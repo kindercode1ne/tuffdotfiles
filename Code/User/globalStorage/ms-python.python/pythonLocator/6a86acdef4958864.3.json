@@ -1,0 +1,14 @@
+{
+  "environment": {
+    "executable": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/icons/iconenv/bin/python",
+    "prefix": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/icons/iconenv",
+    "version": "3.13.5.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "/home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/icons/iconenv/bin/python",
+      "/home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/icons/iconenv/bin/python3",
+      "/home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/icons/iconenv/bin/python3.13"
+    ]
+  },
+  "symlinks": []
+}

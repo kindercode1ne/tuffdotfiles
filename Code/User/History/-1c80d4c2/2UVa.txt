@@ -1,0 +1,10 @@
+cock.li: hvnkrush@waifu.club | rb3#oa-beiu#2-h#oebn
+
+ssh: averykey | meowmeow
+sql pass: root | root
+anna-senapi pass: avery | meowmeow
++----+----------+----------+----------------+----------+------+-----------+----------+-------+-------+---------+
+| id | username | password | duration_limit | cooldown | wrc  | last_paid | max_bots | admin | intvl | api_key |
++----+----------+----------+----------------+----------+------+-----------+----------+-------+-------+---------+
+|  1 | avery    | meowmeow |              0 |        0 |    0 |         0 |       -1 |     1 |    30 |         |
++----+----------+----------+----------------+----------+------+-----------+----------+-------+-------+---------+

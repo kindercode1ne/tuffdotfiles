@@ -1,0 +1,208 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_8c393b5f-d148-4387-ad71-fc827cf8f479",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 31
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 32
+            },
+            "text": "how do i activate the power meu",
+            "kind": "text"
+          }
+        ],
+        "text": "how do i activate the power meu"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/.config/wofi/scripts/wofipowermenu.py",
+              "external": "file:///home/avery/.config/wofi/scripts/wofipowermenu.py",
+              "path": "/home/avery/.config/wofi/scripts/wofipowermenu.py",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/.config/wofi/scripts/wofipowermenu.py",
+            "name": "wofipowermenu.py",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/.config/wofi/config",
+              "external": "file:///home/avery/.config/wofi/config",
+              "path": "/home/avery/.config/wofi/config",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/.config/wofi/config",
+            "name": "config",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/.config/wofi/style.css",
+              "external": "file:///home/avery/.config/wofi/style.css",
+              "path": "/home/avery/.config/wofi/style.css",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/.config/wofi/style.css",
+            "name": "style.css",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:style.css",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/.config/wofi/style.css",
+                "external": "file:///home/avery/.config/wofi/style.css",
+                "path": "/home/avery/.config/wofi/style.css",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 45,
+                "endColumn": 2
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "To activate the power menu, you need to run the script `wofipowermenu.py`. You can do this by executing the following command in your terminal:\n\n```sh\npython3 ~/.config/wofi/scripts/wofipowermenu.py\n```\n\nFor convenience, you can also bind this script to a key combination in your window manager or launcher. Let me know if you want instructions for a specific environment (like Hyprland, Sway, etc.).",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/.config/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_168eb419-5b12-4cc9-8a36-58da4b689862",
+      "result": {
+        "timings": {
+          "firstProgress": 1479,
+          "totalElapsed": 2312
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "python3 ~/.config/wofi/scripts/wofipowermenu.py\n",
+              "language": "sh",
+              "markdownBeforeBlock": "To activate the power menu, you need to run the script `wofipowermenu.py`. You can do this by executing the following command in your terminal:\n\n"
+            }
+          ],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"wofipowermenu.py\" filePath=\"/home/avery/.config/wofi/scripts/wofipowermenu.py\">\n```python\n#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\nimport os\n\n\ndef run_menu():\n    keys = (\n        \"\\uf186   Suspend\",\n        \"\\uf2dc   Lock\",\n        \"\\uf021   Reboot\",\n        \"\\uf021   UEFI Firmware\",\n        \"\\uf011   Shutdown\",\n    )\n\n    actions = (\n        \"systemctl suspend\",\n        \"hyprlock\",\n        \"systemctl reboot\",\n        \"systemctl reboot --firmware-setup\",\n        \"systemctl poweroff\",\n    )\n\n    options = \"\\n\".join(keys)\n    choice = (\n        os.popen(\n            \"echo -e '\"\n            + options\n            + \"' | wofi -d -i -p 'Power Menu' -W 600 -H 300 -k /dev/null\"\n        )\n        .readline()\n        .strip()\n    )\n    if choice in keys:\n        os.popen(actions[keys.index(choice)])\n\n\nrun_menu()\n```\n</attachment>\n<attachment id=\"config\" filePath=\"/home/avery/.config/wofi/config\">\n```plaintext\nprompt=\nallow_images=true\ninsensitive=true\nlocation=center\nwidth=600px\nborder-width=0\n```\n</attachment>\n<attachment id=\"style.css\" filePath=\"/home/avery/.config/wofi/style.css\">\n```css\nwindow {\n  margin: 0px;\n  border: 1px solid #494d64;\n  width: 40%;\n  border-radius: 4px;\n}\n\n#input {\n  margin: 8px;\n  border: none;\n  background-color: #44475a;\n}\n\n#inner-box {\n  padding: 0 8px;\n  border: none;\n}\n\n#outer-box {\n  border: none;\n  margin: 4px;\n}\n\n#scroll {\n  margin: 0px;\n  border: none;\n}\n\n#text {\n  color: #cad3f5;\n  border: none;\n}\n\n#entry.activatable #text {\n}\n\n#entry > * {\n}\n\n#entry:selected {\n  background-color: #494d64;\n}\n#entry:selected #text {\n  font-weight: bold;\n}\n```\n</attachment>\n<attachment id=\"file:style.css\">\nUser's current visible code:\nExcerpt from style.css, lines 1 to 45:\n```css\nwindow {\n  margin: 0px;\n  border: 1px solid #494d64;\n  width: 40%;\n  border-radius: 4px;\n}\n\n#input {\n  margin: 8px;\n  border: none;\n  background-color: #44475a;\n}\n\n#inner-box {\n  padding: 0 8px;\n  border: none;\n}\n\n#outer-box {\n  border: none;\n  margin: 4px;\n}\n\n#scroll {\n  margin: 0px;\n  border: none;\n}\n\n#text {\n  color: #cad3f5;\n  border: none;\n}\n\n#entry.activatable #text {\n}\n\n#entry > * {\n}\n\n#entry:selected {\n  background-color: #494d64;\n}\n#entry:selected #text {\n  font-weight: bold;\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is July 27, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/.config/wofi/style.css. \n</editorContext>\n<reminderInstructions>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nhow do i activate the power meu (See <attachments> above for file contents. You may not need to search or read the file again.)\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Linux\nThe user's default shell is: \"zsh\". When you generate terminal commands, please generate them correctly for this shell.\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- /home/avery/.config \nI am working in a workspace that has the following structure:\n```\ndolphinrc\nkiorc\ntrashrc\ncava/\n\tconfig\n\tshaders/\n\t\tbar_spectrum.frag\n\t\tnorthern_lights.frag\n\t\tpass_through.vert\n\t\tspectrogram.frag\n\t\twinamp_line_style_spectrum.frag\nCode/\n\tcode.lock\n\tCookies\n\tCookies-journal\n\tDIPS\n\tDIPS-shm\n\tDIPS-wal\n\tlanguagepacks.json\n\tmachineid\n\tNetwork Persistent State\n\tPreferences\n\tSharedStorage\n\tSharedStorage-wal\n\tTransportSecurity\n\tTrust Tokens\n\tTrust Tokens-journal\n\tBackups/\n\t\t6ec4c2f9f5c679874ee673c27a4f9bd1/\n\tblob_storage/\n\t\te60890e7-078e-41fc-beb5-a963f9a6605e/\n\tCache/\n\t\tCache_Data/\n\tCachedConfigurations/\n\t\tdefaults/\n\tCachedData/\n\t\tc306e94f98122556ca081f527b466015e1bc37b0/\n\tCachedExtensionVSIXs/\n\t\tesbenp.prettier-vscode-11.0.0\n\t\t...\n\tCachedProfilesData/\n\t\t...\n\tCode Cache/\n\t\tjs/\n\t\t...\n\tCrashpad/\n\tDawnGraphiteCache/\n\tDawnWebGPUCache/\n\tDictionaries/\n\tGPUCache/\n\tLocal Storage/\n\tlogs/\n\tSession Storage/\n\tShared Dictionary/\n\tUser/\ndconf/\n\tuser\ndiscord/\ndiscordcanary/\n\tSingletonCookie\n\tSingletonLock\n\tSingletonSocket\n\tCookies\n\tCookies-journal\n\tDIPS\n\tDIPS-shm\n\tDIPS-wal\n\tLocal State\n\tNetwork Persistent State\n\tPreferences\n\tquotes.json\n\tsettings.json\n\tSharedStorage\n\tSharedStorage-wal\n\tTransportSecurity\n\tTrust Tokens\n\tTrust Tokens-journal\n\t0.0.727/\n\tblob_storage/\n\tCache/\n\tCode Cache/\n\tcomponent_crx_cache/\n\tCrashpad/\n\tDawnGraphiteCache/\n\tDawnWebGPUCache/\n\tDictionaries/\n\tGPUCache/\n\tIndexedDB/\n\tLocal Storage/\n\tlogs/\n\tsentry/\n\tService Worker/\n\tSession Storage/\n\tShared Dictionary/\n\tshared_proto_db/\n\tVideoDecodeStats/\n\tWebStorage/\n\tWidevineCdm/\nElectron/\nfastfetch/\n\tconfig.jsonc\n\tconfig1.jsonc\nfontforge/\n\tplugin/\ngo/\n\ttelemetry/\ngtk-3.0/\nhtop/\nhypr/\n\thyprland.conf\nkde.org/\n\tUserFeedback.org.kde.dolphin.conf\nkitty/\n\tkitty.conf\n\tthemes/\nmatugen/\n\tconfig.toml\n\ttemplates/\nmonero-project/\n\tmonero-core.conf\npulse/\n\tcookie\nsession/\n\tdolphin_dolphin_dolphin\nspicetify/\n\tconfig-xpui.ini\n\tCustomApps/\n\tExtensions/\n\tThemes/\nspotify/\n\tprefs\n\tUsers/\nswww/\n\tswww.sh\nsystemd/\n\tuser/\nVencord/\n\tsettings/\n\tthemes/\nwaybar/\n\tconfig\n\tstyle.css\nwofi/\n\tconfig\n\tstyle.css\n\tscripts/\nyay/\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To activate the power menu, you need to run the script `wofipowermenu.py`. You can do this by executing the following command in your terminal:\n\n```sh\npython3 ~/.config/wofi/scripts/wofipowermenu.py\n```\n\nFor convenience, you can also bind this script to a key combination in your window manager or launcher. Let me know if you want instructions for a specific environment (like Hyprland, Sway, etc.).",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "677db21e-249b-4395-b70f-dbe9236ed5a9"
+            }
+          ],
+          "modelMessageId": "5cd23090-30cd-49ce-9e96-be74a674307d",
+          "responseId": "9583300a-1763-4a3f-a903-46d5c277c369",
+          "sessionId": "8824ae23-f920-407c-b319-c98f44899c30",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753620536521,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "c0105b6a-3ff7-4d4b-a7a1-c282a4e5278d",
+  "creationDate": 1753620530389,
+  "isImported": false,
+  "lastMessageDate": 1753620536521
+}

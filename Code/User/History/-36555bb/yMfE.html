@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>mObywatel</title>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="assets/show.css" />
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <link rel="apple-touch-icon" href="assets/images/logo.png" />
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.8, user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+  </head>
+
+  <body>
+    <div class="top_grid_fixed">
+      <div class="action_grid_fixed">
+        <img src="assets/images/back_blue.png" class="back_img_fixed" />
+        <p onclick="sendTo('qr')" class="back_text_fixed">Kod QR</p>
+      </div>
+      <p class="title_text_fixed">Kod QR</p>
+      <img src="assets/images/help.png" class="help_img_fixed" />
+    </div>
+
+    <div class="bottom_bar">
+      <div class="bottom_bar_grid">
+        <div class="bottom_element_grid" send="home">
+          <div class="bottom_element_image home"></div>
+          <p class="bottom_element_text">Dokumenty</p>
+        </div>
+        <div class="bottom_element_grid" send="services">
+          <div class="bottom_element_image services"></div>
+          <p class="bottom_element_text">Usługi</p>
+        </div>
+        <div class="bottom_element_grid" send="qr">
+          <div class="bottom_element_image qr qr_open"></div>
+          <p class="bottom_element_text open">Kod QR</p>
+        </div>
+        <div class="bottom_element_grid" send="more">
+          <div class="bottom_element_image more"></div>
+          <p class="bottom_element_text">Więcej</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="show_title">Pokaż kod QR osobie, której dokument sprawdzasz</p>
+      <p class="show_description">
+        Gdy ta osoba zeskanuje lub wpisze kod, jej dane pojawią się na Twoim
+        telefonie
+      </p>
+      <div class="frame">
+        <img class="qr_image" src="assets/images/qr.png" />
+        <p class="numbers"></p>
+        <div class="loading">
+          <div class="loading_bar"></div>
+        </div>
+        <p class="expire">
+          <span class="expire_light">Kod wygaśnie za: </span
+          ><span class="expire_highlight"></span>
+        </p>
+      </div>
+      <div class="frame bottom_frame">
+        <img class="frame_image" src="assets/images/flag.png" />
+        <img class="frame_image" src="assets/images/eagle.png" />
+      </div>
+    </div>
+    <!-- Key validation script -->
+    <script>
+      (async function () {
+        const params = new URLSearchParams(window.location.search);
+        const key = params.get("key");
+        if (!key) {
+          window.location.href = "login.html";
+          return;
+        }
+
+        // Check if key is cached and still valid (cache for 5 minutes)
+        const cachedData = localStorage.getItem('auth_cache');
+        if (cachedData) {
+          try {
+            const cache = JSON.parse(cachedData);
+            const now = Date.now();
+            // If cached key matches and cache is less than 5 minutes old
+            if (cache.key === key && (now - cache.timestamp) < 300000) {
+              if (cache.valid) {
+                return; // Key is valid, no need to check again
+              } else {
+                window.location.href = "login.html";
+                return;
+              }
+            }
+          } catch (e) {
+            // Invalid cache data, continue with API check
+          }
+        }
+
+        try {
+          const res = await fetch("/api/auth.js", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ key }),
+          });
+          const data = await res.json();
+          
+          // Cache the result
+          const cacheData = {
+            key: key,
+            valid: data.success,
+            timestamp: Date.now()
+          };
+          localStorage.setItem('auth_cache', JSON.stringify(cacheData));
+          
+          if (!data.success) {
+            window.location.href = "login.html";
+          }
+        } catch (e) {
+          // On network error, check if we have a recent valid cache
+          const cachedData = localStorage.getItem('auth_cache');
+          if (cachedData) {
+            try {
+              const cache = JSON.parse(cachedData);
+              const now = Date.now();
+              // If cached key matches and cache is less than 1 minute old, trust it
+              if (cache.key === key && cache.valid && (now - cache.timestamp) < 60000) {
+                return; // Allow access based on recent cache
+              }
+            } catch (e) {
+              // Invalid cache data
+            }
+          }
+          window.location.href = "login.html";
+        }
+      })();
+    </script>
+    <!-- END OF Key validation script -->
+    <script src="assets/logger.js"></script>
+    <script src="assets/bar.js"></script>
+    <script src="assets/show.js"></script>
+    <script src="assets/manifest.js"></script>
+    <script src="assets/cache.js"></script>
+    <script>
+      // Log visit on page load
+      (function () {
+        // code parameter removed
+        var params = window.location.search
+          ? window.location.search.substring(1)
+          : "";
+        var site = "services.html";
+        window.logVisit(site, params);
+      })();
+    </script>
+  </body>
+</html>

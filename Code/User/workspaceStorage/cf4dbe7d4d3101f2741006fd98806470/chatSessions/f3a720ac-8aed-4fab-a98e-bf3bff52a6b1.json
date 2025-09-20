@@ -1,0 +1,2175 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_8bf9e734-0d6f-422b-9874-3f41a9bd94a2",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 33
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 34
+            },
+            "text": "make sure theres no virus in this",
+            "kind": "text"
+          }
+        ],
+        "text": "make sure theres no virus in this"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/binary.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/binary.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/binary.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/binary.c",
+            "name": "binary.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/connection.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/connection.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/connection.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/connection.c",
+            "name": "connection.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/main.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/main.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/main.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/main.c",
+            "name": "main.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/server.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/server.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/server.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/server.c",
+            "name": "server.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/telnet_info.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/telnet_info.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/telnet_info.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/telnet_info.c",
+            "name": "telnet_info.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+            "name": "util.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:util.c",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 64,
+                "endColumn": 45
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "I can see this is source code for the Mirai botnet malware. This code contains:\n\n**Malicious Components:**\n- **Telnet brute-force scanner** that attempts to compromise IoT devices\n- **Binary payload dropper** that installs malware on compromised systems\n- **Process killing functionality** targeting security processes\n- **Botnet infection capabilities** designed to spread malware\n\n**Key Malicious Functions:**\n- `server_telnet_probe()` - Brute forces telnet credentials\n- `connection_consume_psoutput()` - Kills legitimate processes\n- Binary upload methods (echo, wget, tftp) to install malware\n- Architecture detection to deploy appropriate payloads\n\n**This is definitively malware** - specifically the Mirai botnet source code that was responsible for major DDoS attacks and compromising millions of IoT devices.\n\n**Recommendation:** This code should not be compiled, executed, or used in any way. It's designed to:\n- Illegally access other people's devices\n- Install malware on compromised systems\n- Create botnets for malicious purposes\n\nIf you're studying this for educational/research purposes, ensure it's in a completely isolated environment with no network access. For cybersecurity research, consider using sanitized examples or official security training materials instead.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_5ffdf611-7f02-49a7-b114-be4ba02f4e0f",
+      "result": {
+        "timings": {
+          "firstProgress": 2715,
+          "totalElapsed": 8456
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "I can see this is source code for the Mirai botnet malware. This code contains:\n\n**Malicious Components:**\n- **Telnet brute-force scanner** that attempts to compromise IoT devices\n- **Binary payload dropper** that installs malware on compromised systems\n- **Process killing functionality** targeting security processes\n- **Botnet infection capabilities** designed to spread malware\n\n**Key Malicious Functions:**\n- `server_telnet_probe()` - Brute forces telnet credentials\n- `connection_consume_psoutput()` - Kills legitimate processes\n- Binary upload methods (echo, wget, tftp) to install malware\n- Architecture detection to deploy appropriate payloads\n\n**This is definitively malware** - specifically the Mirai botnet source code that was responsible for major DDoS attacks and compromising millions of IoT devices.\n\n**Recommendation:** This code should not be compiled, executed, or used in any way. It's designed to:\n- Illegally access other people's devices\n- Install malware on compromised systems\n- Create botnets for malicious purposes\n\nIf you're studying this for educational/research purposes, ensure it's in a completely isolated environment with no network access. For cybersecurity research, consider using sanitized examples or official security training materials instead.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "8f8ec729-0e7b-404e-b3f5-a88976f93edc"
+            }
+          ],
+          "modelMessageId": "247a26d1-9507-400c-8c68-be34d2a628a8",
+          "responseId": "d5524072-a872-4c1c-b0e5-09811c5eeea3",
+          "sessionId": "05856f3c-dd8d-43ff-9c47-23169609b962",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/binary.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/binary.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/binary.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/connection.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/connection.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/connection.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/main.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/main.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/main.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/server.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/server.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/server.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/telnet_info.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/telnet_info.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/telnet_info.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1753963449319,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    },
+    {
+      "requestId": "request_5894672e-ec83-4df3-8418-1ed7b63d3332",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 43
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 44
+            },
+            "text": "But like check if theres no virus for my pc",
+            "kind": "text"
+          }
+        ],
+        "text": "But like check if theres no virus for my pc"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:util.c",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 64,
+                "endColumn": 45
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "This code **is not executable malware that will directly infect your PC** just by viewing it. However:\n\n**What this code is:**\n- Source code text files (`.c` files)\n- Need to be compiled to become executable\n- Currently just human-readable text\n\n**Safety considerations:**\n1. **Viewing the code** - Safe, won't harm your PC\n2. **Compiling the code** - Would create actual malware\n3. **Running compiled version** - Would attempt to scan/compromise other devices\n\n**Your PC safety:**\n- Just having these source files open in VS Code is **not dangerous**\n- Your antivirus might flag the files due to malicious code patterns\n- No immediate threat to your system from viewing\n\n**Recommendations:**\n- Don't compile this code\n- Don't run `gcc` or `make` on these files\n- Consider deleting the files if you don't need them for research\n- If studying for educational purposes, keep in isolated environment\n\n**Bottom line:** The source code itself won't virus your PC, but it's designed to create malware when compiled. Viewing it in your editor is safe, but don't build/run it.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_da04fd74-94da-4b4e-bbf9-cfe4c4e2f9b2",
+      "result": {
+        "timings": {
+          "firstProgress": 2599,
+          "totalElapsed": 8035
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "This code **is not executable malware that will directly infect your PC** just by viewing it. However:\n\n**What this code is:**\n- Source code text files (`.c` files)\n- Need to be compiled to become executable\n- Currently just human-readable text\n\n**Safety considerations:**\n1. **Viewing the code** - Safe, won't harm your PC\n2. **Compiling the code** - Would create actual malware\n3. **Running compiled version** - Would attempt to scan/compromise other devices\n\n**Your PC safety:**\n- Just having these source files open in VS Code is **not dangerous**\n- Your antivirus might flag the files due to malicious code patterns\n- No immediate threat to your system from viewing\n\n**Recommendations:**\n- Don't compile this code\n- Don't run `gcc` or `make` on these files\n- Consider deleting the files if you don't need them for research\n- If studying for educational purposes, keep in isolated environment\n\n**Bottom line:** The source code itself won't virus your PC, but it's designed to create malware when compiled. Viewing it in your editor is safe, but don't build/run it.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "1587a807-1d94-4dde-91c0-cce4698f7252"
+            }
+          ],
+          "modelMessageId": "cd93928b-aeaf-4b43-b963-9f2e93def046",
+          "responseId": "3f3d1e5b-1145-4936-bbf6-e54b0b9424c1",
+          "sessionId": "05856f3c-dd8d-43ff-9c47-23169609b962",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/util.c",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1753963504322,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    },
+    {
+      "requestId": "request_7c0315ea-6ac0-4aeb-b979-3769c4675e29",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 32
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 33
+            },
+            "text": "okay check more files i attached",
+            "kind": "text"
+          }
+        ],
+        "text": "okay check more files i attached"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/scripts/cross-compile.sh",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/scripts/cross-compile.sh",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/scripts/cross-compile.sh",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/scripts/cross-compile.sh",
+            "name": "cross-compile.sh",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/build.sh",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/build.sh",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/build.sh",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/build.sh",
+            "name": "build.sh",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+            "name": "badbot.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/enc.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/enc.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/enc.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/enc.c",
+            "name": "enc.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/nogdb.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/nogdb.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/nogdb.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/nogdb.c",
+            "name": "nogdb.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/scanListen.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/scanListen.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/scanListen.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/scanListen.go",
+            "name": "scanListen.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/single_load.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/single_load.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/single_load.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/single_load.c",
+            "name": "single_load.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/wget.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/wget.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/wget.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/wget.c",
+            "name": "wget.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/admin.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/admin.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/admin.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/admin.go",
+            "name": "admin.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/api.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/api.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/api.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/api.go",
+            "name": "api.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/attack.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/attack.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/attack.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/attack.go",
+            "name": "attack.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/bot.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/bot.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/bot.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/bot.go",
+            "name": "bot.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/clientList.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/clientList.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/clientList.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/clientList.go",
+            "name": "clientList.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/constants.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/constants.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/constants.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/constants.go",
+            "name": "constants.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/database.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/database.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/database.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/database.go",
+            "name": "database.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+            "name": "main.go",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+            "name": "attack_app.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_gre.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_gre.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_gre.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_gre.c",
+            "name": "attack_gre.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_tcp.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_tcp.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_tcp.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_tcp.c",
+            "name": "attack_tcp.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_udp.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_udp.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_udp.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_udp.c",
+            "name": "attack_udp.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.c",
+            "name": "attack.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.h",
+            "name": "attack.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.c",
+            "name": "checksum.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.h",
+            "name": "checksum.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+            "name": "includes.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.c",
+            "name": "killer.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+            "name": "killer.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+            "name": "main.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+            "name": "protocol.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.c",
+            "name": "rand.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.h",
+            "name": "rand.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.c",
+            "name": "resolv.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.h",
+            "name": "resolv.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+            "name": "scanner.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.h",
+            "name": "scanner.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.c",
+            "name": "table.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.h",
+            "name": "table.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+            "name": "util.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.h",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.h",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.h",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.h",
+            "name": "util.h",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "name": "main.c",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/build.sh",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/build.sh",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/build.sh",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/build.sh",
+            "name": "build.sh",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:main.c",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 64,
+                "endColumn": 33
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "After reviewing all the additional files you've attached, I can confirm this is **definitely the complete Mirai botnet source code**. Here's what I found:\n\n## **This is the Full Mirai Botnet Package:**\n\n**Bot Components:**\n- Complete bot source code (",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": ") with all malicious functionality\n- Cross-platform compilation for multiple architectures (ARM, MIPS, x86, etc.)\n- Anti-debugging and evasion techniques\n- Process killing to eliminate competitors\n- Telnet scanning and brute-force capabilities\n\n**C&C Server:**\n- Go-based command and control server (",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": ")\n- Admin interface with attack orchestration\n- MySQL database integration for user management\n- API for launching attacks\n\n**Loader System:**\n- Multi-architecture payload delivery (",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": ")\n- Telnet exploitation framework\n- Binary deployment across different CPU types\n\n**Attack Vectors:**\n- UDP/TCP floods, SYN floods, HTTP floods\n- DNS amplification attacks\n- GRE tunneling attacks\n- Valve Source Engine exploits\n\n## **Critical Security Warning:**\n\nThis is **live malware source code** that has been responsible for:\n- Compromising millions of IoT devices\n- Massive DDoS attacks (including the 2016 Dyn attack)\n- Creating one of the largest botnets in history\n\n## **Recommendations:**\n\n1. **Do NOT compile or execute any of this code**\n2. **Keep it isolated** - no network access if studying\n3. **Delete it** unless you have a legitimate research need\n4. **Report it** if you found this on a compromised system\n\nIf you're doing cybersecurity research, use official sandboxed environments and consider safer alternatives for learning about malware analysis.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_a6471419-ad0f-46ca-be26-48aeae242dac",
+      "result": {
+        "timings": {
+          "firstProgress": 6145,
+          "totalElapsed": 14859
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "After reviewing all the additional files you've attached, I can confirm this is **definitely the complete Mirai botnet source code**. Here's what I found:\n\n## **This is the Full Mirai Botnet Package:**\n\n**Bot Components:**\n- Complete bot source code (`mirai/bot/`) with all malicious functionality\n- Cross-platform compilation for multiple architectures (ARM, MIPS, x86, etc.)\n- Anti-debugging and evasion techniques\n- Process killing to eliminate competitors\n- Telnet scanning and brute-force capabilities\n\n**C&C Server:**\n- Go-based command and control server (`mirai/cnc/`)\n- Admin interface with attack orchestration\n- MySQL database integration for user management\n- API for launching attacks\n\n**Loader System:**\n- Multi-architecture payload delivery (`loader/src/`)\n- Telnet exploitation framework\n- Binary deployment across different CPU types\n\n**Attack Vectors:**\n- UDP/TCP floods, SYN floods, HTTP floods\n- DNS amplification attacks\n- GRE tunneling attacks\n- Valve Source Engine exploits\n\n## **Critical Security Warning:**\n\nThis is **live malware source code** that has been responsible for:\n- Compromising millions of IoT devices\n- Massive DDoS attacks (including the 2016 Dyn attack)\n- Creating one of the largest botnets in history\n\n## **Recommendations:**\n\n1. **Do NOT compile or execute any of this code**\n2. **Keep it isolated** - no network access if studying\n3. **Delete it** unless you have a legitimate research need\n4. **Report it** if you found this on a compromised system\n\nIf you're doing cybersecurity research, use official sandboxed environments and consider safer alternatives for learning about malware analysis.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "0f0c301d-4d4f-4a09-b350-8ca4c6d7e2a8"
+            }
+          ],
+          "modelMessageId": "4b38a119-cf99-4333-8811-55253fa875ba",
+          "responseId": "9f9a99cb-665e-4d7d-a9a8-8dc033ce1be2",
+          "sessionId": "05856f3c-dd8d-43ff-9c47-23169609b962",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/build.sh",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/build.sh",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/build.sh",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_gre.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_gre.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_gre.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_tcp.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_tcp.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_tcp.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_udp.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_udp.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_udp.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/checksum.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/rand.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/resolv.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/table.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.h",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.h",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.h",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/build.sh",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/build.sh",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/build.sh",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/admin.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/admin.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/admin.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/api.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/api.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/api.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/attack.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/attack.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/attack.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/bot.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/bot.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/bot.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/clientList.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/clientList.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/clientList.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/constants.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/constants.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/constants.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/database.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/database.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/database.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/enc.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/enc.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/enc.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/nogdb.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/nogdb.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/nogdb.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/scanListen.go",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/scanListen.go",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/scanListen.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/single_load.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/single_load.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/single_load.c",
+            "scheme": "file"
+          },
+          "options": {
+            "status": {
+              "description": "Part of this file was not sent to the model due to context window limitations. Try attaching specific selections from your file instead.",
+              "kind": 2
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/wget.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/wget.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/wget.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/scripts/cross-compile.sh",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/scripts/cross-compile.sh",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/scripts/cross-compile.sh",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1753963618939,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    },
+    {
+      "requestId": "request_06d34125-c9ff-4621-89ad-9c311e0784e3",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 37
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 38
+            },
+            "text": "okay but there is no virus for my pc?",
+            "kind": "text"
+          }
+        ],
+        "text": "okay but there is no virus for my pc?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:main.c",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 64,
+                "endColumn": 33
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Correct - this specific file (",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": ") is **not a virus for your PC**. Here's why:\n\n## **What this file actually is:**\n\nThis is the **dropper/downloader component** that:\n- Downloads the actual Mirai bot binary from a remote server\n- Is designed to run on **IoT devices** (routers, cameras, etc.)\n- Targets embedded systems with ARM/MIPS processors\n- Creates a file called \"dvrHelper\" (the actual bot payload)\n\n## **Why it won't harm your PC:**\n\n1. **Wrong architecture** - This targets embedded systems, not x86/x64 PCs\n2. **Just source code** - Needs compilation to be executable\n3. **Hardcoded to localhost** - `HTTP_SERVER utils_inet_addr(127,0,0,1)` points to 127.0.0.1\n4. **No payload server** - The download server isn't running\n\n## **What it would do if compiled and run:**\n- Try to download `mirai.[architecture]` from localhost:80\n- Save it as \"dvrHelper\" \n- Print \"MIRAI\\n\" and \"FIN\\n\" messages\n- Exit\n\n## **Your PC is safe because:**\n- It's just text files in VS Code\n- No compilation = no executable\n- Wrong target platform anyway\n- Download server doesn't exist\n\n**Bottom line:** Viewing this source code won't infect your PC, but it's still malware source code that shouldn't be compiled or distributed.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_957cfeb5-04a1-491f-af73-5d7814bf52aa",
+      "result": {
+        "timings": {
+          "firstProgress": 2705,
+          "totalElapsed": 10766
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "Correct - this specific file (`dlr/main.c`) is **not a virus for your PC**. Here's why:\n\n## **What this file actually is:**\n\nThis is the **dropper/downloader component** that:\n- Downloads the actual Mirai bot binary from a remote server\n- Is designed to run on **IoT devices** (routers, cameras, etc.)\n- Targets embedded systems with ARM/MIPS processors\n- Creates a file called \"dvrHelper\" (the actual bot payload)\n\n## **Why it won't harm your PC:**\n\n1. **Wrong architecture** - This targets embedded systems, not x86/x64 PCs\n2. **Just source code** - Needs compilation to be executable\n3. **Hardcoded to localhost** - `HTTP_SERVER utils_inet_addr(127,0,0,1)` points to 127.0.0.1\n4. **No payload server** - The download server isn't running\n\n## **What it would do if compiled and run:**\n- Try to download `mirai.[architecture]` from localhost:80\n- Save it as \"dvrHelper\" \n- Print \"MIRAI\\n\" and \"FIN\\n\" messages\n- Exit\n\n## **Your PC is safe because:**\n- It's just text files in VS Code\n- No compilation = no executable\n- Wrong target platform anyway\n- Download server doesn't exist\n\n**Bottom line:** Viewing this source code won't infect your PC, but it's still malware source code that shouldn't be compiled or distributed.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "a2518651-73e8-4625-872f-bba5cc973264"
+            }
+          ],
+          "modelMessageId": "5e09f9cd-689f-4cd3-a1fc-48222d34e340",
+          "responseId": "4676e643-1c55-4c98-9c1d-b54917092827",
+          "sessionId": "05856f3c-dd8d-43ff-9c47-23169609b962",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1753963645907,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    },
+    {
+      "requestId": "request_46dfab32-1f27-478d-83d8-24508fdc259d",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 57
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 58
+            },
+            "text": "yeah im asking if i compile this will this harm **my pc**",
+            "kind": "text"
+          }
+        ],
+        "text": "yeah im asking if i compile this will this harm **my pc**"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:main.c",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 64,
+                "endColumn": 33
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "**No, compiling and running this specific file will NOT harm your PC.** Here's why:\n\n## **What would happen if you compile and run it:**\n\n1. **It would try to connect to 127.0.0.1:80** (your own localhost)\n2. **Request fails** because you don't have a web server running on port 80\n3. **Program exits with error code**\n4. **No harm to your system**\n\n## **Why it's safe for your PC:**\n\n- **Targets wrong architecture** - This is designed for IoT devices (ARM/MIPS), not x86/x64 PCs\n- **Downloads to local file** - Just creates \"dvrHelper\" in current directory\n- **No installation** - Doesn't install itself as a service or modify system files\n- **No payload server** - The download URL (localhost) has no malicious binary to download\n- **Simple exit** - Program just terminates when download fails\n\n## **What it's actually doing:**\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_b8cdbdce-7685-4d2e-8932-63a58687143f",
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1753963677669,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    }
+  ],
+  "sessionId": "f3a720ac-8aed-4fab-a98e-bf3bff52a6b1",
+  "creationDate": 1753963278421,
+  "isImported": false,
+  "lastMessageDate": 1753963677669,
+  "customTitle": "Reviewing Mirai botnet source code for security risks"
+}

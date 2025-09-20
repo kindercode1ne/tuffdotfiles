@@ -1,0 +1,34 @@
+2025-08-21 19:56:23.884 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:23.906 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:23.910 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:23.916 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.004 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.038 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.064 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.098 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.153 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.178 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.210 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.330 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:26.420 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:26.822 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:31.461 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:54.233 [info] Getting Manifest... github.copilot-chat
+2025-08-21 19:56:54.316 [info] Installing extension: github.copilot-chat {"productVersion":{"version":"1.103.2","date":"2025-08-20T16:51:49.252Z"},"pinned":false,"operation":3,"isApplicationScoped":true,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/avery/.vscode/extensions/extensions.json","path":"/home/avery/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2025-08-21 19:56:55.142 [info] Extension signature verification result for github.copilot-chat: Success. Internal Code: 0. Executed: true. Duration: 395ms.
+2025-08-21 19:56:55.241 [info] Extracted extension to file:///home/avery/.vscode/extensions/github.copilot-chat-0.30.2: github.copilot-chat
+2025-08-21 19:56:55.248 [info] Renamed to /home/avery/.vscode/extensions/github.copilot-chat-0.30.2
+2025-08-21 19:56:55.250 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.2]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:55.268 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.2]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:55.268 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:55.269 [error] Error while installing the extension github.copilot-chat Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2 vscode-userdata:/home/avery/.vscode/extensions/extensions.json
+2025-08-21 19:58:09.483 [info] Getting Manifest... github.copilot-chat
+2025-08-21 19:58:09.493 [info] Installing extension: github.copilot-chat {"productVersion":{"version":"1.103.2","date":"2025-08-20T16:51:49.252Z"},"pinned":false,"operation":3,"isApplicationScoped":true,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/avery/.vscode/extensions/extensions.json","path":"/home/avery/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2025-08-21 19:58:09.572 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:58:09.572 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.2]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:58:09.573 [error] Error while installing the extension github.copilot-chat Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2 vscode-userdata:/home/avery/.vscode/extensions/extensions.json
+2025-08-21 20:00:27.733 [info] Getting Manifest... github.copilot-chat
+2025-08-21 20:00:27.744 [info] Installing extension: github.copilot-chat {"productVersion":{"version":"1.103.2","date":"2025-08-20T16:51:49.252Z"},"pinned":false,"operation":3,"isApplicationScoped":true,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/avery/.vscode/extensions/extensions.json","path":"/home/avery/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2025-08-21 20:00:27.795 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 20:00:27.796 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.2]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 20:00:27.796 [error] Error while installing the extension github.copilot-chat Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2 vscode-userdata:/home/avery/.vscode/extensions/extensions.json

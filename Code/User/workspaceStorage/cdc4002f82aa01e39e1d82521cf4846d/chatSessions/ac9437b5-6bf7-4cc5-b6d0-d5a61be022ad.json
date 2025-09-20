@@ -1,0 +1,306 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_6d80924e-7370-41ca-93cf-2a2038d70914",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 52
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 53
+            },
+            "text": "make it horizontal on top of the screen not vertical",
+            "kind": "text"
+          }
+        ],
+        "text": "make it horizontal on top of the screen not vertical"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/.config/waybar/style.css",
+              "external": "file:///home/avery/.config/waybar/style.css",
+              "path": "/home/avery/.config/waybar/style.css",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/.config/waybar/style.css",
+            "name": "style.css",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:config",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/.config/waybar/config",
+                "external": "file:///home/avery/.config/waybar/config",
+                "path": "/home/avery/.config/waybar/config",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 2,
+                "startColumn": 1,
+                "endLineNumber": 66,
+                "endColumn": 22
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "toolInvocationSerialized",
+          "presentation": "hidden",
+          "invocationMessage": "Using \"Apply Patch\"",
+          "isConfirmed": true,
+          "isComplete": true,
+          "toolCallId": "b484d9dc-8af6-471c-9d28-be1006e75eb8",
+          "toolId": "copilot_applyPatch"
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "id": "cec4a414-6102-4304-81e2-d0e10d83ef59",
+          "kind": "undoStop"
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/.config/waybar/config",
+            "external": "file:///home/avery/.config/waybar/config",
+            "path": "/home/avery/.config/waybar/config",
+            "scheme": "file"
+          },
+          "isEdit": true
+        },
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/.config/waybar/config",
+            "external": "file:///home/avery/.config/waybar/config",
+            "path": "/home/avery/.config/waybar/config",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "{\n  \"layer\": \"top\",\n  \"position\": \"top\",\n  \"height\": 28,\n  \"margin\": \"2 2 0 2\",\n  \"spacing\": 2,\n  \"modules-left\": [\n    \"clock\",\n    \"custom/sep\",\n    \"tray\"\n  ],\n  \"modules-center\": [\n    \"hyprland/workspaces\"\n  ],\n  \"modules-right\": [\n    \"custom/bluetooth_devices\",\n    \"custom/sep\",\n    \"temperature\",\n    \"custom/sep\",\n    \"pulseaudio\",\n    \"custom/powermenu\"\n  ],\n  \"custom/sep\": {\n    //    \"format\": \"──\"\n    \"format\": \"\"\n  },\n  \"custom/powermenu\": {\n    \"on-click\": \"~/.config/wofi/scripts/wofipowermenu.py\",\n    \"format\": \"\",\n    \"tooltip\": false\n  },\n  \"custom/bluetooth_devices\": {\n    \"exec\": \"$HOME/.config/waybar/custom_modules/bluetooth_devices.sh\",\n    \"return-type\": \"json\",\n    \"format\": \"{}\",\n    \"justify\": \"center\",\n    \"rotate\": 90,\n    \"interval\": 5,\n    \"on-click\": \"blueman-manager\"\n  },\n  \"hyprland/workspaces\": {\n    \"format\": \"{icon}\",\n    \"on-click\": \"activate\",\n    \"on-scroll-up\": \"hyprctl dispatch workspace e-1\",\n    \"on-scroll-down\": \"hyprctl dispatch workspace e+1\",\n    \"format-icons\": {\n      \"active\": \"\",\n      \"urgent\": \"\",\n      \"default\": \"\"\n    }\n  },\n  \"clock\": {\n    \"tooltip\": true,\n    \"format\": \"{:%H\\n%M}\",\n    \"tooltip-format\": \"{:%Y-%m-%d}\",\n  },\n  \"tray\": {\n    \"icon-size\": 18,\n    \"show-passive-items\": \"true\"\n  },\n  \"temperature\": {\n    \"rotate\": 90,\n    \"hwmon-path\": \"/sys/class/hwmon/hwmon3/temp1_input\",\n    \"critical-threshold\": 80,\n    \"format\": \"{icon} {temperatureC}°C\",\n    \"format-icons\": [\n      \"\",\n      \"\",\n      \"\"\n    ]\n  },\n  \"pulseaudio\": {\n    \"rotate\": 90,\n    \"format\": \"{icon} {volume}%\",\n    \"format-bluetooth\": \"{icon} {volume}%\",\n    \"format-muted\": \"MUTE \",\n    \"format-icons\": {\n      \"headphones\": \"\",\n      \"handsfree\": \"\",\n      \"headset\": \"\",\n      \"phone\": \"\",\n      \"portable\": \"\",\n      \"car\": \"\",\n      \"default\": [\n        \"\",\n        \"\"\n      ]\n    },\n    \"scroll-step\": 3,\n    \"on-click\": \"pavucontrol\",\n    \"on-click-right\": \"pactl set-source-mute @DEFAULT_SOURCE@ toggle\"\n  }\n}",
+                "range": {
+                  "startLineNumber": 1,
+                  "startColumn": 1,
+                  "endLineNumber": 94,
+                  "endColumn": 1
+                }
+              }
+            ],
+            []
+          ],
+          "done": true
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "value": "Your Waybar config is now set for a horizontal bar at the top of the screen instead of a vertical bar on the left. The position is \"top\", and the margin/size are adjusted for a horizontal layout.\n\nRestart Waybar to see the changes. Let me know if you want further tweaks!",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/.config/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_9c0509ef-08d6-4892-b696-45c84f462748",
+      "result": {
+        "timings": {
+          "firstProgress": 2440,
+          "totalElapsed": 6104
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"style.css\" filePath=\"/home/avery/.config/waybar/style.css\">\n```css\n* {\n  border: none;\n  font-family: \"Hack\", \"Font Awesome 6 Pro\";\n  font-size: 14px;\n  font-weight: 600;\n  background: none;\n}\n\nwindow#waybar {\n  color: #a5adcb;\n}\n.modules-left,\n.modules-right,\n.modules-center {\n  border-radius: 6px;\n  background: #181926;\n  padding: 12px 0;\n}\ntooltip {\n  color: #a5adcb;\n  background-color: #181926;\n  text-shadow: none;\n}\n\ntooltip * {\n  color: #a5adcb;\n  text-shadow: none;\n}\n.modules-center {\n}\n\n#custom-sep {\n  color: #494d64;\n  margin: 4px 0;\n}\n#workspaces,\n#clock,\n#custom-bluetooth_devices,\n#custom-powermenu,\n#pulseaudio,\n#tray {\n}\n#workspaces {\n  border-radius: 4px;\n}\n#workspaces button {\n  color: #5b6078;\n  background: none;\n  padding: 0;\n}\n#workspaces button:hover {\n  color: #a6da95;\n}\n#workspaces button.active {\n  color: #f5bde6;\n}\n#temperature {\n  color: #eed49f;\n}\n#clock {\n  font-weight: 600;\n  color: #8bd5ca;\n}\n#custom-bluetooth_devices {\n  color: #8aadf4;\n}\n#pulseaudio {\n  color: #a6da95;\n}\n#pulseaudio.muted {\n  color: #ed8796;\n}\n\n#custom-powermenu {\n  margin: 12px 0 0 0;\n  color: #6e738d;\n}\n```\n</attachment>\n<attachment id=\"file:config\">\nUser's current visible code, this should be the main focus:\nExcerpt from config, lines 2 to 66:\n```json\n\"layer\": \"top\",\n  \"position\": \"left\",\n  \"width\": 28,\n  \"margin\": \"2 0 2 2\",\n  \"spacing\": 2,\n  \"modules-left\": [\n    \"clock\",\n    \"custom/sep\",\n    \"tray\"\n  ],\n  \"modules-center\": [\n    \"hyprland/workspaces\"\n  ],\n  \"modules-right\": [\n    \"custom/bluetooth_devices\",\n    \"custom/sep\",\n    \"temperature\",\n    \"custom/sep\",\n    \"pulseaudio\",\n    \"custom/powermenu\"\n  ],\n  \"custom/sep\": {\n    //    \"format\": \"──\"\n    \"format\": \"\"\n  },\n  \"custom/powermenu\": {\n    \"on-click\": \"~/.config/wofi/scripts/wofipowermenu.py\",\n    \"format\": \"\",\n    \"tooltip\": false\n  },\n  \"custom/bluetooth_devices\": {\n    \"exec\": \"$HOME/.config/waybar/custom_modules/bluetooth_devices.sh\",\n    \"return-type\": \"json\",\n    \"format\": \"{}\",\n    \"justify\": \"center\",\n    \"rotate\": 90,\n    \"interval\": 5,\n    \"on-click\": \"blueman-manager\"\n  },\n  \"hyprland/workspaces\": {\n    \"format\": \"{icon}\",\n    \"on-click\": \"activate\",\n    \"on-scroll-up\": \"hyprctl dispatch workspace e-1\",\n    \"on-scroll-down\": \"hyprctl dispatch workspace e+1\",\n    \"format-icons\": {\n      \"active\": \"\",\n      \"urgent\": \"\",\n      \"default\": \"\"\n    }\n  },\n  \"clock\": {\n    \"tooltip\": true,\n    \"format\": \"{:%H\\n%M}\",\n    \"tooltip-format\": \"{:%Y-%m-%d}\",\n  },\n  \"tray\": {\n    \"icon-size\": 18,\n    \"show-passive-items\": \"true\"\n  },\n  \"temperature\": {\n    \"rotate\": 90,\n    \"hwmon-path\": \"/sys/class/hwmon/hwmon3/temp1_input\",\n    \"critical-threshold\": 80,\n    \"format\": \"{icon} {temperatureC}°C\",\n    \"format-icons\": [\n```\n</attachment>\n<attachment filePath=\"/home/avery/.config/waybar/config\">\nUser's active file for additional context:\n```json\n{\n  \"layer\": \"top\",\n  \"position\": \"left\",\n  \"width\": 28,\n  \"margin\": \"2 0 2 2\",\n  \"spacing\": 2,\n  \"modules-left\": [\n    \"clock\",\n    \"custom/sep\",\n    \"tray\"\n  ],\n  \"modules-center\": [\n    \"hyprland/workspaces\"\n  ],\n  \"modules-right\": [\n    \"custom/bluetooth_devices\",\n    \"custom/sep\",\n    \"temperature\",\n    \"custom/sep\",\n    \"pulseaudio\",\n    \"custom/powermenu\"\n  ],\n  \"custom/sep\": {\n    //    \"format\": \"──\"\n    \"format\": \"\"\n  },\n  \"custom/powermenu\": {\n    \"on-click\": \"~/.config/wofi/scripts/wofipowermenu.py\",\n    \"format\": \"\",\n    \"tooltip\": false\n  },\n  \"custom/bluetooth_devices\": {\n    \"exec\": \"$HOME/.config/waybar/custom_modules/bluetooth_devices.sh\",\n    \"return-type\": \"json\",\n    \"format\": \"{}\",\n    \"justify\": \"center\",\n    \"rotate\": 90,\n    \"interval\": 5,\n    \"on-click\": \"blueman-manager\"\n  },\n  \"hyprland/workspaces\": {\n    \"format\": \"{icon}\",\n    \"on-click\": \"activate\",\n    \"on-scroll-up\": \"hyprctl dispatch workspace e-1\",\n    \"on-scroll-down\": \"hyprctl dispatch workspace e+1\",\n    \"format-icons\": {\n      \"active\": \"\",\n      \"urgent\": \"\",\n      \"default\": \"\"\n    }\n  },\n  \"clock\": {\n    \"tooltip\": true,\n    \"format\": \"{:%H\\n%M}\",\n    \"tooltip-format\": \"{:%Y-%m-%d}\",\n  },\n  \"tray\": {\n    \"icon-size\": 18,\n    \"show-passive-items\": \"true\"\n  },\n  \"temperature\": {\n    \"rotate\": 90,\n    \"hwmon-path\": \"/sys/class/hwmon/hwmon3/temp1_input\",\n    \"critical-threshold\": 80,\n    \"format\": \"{icon} {temperatureC}°C\",\n    \"format-icons\": [\n      \"\",\n      \"\",\n      \"\"\n    ]\n  },\n  \"pulseaudio\": {\n    \"rotate\": 90,\n    \"format\": \"{icon} {volume}%\",\n    \"format-bluetooth\": \"{icon} {volume}%\",\n    \"format-muted\": \"MUTE \",\n    \"format-icons\": {\n      \"headphones\": \"\",\n      \"handsfree\": \"\",\n      \"headset\": \"\",\n      \"phone\": \"\",\n      \"portable\": \"\",\n      \"car\": \"\",\n      \"default\": [\n        \"\",\n        \"\"\n      ]\n    },\n    \"scroll-step\": 3,\n    \"on-click\": \"pavucontrol\",\n    \"on-click-right\": \"pactl set-source-mute @DEFAULT_SOURCE@ toggle\"\n  }\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is July 27, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/.config/waybar/config. \n</editorContext>\n<reminderInstructions>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nmake it horizontal on top of the screen not vertical (See <attachments> above for file contents. You may not need to search or read the file again.)\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Linux\nThe user's default shell is: \"zsh\". When you generate terminal commands, please generate them correctly for this shell.\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- /home/avery/.config \nI am working in a workspace that has the following structure:\n```\ndolphinrc\nkiorc\ntrashrc\ncava/\n\tconfig\n\tshaders/\n\t\tbar_spectrum.frag\n\t\tnorthern_lights.frag\n\t\tpass_through.vert\n\t\tspectrogram.frag\n\t\twinamp_line_style_spectrum.frag\nCode/\n\tcode.lock\n\tCookies\n\tCookies-journal\n\tDIPS\n\tDIPS-shm\n\tDIPS-wal\n\tlanguagepacks.json\n\tmachineid\n\tNetwork Persistent State\n\tPreferences\n\tSharedStorage\n\tSharedStorage-wal\n\tTransportSecurity\n\tTrust Tokens\n\tTrust Tokens-journal\n\tBackups/\n\t\t6ec4c2f9f5c679874ee673c27a4f9bd1/\n\tblob_storage/\n\t\te60890e7-078e-41fc-beb5-a963f9a6605e/\n\tCache/\n\t\tCache_Data/\n\tCachedConfigurations/\n\t\tdefaults/\n\tCachedData/\n\t\tc306e94f98122556ca081f527b466015e1bc37b0/\n\tCachedExtensionVSIXs/\n\t\tesbenp.prettier-vscode-11.0.0\n\t\t...\n\tCachedProfilesData/\n\tCode Cache/\n\tCrashpad/\n\tDawnGraphiteCache/\n\tDawnWebGPUCache/\n\tDictionaries/\n\tGPUCache/\n\tLocal Storage/\n\tlogs/\n\tSession Storage/\n\tShared Dictionary/\n\tUser/\ndconf/\n\tuser\ndiscord/\ndiscordcanary/\n\tSingletonCookie\n\tSingletonLock\n\tSingletonSocket\n\tCookies\n\tCookies-journal\n\tDIPS\n\tDIPS-shm\n\tDIPS-wal\n\tLocal State\n\tNetwork Persistent State\n\tPreferences\n\tquotes.json\n\tsettings.json\n\tSharedStorage\n\tSharedStorage-wal\n\tTransportSecurity\n\tTrust Tokens\n\tTrust Tokens-journal\n\t0.0.727/\n\tblob_storage/\n\tCache/\n\tCode Cache/\n\tcomponent_crx_cache/\n\tCrashpad/\n\tDawnGraphiteCache/\n\tDawnWebGPUCache/\n\tDictionaries/\n\tGPUCache/\n\tIndexedDB/\n\tLocal Storage/\n\tlogs/\n\tsentry/\n\tService Worker/\n\tSession Storage/\n\tShared Dictionary/\n\tshared_proto_db/\n\tVideoDecodeStats/\n\tWebStorage/\n\tWidevineCdm/\nElectron/\nfastfetch/\n\tconfig.jsonc\n\tconfig1.jsonc\nfontforge/\n\tplugin/\ngo/\n\ttelemetry/\ngtk-3.0/\nhtop/\nhypr/\n\thyprland.conf\nkde.org/\n\tUserFeedback.org.kde.dolphin.conf\nkitty/\n\tkitty.conf\n\tthemes/\nmatugen/\n\tconfig.toml\n\ttemplates/\nmonero-project/\n\tmonero-core.conf\npulse/\n\tcookie\nsession/\n\tdolphin_dolphin_dolphin\nspicetify/\n\tconfig-xpui.ini\n\tCustomApps/\n\tExtensions/\n\tThemes/\nspotify/\n\tprefs\n\tUsers/\nswww/\n\tswww.sh\nsystemd/\n\tuser/\nVencord/\n\tsettings/\n\tthemes/\nwaybar/\n\tconfig\n\tstyle.css\n\tcustom_modules/\nwofi/\n\tconfig\n\tstyle.css\n\tscripts/\nyay/\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "",
+              "toolCalls": [
+                {
+                  "name": "apply_patch",
+                  "arguments": "{\"explanation\":\"Change Waybar config from vertical (left) to horizontal (top) layout by setting position to 'top', adjusting width, and updating margin for horizontal orientation.\",\"input\":\"*** Begin Patch\\n*** Update File: /home/avery/.config/waybar/config\\n@@\\n-  \\\"position\\\": \\\"left\\\",\\n-  \\\"width\\\": 28,\\n-  \\\"margin\\\": \\\"2 0 2 2\\\",\\n+  \\\"position\\\": \\\"top\\\",\\n+  \\\"height\\\": 28,\\n+  \\\"margin\\\": \\\"2 2 0 2\\\",\\n*** End Patch\"}",
+                  "id": "call_qLqYvgFH6MCZLNf5yu8lcoFh__vscode-1753619880358"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "b374181c-320f-4b00-87ff-3cf38865483b"
+            },
+            {
+              "response": "Your Waybar config is now set for a horizontal bar at the top of the screen instead of a vertical bar on the left. The position is \"top\", and the margin/size are adjusted for a horizontal layout.\n\nRestart Waybar to see the changes. Let me know if you want further tweaks!",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "ff306b01-aa1b-4b46-9013-7f0bb2861bff"
+            }
+          ],
+          "toolCallResults": {
+            "call_qLqYvgFH6MCZLNf5yu8lcoFh__vscode-1753619880358": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 22,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "zf",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "The following files were successfully edited:",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/home/avery/.config/waybar/config",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "modelMessageId": "8165067b-8ab6-49eb-a98b-eb614d6d9012",
+          "responseId": "364aee63-e230-4938-91c8-8d2e090e1368",
+          "sessionId": "29028a94-333e-409e-a137-4e96c4860526",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753620438969,
+      "editedFileEvents": [
+        {
+          "eventKind": 1,
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/.config/waybar/config",
+            "external": "file:///home/avery/.config/waybar/config",
+            "path": "/home/avery/.config/waybar/config",
+            "scheme": "file"
+          }
+        }
+      ],
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "ac9437b5-6bf7-4cc5-b6d0-d5a61be022ad",
+  "creationDate": 1753555135335,
+  "isImported": false,
+  "lastMessageDate": 1753620438970
+}

@@ -1,0 +1,19 @@
+2025-08-22 16:42:55.875 [info] Extension host with pid 2158 started
+2025-08-22 16:42:55.875 [info] Skipping acquiring lock for /home/avery/.config/Code/User/workspaceStorage/9c30e612d697b1b7fdfe429e6414e168.
+2025-08-22 16:42:55.992 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-08-22 16:42:56.005 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-22 16:42:56.018 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-08-22 16:42:56.205 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-08-22 16:42:56.223 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-08-22 16:42:56.921 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-08-22 16:42:56.966 [info] Eager extensions activated
+2025-08-22 16:42:56.967 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-22 16:42:56.968 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-22 16:42:56.977 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-08-22 16:42:57.014 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-08-22 16:42:57.789 [info] ExtensionService#_doActivateExtension miguelsolorio.symbols, startup: false, activationEvent: 'onStartupFinished'
+2025-08-22 16:42:57.792 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-08-22 16:42:57.795 [info] ExtensionService#_doActivateExtension usernamehw.errorlens, startup: false, activationEvent: 'onStartupFinished'
+2025-08-22 16:48:26.983 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
+2025-08-22 16:53:44.591 [info] Extension host terminating: renderer closed the MessagePort
+2025-08-22 16:53:44.607 [info] Extension host with pid 2158 exiting with code 0

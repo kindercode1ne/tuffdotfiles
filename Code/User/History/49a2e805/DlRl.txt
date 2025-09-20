@@ -1,0 +1,5 @@
+zmap -p9034 -Mudp -wrt.zone --probe-args=file:payload -T5
+big boatz
+
+
+sudo vi /etc/systemd/system/realtek-zmap.service

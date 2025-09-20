@@ -1,0 +1,9 @@
+[Unit]
+Description=Change wallpaper using SWWW
+After=swww.service
+
+[Service]
+ExecStart=/bin/bash /home/USER/.config/swww/swww.sh
+
+[Install]
+WantedBy=default.target

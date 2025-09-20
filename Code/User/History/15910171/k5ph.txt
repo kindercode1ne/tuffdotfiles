@@ -1,0 +1,8 @@
+install zmap
+lookup how to scan with zmap for telnet
+
+python bruter.py <list> <threads> <output file>
+
+like
+sudo zmap -p 23 192.0.0.0/8 -o iplist.txt
+will scan all ips that start with 192

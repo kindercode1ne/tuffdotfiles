@@ -1,0 +1,2053 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_adcea83a-7cf8-4bb2-99fa-fbe6b624fd31",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 1002
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 29,
+              "endColumn": 135
+            },
+            "text": "Yo so my webapp stores the key at the end as a parameter and validates the key in .html's with:\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {\n        window.location.href = \"login.html\";\n        return;\n      }\n      try {\n        const res = await fetch(\"/api/auth.js\", {\n          method: \"POST\",\n          headers: { \"Content-Type\": \"application/json\" },\n          body: JSON.stringify({ key }),\n        });\n        const data = await res.json();\n        if (!data.success) {\n          window.location.href = \"login.html\";\n        }\n      } catch (e) {\n        window.location.href = \"login.html\";\n      }\n    })();\n  </script>\n\n  But there is an issue, when you quickly switch between tabs it kicks you to login.html .\n\n  What is the issue and how can we fix it? i will not change the way it authenticates because this is the only way that works on PWA's",
+            "kind": "text"
+          }
+        ],
+        "text": "Yo so my webapp stores the key at the end as a parameter and validates the key in .html's with:\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {\n        window.location.href = \"login.html\";\n        return;\n      }\n      try {\n        const res = await fetch(\"/api/auth.js\", {\n          method: \"POST\",\n          headers: { \"Content-Type\": \"application/json\" },\n          body: JSON.stringify({ key }),\n        });\n        const data = await res.json();\n        if (!data.success) {\n          window.location.href = \"login.html\";\n        }\n      } catch (e) {\n        window.location.href = \"login.html\";\n      }\n    })();\n  </script>\n\n  But there is an issue, when you quickly switch between tabs it kicks you to login.html .\n\n  What is the issue and how can we fix it? i will not change the way it authenticates because this is the only way that works on PWA's"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/card.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/card.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/card.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/card.html",
+            "name": "card.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/document.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/document.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/document.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/document.html",
+            "name": "document.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/documents.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/documents.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/documents.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/documents.html",
+            "name": "documents.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html",
+            "name": "home.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/id.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/id.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/id.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/id.html",
+            "name": "id.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.1.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.1.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.1.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.1.html",
+            "name": "index.1.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.html",
+            "name": "index.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/login.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/login.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/login.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/login.html",
+            "name": "login.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/more.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/more.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/more.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/more.html",
+            "name": "more.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/pesel.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/pesel.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/pesel.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/pesel.html",
+            "name": "pesel.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/qr.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/qr.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/qr.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/qr.html",
+            "name": "qr.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/scan.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/scan.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/scan.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/scan.html",
+            "name": "scan.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/services.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/services.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/services.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/services.html",
+            "name": "services.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/shortcuts.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/shortcuts.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/shortcuts.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/shortcuts.html",
+            "name": "shortcuts.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+            "name": "show.html",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/api/auth.js",
+              "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/api/auth.js",
+              "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/api/auth.js",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/api/auth.js",
+            "name": "auth.js",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:home.html",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html",
+                "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html",
+                "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 97,
+                "startColumn": 1,
+                "endLineNumber": 120,
+                "endColumn": 12,
+                "selectionStartLineNumber": 120,
+                "selectionStartColumn": 12,
+                "positionLineNumber": 97,
+                "positionColumn": 1
+              }
+            },
+            "modelDescription": "User's active selection"
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:show.html",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+                "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+                "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 4,
+                "startColumn": 1,
+                "endLineNumber": 66,
+                "endColumn": 42
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Reading [](file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js",
+                "scheme": "file"
+              }
+            }
+          },
+          "pastTenseMessage": {
+            "value": "Read [](file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js",
+                "scheme": "file"
+              }
+            }
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "toolCallId": "cb8759ad-52f6-4c66-b69a-41faf3ac9728",
+          "toolId": "copilot_readFile"
+        },
+        {
+          "value": "Issue:\nWhen you tap fast, the previous page is still running its auth fetch. Navigating away aborts that fetch (AbortError / network interruption). Your catch treats ANY error (including abort caused by leaving the page) as auth failure and forces login, so you get bounced.\n\nFix approach:\n1. Do not redirect on aborted / transient errors.\n2. Cache recent successful validation (sessionStorage) so every page doesn’t re‑POST immediately.\n3. Abort the fetch on pagehide and ignore that abort.\n\nDrop‑in improved script:\n\n<script>\n(async () => {\n  const params = new URLSearchParams(location.search);\n  const key = params.get('key');\n  if (!key) { location.replace('login.html'); return; }\n\n  // Reuse recent validation (e.g. 5 minutes)\n  const validatedKey = sessionStorage.getItem('validatedKey');\n  const validatedAt = Number(sessionStorage.getItem('validatedAt')||0);\n  const MAX_AGE = 5 * 60 * 1000;\n  if (validatedKey === key && Date.now() - validatedAt < MAX_AGE) return;\n\n  const controller = new AbortController();\n  // Abort fetch if page is being hidden/unloaded (user navigates away)\n  addEventListener('pagehide', () => controller.abort(), { once: true });\n\n  try {\n    const res = await fetch('/api/auth.js', {\n      method: 'POST',\n      headers: {'Content-Type': 'application/json'},\n      body: JSON.stringify({ key }),\n      signal: controller.signal\n    });\n    if (!res.ok) throw new Error('Bad status');\n    const data = await res.json();\n    if (data.success) {\n      sessionStorage.setItem('validatedKey', key);\n      sessionStorage.setItem('validatedAt', Date.now().toString());\n      return;\n    }\n    location.replace('login.html');\n  } catch (e) {\n    // Ignore intentional/visibility aborts; only redirect on real failures\n    if (e.name === 'AbortError' || document.visibilityState === 'hidden') return;\n    location.replace('login.html');\n  }\n})();\n</script>\n\nSummary:\nRedirect only on actual invalid key; ignore aborts; cache success to prevent rapid repeated fetches that get aborted during fast tab switches.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_cf393664-b5bb-42de-9fd1-cc138569d8ba",
+      "result": {
+        "timings": {
+          "firstProgress": 29579,
+          "totalElapsed": 37119
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"documents.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/documents.html\">\n```html\n<head>\n  <title>mObywatel</title>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"assets/documents.css\" />\n  <link rel=\"stylesheet\" href=\"assets/main.css\" />\n  <link rel=\"stylesheet\" href=\"assets/flow.css\" />\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n</head>\n<body>\n  <div class=\"bottom_bar\">\n    <div class=\"bottom_bar_grid\">\n      <div class=\"bottom_element_grid\" send=\"home\">\n        <div class=\"bottom_element_image home\"></div>\n        <p class=\"bottom_element_text\">Dokumenty</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"services\">\n        <div class=\"bottom_element_image services\"></div>\n        <p class=\"bottom_element_text\">Usługi</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"qr\">\n        <div class=\"bottom_element_image qr\"></div>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"more\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"top_slide_bar\">\n    <div class=\"top_action_grid\">\n      <p class=\"top_action_button\">Dodaj</p>\n      <p class=\"top_action_button\">Edytuj</p>\n    </div>\n    <p class=\"main_page_title\">Dokumenty</p>\n  </div>\n  <div class=\"container\">\n    <div class=\"search_grid\">\n      <img class=\"search_icon\" src=\"assets/images/search.png\" />\n      <input class=\"search\" placeholder=\"Szukaj\" />\n    </div>\n    <p class=\"title\" style=\"margin-top: 30px\">Na pulpicie</p>\n    <div class=\"card\" onclick=\"sendTo('card', null, 'documents')\">\n      <img class=\"human\" src=\"assets/images/human.png\" />\n      <p class=\"title\" style=\"font-size: 20px\">mDowód</p>\n      <img class=\"arrow\" src=\"assets/images/arrow_light.png\" />\n    </div>\n    <p class=\"title\">Pozostałe</p>\n    <div class=\"other\">\n      <p class=\"other_title\">Chcesz przenieść tu dokument z pulpitu?</p>\n      <p class=\"other_subtitle\">Użyj przycisku edytuj w prawym górnym rogu.</p>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {…}\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/bar.js\"></script>\n  <script src=\"assets/manifest.js\"></script>\n  <script src=\"assets/cache.js\"></script>\n  <script src=\"assets/flow.js\"></script>\n  <script src=\"assets/logger.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"home.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html\">\n```html\n<head>\n  <title>mObywatel</title>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"assets/home.css\" />\n  <link rel=\"stylesheet\" href=\"assets/main.css\" />\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n</head>\n<body>\n  <div class=\"bottom_bar\">\n    <div class=\"bottom_bar_grid\">\n      <div class=\"bottom_element_grid\" send=\"home\">\n        <div class=\"bottom_element_image home_open home\"></div>\n        <p class=\"bottom_element_text open\">Dokumenty</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"services\">\n      </div>\n      <div class=\"bottom_element_grid\" send=\"qr\">\n      </div>\n      <div class=\"bottom_element_grid\" send=\"more\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"container\">\n    <div class=\"top_grid\">\n      <img src=\"assets/images/logo_rounded.png\" class=\"top_image\" />\n      <img src=\"assets/images/bell.png\" class=\"top_image right\" />\n    </div>\n    <div class=\"card_grid\">\n      <p class=\"title\">Dokumenty</p>\n      <button class=\"main_button\">Dodaj</button>\n      <button class=\"main_button all_documents\" onclick=\"sendTo('documents')\">\n      </button>\n    </div>\n    <div class=\"card\" onclick=\"sendTo('card', null, 'home')\">\n      <img class=\"background\" src=\"assets/images/card_background.png\" />\n      <img class=\"human\" src=\"assets/images/human.png\" />\n      <div class=\"id_bottom\">\n      </div>\n    </div>\n    <div class=\"card_below_grid\">\n      <p class=\"title\">Usługi</p>\n      <button class=\"main_button all_services\" onclick=\"sendTo('services')\">\n      </button>\n    </div>\n    <div class=\"services_grid\">\n      <div class=\"service_box\">\n      </div>\n      <div class=\"service_box\">\n      </div>\n      <div class=\"service_box\">\n      </div>\n      <div class=\"service_box\">\n      </div>\n      <div class=\"service_box\">\n      </div>\n      <div class=\"service_box\">\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {…}\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/bar.js\"></script>\n  <script src=\"assets/manifest.js\"></script>\n  <script src=\"assets/cache.js\"></script>\n  <script src=\"assets/logger.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"id.html\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/id.html\">\n```html\n<head>\n  <title>mObywatel</title>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"assets/id.css\" />\n  <link rel=\"stylesheet\" href=\"assets/main.css\" />\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n</head>\n<body>\n  <div class=\"background\"></div>\n  <div class=\"container\">\n    <div class=\"top_grid\">\n      <img class=\"logo\" src=\"assets/images/logo_large.png\" />\n      <p class=\"logo_text\">mObywatel</p>\n    </div>\n    <div class=\"top_text\">\n      <p class=\"welcome\"></p>\n      <p class=\"login_text\">Zaloguj się do aplikacji.</p>\n    </div>\n    <div class=\"password_box\">\n      <div class=\"password_grid\">\n        <p class=\"password_text\">Hasło</p>\n        <div class=\"input_holder\">\n          <input class=\"password_input\" />\n          <div class=\"eye\"></div>\n        </div>\n        <p class=\"forgot_password\">Nie pamiętasz hasła?</p>\n      </div>\n    </div>\n    <div class=\"bottom\">\n      <p class=\"login\">Zaloguj się</p>\n      <div class=\"data\">\n        <img\n          class=\"logo_other\"\n          style=\"height: 20px\"\n          src=\"assets/images/coi.png\"\n        />\n        <img class=\"logo_other\" src=\"assets/images/mc.png\" />\n        <p class=\"version\">wersja 4.52.0 (13)</p>\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {\n        window.location.href = \"login.html\";\n        return;\n      }\n      try {\n        const res = await fetch(\"/api/auth.js\", {\n          method: \"POST\",\n          headers: { \"Content-Type\": \"application/json\" },\n          body: JSON.stringify({ key }),\n        });\n        const data = await res.json();\n        if (!data.success) {\n          window.location.href = \"login.html\";\n        }\n      } catch (e) {\n        window.location.href = \"login.html\";\n      }\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/id.js\"></script>\n  <script src=\"assets/manifest.js\"></script>\n  <script src=\"assets/cache.js\"></script>\n  <script src=\"assets/logger.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        ? window.location.search.substring(1)\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"index.1.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.1.html\">\n```html\n<!DOCTYPE >\n>\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"assets/common.css\" />\n  <link rel=\"stylesheet\" href=\"assets/index.css\" />\n  <link rel=\"stylesheet\" href=\"assets/header.css\" />\n  <link rel=\"stylesheet\" href=\"assets/footer.css\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <title>fObywatel.xyz - Strona główna</title>\n</head>\n<body>\n  <div class=\"background_container\">\n    <div class=\"background_gradient\"></div>\n    <canvas class=\"background\"></canvas>\n  </div>\n\n  <div class=\"header\">\n    <div class=\"header_opacity\"></div>\n    <img class=\"header_logo\" src=\"assets/images/fobywatel.png\" />\n    <img class=\"hamburger\" src=\"assets/images/hamburger.png\" />\n    <div class=\"header_holder\">\n      <img class=\"x\" src=\"assets/images/close.png\" />\n      <div class=\"buttons header_buttons\">\n        <div class=\"button\" onclick=\"location.href = '/'\">\n        </div>\n        <div\n          onclick=\"window.open('https://discord.gg/fobywatel')\"\n        >\n        </div>\n        <div class=\"login\">\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"info\">\n    <p class=\"title\">FOBYWATEL</p>\n    <p class=\"description description_top\">\n      Narzędzie edukacyjne przypominające\n      <span class=\"highlight\">mObywatela</span>, przydatny do celów filmowych.\n    </p>\n    <p\n      class=\"info_login\"\n      onclick=\"location.href = 'https://discord.gg/fobywatel'\"\n    >\n      Zakup\n    </p>\n  </div>\n\n  <img\n    class=\"scroll\"\n    src=\"assets/images/scroll.png\"\n    onclick=\"location.href = '#buy'\"\n  />\n\n  <div class=\"bottom_wrapper wrapper\">\n    <div class=\"info_bottom\" id=\"buy\">\n      <div class=\"bottom_text\">\n        <p class=\"title\" id=\"buy\">ZAKUP</p>\n        <p class=\"description\">\n        </p>\n      </div>\n      <div class=\"guide\">\n        <div class=\"guide_element\">\n        </div>\n        <div class=\"line\"></div>\n        <div class=\"guide_element\">\n        </div>\n        <div class=\"line\"></div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"footer\">\n    <p class=\"footer_title\">FOBYWATEL</p>\n    <div class=\"buttons\">\n      <div class=\"button\" onclick=\"location.href = '/'\">\n      </div>\n      <div class=\"button\" onclick=\"window.open('https://discord.gg/fobywatel')\">\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {…}\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/logger.js\"></script>\n  <script src=\"assets/header.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n<>\n```\n</attachment>\n<attachment id=\"index.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/index.html\">\n```html\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <link rel=\"stylesheet\" href=\"assets/index.css\">\r\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"./assets/images/icccon.png\">\r\n    <title>cwelobywatel</title>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8, user-scalable=no\">\r\n</head>\r\n<body>\r\n    <img src=\"assets/images/larp.webp\" class=\"logo\">\r\n\r\n    <p class=\"logo_text\">cwelobywatel v6.9</p>\r\n    <p class=\"warning\">developed by poorlackslayuh</p>\r\n    \r\n    <a\r\n      class=\"discord-btn\"\r\n      href=\"https://discord.com/invite/your-invite-link\"\r\n      target=\"_blank\"\r\n      rel=\"noopener\"\r\n      style=\"display:block;text-decoration:none;\"\r\n    >\r\n      <div style=\"display:flex;align-items:center;justify-content:center;\">\r\n      </div>\r\n    </a>\r\n\r\n    <div class=\"guide_holder\">\r\n        <div class=\"top_holder\">\r\n        </div>\r\n        <div class=\"guide_text\">\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"upload\">\r\n        <p class=\"error\">To pole jest wymagane</p>\r\n        <img class=\"upload_uploaded\">\r\n        <div class=\"upload_uploading\"></div>\r\n        <div class=\"upload_grid\">\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n        <input type=\"text\" id=\"name\" class=\"input\" placeholder=\"\">\r\n        <span class=\"placeholder\">Imię (imiona)</span>\r\n        <p class=\"error\">To pole jest wymagane</p>\r\n    </div>\r\n \r\n    <div class=\"input_holder\">\r\n        <input type=\"text\" id=\"surname\" class=\"input\" placeholder=\"\">\r\n        <span class=\"placeholder\">Nazwisko</span>\r\n        <p class=\"error\">To pole jest wymagane</p>\r\n    </div>\r\n\r\n    <p class=\"top_info\">Płeć</p>\r\n    <div class=\"selector_box\">\r\n        <div class=\"selected_grid\">\r\n        </div>\r\n        <div class=\"option_box\">\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"date\">\r\n        <p class=\"top_info\">Data urodzenia</p>\r\n        <div class=\"date_grid\">\r\n        </div>\r\n        <p class=\"error\">Wprowadź prawidłową datę</p>\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n        <input type=\"text\" id=\"nationality\" class=\"input\" placeholder=\"\">\r\n        <span class=\"placeholder\">Obywatelstwo</span>\r\n        <p class=\"error\">To pole jest wymagane</p>\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n        <input type=\"text\" id=\"familyName\" class=\"input\" placeholder=\"\">\r\n        <span class=\"placeholder\">Nazwisko rodowe</span>\r\n        <p class=\"error\">To pole jest wymagane</p>\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n    </div>\r\n\r\n    <p class=\"subtext\">Miejsce zamieszkania</p>\r\n\r\n    <div class=\"input_holder\">\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n    </div>\r\n\r\n    <div class=\"input_holder\">\r\n    </div>\r\n\r\n    <a class=\"go\">wejdź</a>\r\n\r\n  <!-- Key validation script -->\r\n  <script>\r\n  </script>\r\n<!-- END OF Key validation script -->\r\n  <script src=\"assets/logger.js\"></script>\r\n  <script src=\"assets/index.js\"></script>\r\n    (function () {\r\n  // code parameter removed\r\n      var site = \"services.html\";\r\n  window.logVisit(site, params);\r\n  </script>\r\n</body>\n```\n</attachment>\n<attachment id=\"login.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/login.html\">\n```html\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <!-- fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\r\n    <link\r\n      href=\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\"\r\n      rel=\"stylesheet\"\r\n    />\r\n    <title>Login</title>\r\n  </head>\r\n  <body>\r\n    <style>\r\n      body {…}\r\n      /* Particle canvas background */\r\n      #particle-bg {…}\r\n      .login-box {…}\r\n      .login-fields {…}\r\n      input[type=\"text\"] {…}\r\n      input[type=\"text\"]:focus {…}\r\n      button {…}\r\n      .error {…}\r\n      #scramble-text {…}\r\n      /* Buy section styles */\r\n      #buy-section a {…}\r\n      #buy-section a:hover {…}\r\n      /* Adjusted sizing to truly center (fixed width like other boxes) */\r\n      #buy-section {…}\r\n      #buy-section .buy-label {…}\r\n      /* Low‑key darker handle bars */\r\n      #buy-section .handles div {…}\r\n      #buy-section .handles div:hover {…}\r\n      /* Remove alternating bright backgrounds */\r\n      #buy-section .handles div:nth-child(odd) {…}\r\n\r\n      /* Responsive: reduce outer padding & shadow intensity on very small screens */\r\n      @media (max-width: 420px) {…}\r\n      /* Make warning smaller / less dominant */\r\n      #login-warning-box {…}\r\n      #login-warning-box h2 {…}\r\n    </style>\r\n    <!-- Particle background canvas -->\r\n    <canvas id=\"particle-bg\"></canvas>\r\n\r\n    <div class=\"login-box\">\r\n      <div\r\n        \"\r\n      >\r\n      </div>\r\n      <!-- End scrambled text -->\r\n      <div id=\"error\" class=\"error\" style=\"display: none\"></div>\r\n      <div class=\"login-fields\">\r\n      </div>\r\n      <!-- Buy / Contact section (enlarged) -->\r\n      <div\r\n        \"\r\n      >\r\n      </div>\r\n      <!-- Warning box (now smaller) -->\r\n      <div\r\n        \"\r\n      >\r\n      </div>\r\n    </div>\r\n    <!-- LOGIN WILL BE HERE -->\r\n    <script>\r\n      function login() {\r\n    </script>\r\n\r\n    <!-- scrambler -->\r\n    <script>\r\n      (function () {\r\n        // Optionally, keep hover effect;\r\n      })();\r\n    </script>\r\n    <!-- Particle effect script -->\r\n    <script>\r\n      const canvas = document.getElementById(\"particle-bg\");\r\n      const ctx = canvas.getContext(\"2d\");\r\n      let width = window.innerWidth;\r\n      let height = window.innerHeight;\r\n      let dpr = window.devicePixelRatio || 1;\r\n      function resize() {…}\r\n      window.addEventListener(\"resize\", resize);\r\n      resize();\r\n\r\n      // Particle config\r\n      const PARTICLE_COUNT = 400;\r\n      const SPREAD = 10;\r\n      const SPEED = 0.4;\r\n      const COLORS = [\"#cccccc\", \"#cccccc\", \"#cccccc\"];\r\n      const BASE_SIZE = 0.01; // was 2.5, now smaller\r\n      const SIZE_RANDOMNESS = 0;\r\n      const CAMERA_DISTANCE = 20;\r\n      const ALPHA_PARTICLES = true;\r\n      const disableRotation = true;\r\n\r\n      // Helper: random point in sphere\r\n      function randomInSphere() {…}\r\n    </script>\r\n  </body>\r\n</html>\n```\n</attachment>\n<attachment id=\"more.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/more.html\">\n```html\n<head>\n    <title>mObywatel</title>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\">\n    <meta http-equiv=\"Pragma\" content=\"no-cache\">\n    <meta http-equiv=\"Expires\" content=\"0\">\n    <link rel=\"stylesheet\" href=\"assets/more.css\">\n    <link rel=\"stylesheet\" href=\"assets/main.css\">\n    <link rel=\"stylesheet\" href=\"assets/flow.css\">\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\">\n    <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\">\n    <link rel=\"shortcut icon\" href=\"assets/images/logo.png\">\n    <meta name=\"format-detection\" content=\"telephone=no\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0.8, user-scalable=no\">\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\n</head>\n<body>\n\n    <div class=\"bottom_bar\">\n        <div class=\"bottom_bar_grid\">\n            <div class=\"bottom_element_grid\" send=\"home\">\n                <div class=\"bottom_element_image home\"></div>\n                <p class=\"bottom_element_text\">Dokumenty</p>\n            </div>\n            <div class=\"bottom_element_grid\" send=\"services\">\n            </div>\n            <div class=\"bottom_element_grid\" send=\"qr\">\n            </div>\n            <div class=\"bottom_element_grid\" send=\"more\">\n            </div>\n        </div>\n    </div>\n\n    <div class=\"top_slide_bar\">\n        <div class=\"top_action_grid\">\n            <p class=\"top_action_button\" onclick=\"sendTo('id')\">Wyloguj</p>\n        </div>\n        <p class=\"main_page_title\">Więcej</p>\n    </div>\n    <div class=\"container\">\n        <p class=\"title settings\">Ustawienia</p>\n        <div class=\"services_list\">\n            <div class=\"service\">\n            </div>\n            <div class=\"service\">\n            </div>\n            <div class=\"service\">\n            </div>\n            <div class=\"service\">\n            </div>\n            <div class=\"service\" style=\"border: none;\">\n            </div>\n        </div>\n        <p class=\"title\">Pozostałe</p>\n        <div class=\"services_list\" style=\"margin-bottom: 150px;\"  style=\"margin-bottom: 150px;\">\n            <div class=\"service\">\n            </div>\n            <div class=\"service\">\n            </div>\n            <div class=\"service\" style=\"border: none;\">\n            </div>\n        </div>\n    </div>\n    </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {…}\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n<!-- END OF Key validation script -->\n  <script src=\"assets/logger.js\"></script>\n  <script src=\"assets/bar.js\"></script>\n    <script src=\"assets/manifest.js\"></script>\n    <script src=\"assets/cache.js\"></script>\n    <script src=\"assets/flow.js\"></script>\n      <script>\n    // Log visit on page load\n    (function () {\n  // code parameter removed\n      var params = window.location.search\n        ? window.location.search.substring(1)\n        : \"\";\n      var site = \"services.html\";\n  window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"pesel.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/pesel.html\">\n```html\n<head>\n  <title>mObywatel</title>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"assets/pesel.css\" />\n  <link rel=\"stylesheet\" href=\"assets/main.css\" />\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n</head>\n<body>\n  <div class=\"top_grid_fixed\">\n    <div class=\"action_grid_fixed\">\n      <img src=\"assets/images/back_blue.png\" class=\"back_img_fixed\" />\n      <p onclick=\"sendTo('card')\" class=\"back_text_fixed\">mDowód</p>\n    </div>\n    <p class=\"title_text_fixed\">Zastrzeż PESEL</p>\n    <img src=\"assets/images/help.png\" class=\"help_img_fixed\" />\n  </div>\n  <div class=\"bottom_bar\">\n    <div class=\"bottom_bar_grid\">\n      <div class=\"bottom_element_grid\" send=\"home\">\n        <div class=\"bottom_element_image home_open\"></div>\n        <p class=\"bottom_element_text open\">Pulpit</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"services\">\n        <div class=\"bottom_element_image services\"></div>\n        <p class=\"bottom_element_text\">Usługi</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"qr\">\n        <div class=\"bottom_element_image qr\"></div>\n        <p class=\"bottom_element_text\">Kod QR</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"more\">\n      </div>\n    </div>\n  </div>\n  <div class=\"container\">\n    <img class=\"pesel_icon\" src=\"assets/images/pesel_service.png\" />\n    <p class=\"pesel_title\">Twój PESEL jest niezastrzeżony</p>\n    <p class=\"pesel_description\">\n      Zastrzeż PESEL, żeby nikt nie wykorzystał go bez Twojej wiedzy.\n    </p>\n    <div class=\"action_box\">\n      <p class=\"action_box_text\">Zastrzeż PESEL</p>\n      <button class=\"main_button\">Zastrzeż</button>\n    </div>\n    <p class=\"category_title\">Historia</p>\n    <div class=\"action_box_connected\">\n      <div\n        style=\"border-bottom: 1px solid rgb(228, 228, 228)\"\n      >\n      </div>\n      <div class=\"action_box\">\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {…}\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/bar.js\"></script>\n  <script src=\"assets/manifest.js\"></script>\n  <script src=\"assets/cache.js\"></script>\n  <script src=\"assets/logger.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"qr.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/qr.html\">\n```html\n<head>\n  <title>mObywatel</title>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"./assets/qr.css\" />\n  <link rel=\"stylesheet\" href=\"./assets/main.css\" />\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"./assets/images/logo.png\" />\n  <link rel=\"apple-touch-icon\" href=\"./assets//images/logo.png\" />\n  <link rel=\"shortcut icon\" href=\"./assets/images/logo.png\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n</head>\n<body>\n  <div class=\"bottom_bar\">\n    <div class=\"bottom_bar_grid\">\n      <div class=\"bottom_element_grid\" send=\"home\">\n        <div class=\"bottom_element_image home\"></div>\n        <p class=\"bottom_element_text\">Dokumenty</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"services\">\n        <div class=\"bottom_element_image services\"></div>\n        <p class=\"bottom_element_text\">Usługi</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"qr\">\n        <div class=\"bottom_element_image qr qr_open\"></div>\n        <p class=\"bottom_element_text open\">Kod QR</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"more\">\n        <div class=\"bottom_element_image more\"></div>\n        <p class=\"bottom_element_text\">Więcej</p>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"container\">\n    <p class=\"main_title\">Kod QR</p>\n    <p class=\"description\">\n      Dzięki tej funkcji zalogujesz się do usług w internecie i potwierdzisz\n      cyfrowe dokumenty - zarówno swoje, jak i drugiej osoby.\n    </p>\n    <div class=\"action_grid\">\n      <div class=\"action\" onclick=\"sendTo('scan')\">\n        <img class=\"action_image\" src=\"./assets/images/confirm.png\" />\n        <div class=\"action_text\">\n        </div>\n        <img class=\"arrow\" src=\"./assets/images/right_arrow_sharp.png\" />\n      </div>\n      <div class=\"action\" onclick=\"sendTo('show')\">\n        <img class=\"action_image\" src=\"./assets/images/scan.png\" />\n        <div class=\"action_text\">\n        </div>\n        <img class=\"arrow\" src=\"./assets/images/right_arrow_sharp.png\" />\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {\n        window.location.href = \"login.html\";\n        return;\n      }\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"./assets/bar.js\"></script>\n  <script src=\"./assets/manifest.js\"></script>\n  <script src=\"./assets/cache.js\"></script>\n  <script src=\"./assets/logger.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"scan.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/scan.html\">\n```html\n<!DOCTYPE html>\n<html lang=\"pl\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>mObywatel</title>\n    <meta\n      http-equiv=\"Cache-Control\"\n      content=\"no-cache, no-store, must-revalidate\"\n    />\n    <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n    <meta http-equiv=\"Expires\" content=\"0\" />\n    <link rel=\"stylesheet\" href=\"assets/main.css\" />\n    <link rel=\"stylesheet\" href=\"assets/scan.css\" />\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n    <meta name=\"format-detection\" content=\"telephone=no\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n    />\n    <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n    <script src=\"https://unpkg.com/html5-qrcode\"></script>\n  </head>\n  <body>\n    <div class=\"top_grid_fixed\">\n      <div class=\"action_grid_fixed\">\n        <img src=\"assets/images/back_blue.png\" class=\"back_img_fixed\" />\n        <p onclick=\"sendTo('qr')\" class=\"back_text_fixed\">Kod QR</p>\n      </div>\n      <p class=\"title_text_fixed\">Kod QR</p>\n      <img src=\"assets/images/help.png\" class=\"help_img_fixed\" />\n    </div>\n\n    <div class=\"container\">\n      <p class=\"description\">Umieść kod QR w ramce, aby go zeskanować.</p>\n\n      <div class=\"scan-frame\">\n        <div class=\"warning-box\">\n        </div>\n        <div id=\"reader\"></div>\n        <div class=\"frame-border\">\n        </div>\n      </div>\n\n      <button class=\"manual-input\">Wpisz kod</button>\n    </div>\n\n    <div class=\"error\">\n      <div class=\"opacity\"></div>\n      <div class=\"error_box\" style=\"display: none\"></div>\n    </div>\n\n    <div class=\"bottom_bar\">\n      <div class=\"bottom_bar_grid\">\n        <div class=\"bottom_element_grid\" send=\"home\">\n        </div>\n      </div>\n    </div>\n\n    <div class=\"code-input-container\">\n      <div class=\"code-input-overlay\"></div>\n      <div class=\"code-input-box\">\n      </div>\n    </div>\n\n    <script src=\"assets/bar.js\"></script>\n    <script>\n      if (localStorage.getItem(\"top\") === \"card\") {…}\n\n      function closeWarning() {…}\n\n      document\n\n      function showError() {…}\n\n      function retryAction() {…}\n\n      function onScanSuccess(decodedText) {…}\n\n      function onScanFailure(error) {…}\n\n      let html5QrCode = new Html5Qrcode(\"reader\");\n      html5QrCode.start(\n      );\n\n      document.querySelector(\".manual-input\").addEventListener(\"click\", () => {\n        document.querySelector(\".code-input-field\").focus();\n      });\n\n      function closeCodeInput() {…}\n\n      document\n\n      function submitCode() {…}\n\n      document\n    </script>\n    <!-- Key validation script -->\n    <script>\n      (async function () {\n      })();\n    </script>\n    <!-- END OF Key validation script -->\n    <script src=\"assets/manifest.js\"></script>\n    <script src=\"assets/cache.js\"></script>\n    <script src=\"assets/logger.js\"></script>\n    <script>\n      // Log visit on page load\n      (function () {\n        window.logVisit(site, params);\n      })();\n    </script>\n  </body>\n</html>\n```\n</attachment>\n<attachment id=\"services.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/services.html\">\n```html\n<head>\n  <title>mObywatel</title>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"assets/main.css\" />\n  <link rel=\"stylesheet\" href=\"assets/services.css\" />\n  <link rel=\"stylesheet\" href=\"assets/flow.css\" />\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n</head>\n<body>\n  <div class=\"bottom_bar\">\n    <div class=\"bottom_bar_grid\">\n      <div class=\"bottom_element_grid\" send=\"home\">\n        <div class=\"bottom_element_image home\"></div>\n        <p class=\"bottom_element_text\">Dokumenty</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"services\">\n        <div class=\"bottom_element_image services services_open\"></div>\n        <p class=\"bottom_element_text open\">Usługi</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"qr\">\n      </div>\n      <div class=\"bottom_element_grid\" send=\"more\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"top_slide_bar\">\n    <div class=\"top_action_grid\">\n      <p class=\"top_action_button\">Edytuj</p>\n    </div>\n    <p class=\"main_page_title\">Usługi</p>\n  </div>\n  <div class=\"container\">\n    <div class=\"search_grid\">\n      <img class=\"search_icon\" src=\"assets/images/search.png\" />\n      <input class=\"search\" placeholder=\"Szukaj\" />\n    </div>\n    <p class=\"title\">Ulubione</p>\n    <div class=\"services_list\">\n      <div class=\"service\">\n      </div>\n      <div class=\"service\">\n      </div>\n      <div class=\"service\">\n      </div>\n      <div class=\"service\">\n      </div>\n      <div class=\"service\">\n      </div>\n      <div class=\"service\" style=\"border: none\">\n      </div>\n    </div>\n    <p class=\"title\">Pozostałe</p>\n    <div class=\"services_list\" style=\"margin-bottom: 150px\">\n      <div class=\"service\">\n      </div>\n      <div class=\"service\">\n      </div>\n      <div class=\"service\">\n      </div>\n      <div class=\"service\" style=\"border: none\">\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {…}\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/logger.js\"></script>\n  <script src=\"assets/bar.js\"></script>\n  <script src=\"assets/manifest.js\"></script>\n  <script src=\"assets/cache.js\"></script>\n  <script src=\"assets/flow.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"shortcuts.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/shortcuts.html\">\n```html\n<head>\n  <title>mObywatel</title>\n  <meta charset=\"UTF-8\" />\n  <meta\n    http-equiv=\"Cache-Control\"\n    content=\"no-cache, no-store, must-revalidate\"\n  />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <link rel=\"stylesheet\" href=\"assets/main.css\" />\n  <link rel=\"stylesheet\" href=\"assets/shortcuts.css\" />\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n  <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n  <meta name=\"format-detection\" content=\"telephone=no\" />\n  <meta\n    name=\"viewport\"\n    content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n  />\n  <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n</head>\n<body>\n  <div class=\"top_grid_fixed\">\n    <div class=\"action_grid_fixed\">\n      <img src=\"assets/images/back_blue.png\" class=\"back_img_fixed\" />\n      <p onclick=\"sendTo('card')\" class=\"back_text_fixed\">mDowód</p>\n    </div>\n    <p class=\"title_text_fixed\">Pozostałe skróty</p>\n    <img src=\"assets/images/help.png\" class=\"help_img_fixed\" />\n  </div>\n  <div class=\"bottom_bar\">\n    <div class=\"bottom_bar_grid\">\n      <div class=\"bottom_element_grid\" send=\"home\">\n        <div class=\"bottom_element_image home_open home\"></div>\n        <p class=\"bottom_element_text open\">Pulpit</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"services\">\n        <div class=\"bottom_element_image services\"></div>\n        <p class=\"bottom_element_text\">Usługi</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"qr\">\n        <div class=\"bottom_element_image qr\"></div>\n        <p class=\"bottom_element_text\">Kod QR</p>\n      </div>\n      <div class=\"bottom_element_grid\" send=\"more\">\n        <div class=\"bottom_element_image more\"></div>\n        <p class=\"bottom_element_text\">Więcej</p>\n      </div>\n    </div>\n  </div>\n  <div class=\"container\">\n    <div class=\"action_box_connected\">\n      <div\n        class=\"action_box\"\n        style=\"border-bottom: 1px solid rgb(228, 228, 228)\"\n      >\n        <img class=\"action_image\" src=\"assets/images/tickets_shortcuts.png\" />\n        <p class=\"action_box_text\">Mandaty</p>\n        <img class=\"action_arrow\" src=\"assets/images/right_arrow.png\" />\n      </div>\n      <div class=\"action_box\">\n      </div>\n    </div>\n    <div class=\"delete_action\">\n      <div class=\"action_box\">\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {…}\n      try {\n      } catch (e) {…}\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/bar.js\"></script>\n  <script src=\"assets/manifest.js\"></script>\n  <script src=\"assets/cache.js\"></script>\n  <script src=\"assets/logger.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"show.html\" isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html\">\n```html\n<!DOCTYPE html>\n<html lang=\"pl\">\n  <head>\n    <title>mObywatel</title>\n    <meta charset=\"UTF-8\" />\n    <meta\n      http-equiv=\"Cache-Control\"\n      content=\"no-cache, no-store, must-revalidate\"\n    />\n    <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n    <meta http-equiv=\"Expires\" content=\"0\" />\n    <link rel=\"stylesheet\" href=\"assets/show.css\" />\n    <link rel=\"stylesheet\" href=\"assets/main.css\" />\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n    <meta name=\"format-detection\" content=\"telephone=no\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n    />\n    <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n  </head>\n\n  <body>\n    <div class=\"top_grid_fixed\">\n      <div class=\"action_grid_fixed\">\n        <img src=\"assets/images/back_blue.png\" class=\"back_img_fixed\" />\n        <p onclick=\"sendTo('qr')\" class=\"back_text_fixed\">Kod QR</p>\n      </div>\n      <p class=\"title_text_fixed\">Kod QR</p>\n      <img src=\"assets/images/help.png\" class=\"help_img_fixed\" />\n    </div>\n\n    <div class=\"bottom_bar\">\n      <div class=\"bottom_bar_grid\">\n        <div class=\"bottom_element_grid\" send=\"home\">\n          <div class=\"bottom_element_image home\"></div>\n          <p class=\"bottom_element_text\">Dokumenty</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"services\">\n        </div>\n        <div class=\"bottom_element_grid\" send=\"qr\">\n        </div>\n        <div class=\"bottom_element_grid\" send=\"more\">\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\">\n      <p class=\"show_title\">Pokaż kod QR osobie, której dokument sprawdzasz</p>\n      <p class=\"show_description\">\n        Gdy ta osoba zeskanuje lub wpisze kod, jej dane pojawią się na Twoim\n        telefonie\n      </p>\n      <div class=\"frame\">\n        <img class=\"qr_image\" src=\"assets/images/qr.png\" />\n        <p class=\"numbers\"></p>\n        <div class=\"loading\">\n        </div>\n        <p class=\"expire\">\n        </p>\n      </div>\n      <div class=\"frame bottom_frame\">\n        <img class=\"frame_image\" src=\"assets/images/flag.png\" />\n        <img class=\"frame_image\" src=\"assets/images/eagle.png\" />\n      </div>\n    </div>\n    <!-- Key validation script -->\n    <script>\n      (async function () {\n        const params = new URLSearchParams(window.location.search);\n        const key = params.get(\"key\");\n        if (!key) {…}\n        try {\n        } catch (e) {…}\n      })();\n    </script>\n    <!-- END OF Key validation script -->\n    <script src=\"assets/logger.js\"></script>\n    <script src=\"assets/bar.js\"></script>\n    <script src=\"assets/show.js\"></script>\n    <script src=\"assets/manifest.js\"></script>\n    <script src=\"assets/cache.js\"></script>\n    <script>\n      // Log visit on page load\n      (function () {\n        // code parameter removed\n        var params = window.location.search\n          : \"\";\n        var site = \"services.html\";\n        window.logVisit(site, params);\n      })();\n    </script>\n  </body>\n</html>\n```\n</attachment>\n<attachment id=\"auth.js\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/api/auth.js\">\n```javascript\nexport const AUTH_KEYS = [\n  \"dev-key-cwel\",\n  \"v4k7zp-m9q2hd-s6t3lx\",\n  \"n2r8jw-t7z5kc-q4m9vp\",\n  \"h6d3zt-v8x2rl-m7p5qk\",\n  \"j9m2hs-t4b6zn-w3q7kp\",\n  \"p8x3rn-k2m9vh-d6j7qt\",\n  \"q7l2kd-m8v5jr-w9h3tp\",\n  \"f4b9zx-t1p6kn-r7m8hq\",\n  \"t6q3vn-h9k2zr-p5j8wm\",\n  \"w7r2lp-q3m9tk-v6h5dz\",\n  \"z2h8nj-p7m3kd-w4q9vx\",\n];\n\nexport default async function handler(req, res) {\n  if (req.method !== \"POST\") {\n    return res.status(405).json({ error: \"Method Not Allowed\" });\n  }\n\n  // Accept key from POST body\n  const { key } = req.body;\n\n  if (AUTH_KEYS.includes(key)) {\n    return res.status(200).json({ success: true, key });\n  }\n\n  return res.status(200).json({ success: false, message: \"Invalid key.\" });\n}\n```\n</attachment>\n<attachment id=\"file:home.html\">\nUser's active selection, this should be the main focus:\nExcerpt from home.html, lines 97 to 120:\n```html\n<!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {\n        window.location.href = \"login.html\";\n        return;\n      }\n      try {\n        const res = await fetch(\"/api/auth.js\", {\n          method: \"POST\",\n          headers: { \"Content-Type\": \"application/json\" },\n          body: JSON.stringify({ key }),\n        });\n        const data = await res.json();\n        if (!data.success) {\n          window.location.href = \"login.html\";\n        }\n      } catch (e) {\n        window.location.href = \"login.html\";\n      }\n    })();\n  </script>\n```\n</attachment>\n<attachment isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/home.html\">\nUser's active file for additional context:\n```html\n<body>\n  <div class=\"bottom_bar\">\n  </div>\n\n  <div class=\"container\">\n    <div class=\"card_grid\">\n    </div>\n    <div class=\"card\" onclick=\"sendTo('card', null, 'home')\">\n    </div>\n    <div class=\"card_below_grid\">\n      <p class=\"title\">Usługi</p>\n      <button class=\"main_button all_services\" onclick=\"sendTo('services')\">\n      </button>\n    </div>\n    <div class=\"services_grid\">\n      <div class=\"service_box\">\n      </div>\n      <div class=\"service_box\">\n        <p class=\"service_box_name\">Historia pojazdu</p>\n      </div>\n      <div class=\"service_box\">\n        <img class=\"service_box_icon\" src=\"assets/images/pesel.png\" />\n        <p class=\"service_box_name\">Zastrzeż PESEL</p>\n      </div>\n      <div class=\"service_box\">\n        <img class=\"service_box_icon\" src=\"assets/images/business.png\" />\n        <p class=\"service_box_name\">Firma</p>\n      </div>\n      <div class=\"service_box\">\n        <img class=\"service_box_icon\" src=\"assets/images/penalties.png\" />\n        <p class=\"service_box_name\">Punkty karne</p>\n      </div>\n      <div class=\"service_box\">\n        <img class=\"service_box_icon\" src=\"assets/images/tickets.png\" />\n        <p class=\"service_box_name\">Mandaty</p>\n      </div>\n    </div>\n  </div>\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {\n        window.location.href = \"login.html\";\n        return;\n      }\n      try {\n        const res = await fetch(\"/api/auth.js\", {\n          method: \"POST\",\n          headers: { \"Content-Type\": \"application/json\" },\n          body: JSON.stringify({ key }),\n        });\n        const data = await res.json();\n        if (!data.success) {\n          window.location.href = \"login.html\";\n        }\n      } catch (e) {\n        window.location.href = \"login.html\";\n      }\n    })();\n  </script>\n  <!-- END OF Key validation script -->\n  <script src=\"assets/bar.js\"></script>\n  <script src=\"assets/manifest.js\"></script>\n  <script src=\"assets/cache.js\"></script>\n  <script src=\"assets/logger.js\"></script>\n  <script>\n    // Log visit on page load\n    (function () {\n      // code parameter removed\n      var params = window.location.search\n        : \"\";\n      var site = \"services.html\";\n      window.logVisit(site, params);\n    })();\n  </script>\n</body>\n```\n</attachment>\n<attachment id=\"file:show.html\">\nUser's current visible code, this should be the main focus:\nExcerpt from show.html, lines 4 to 66:\n```html\n<title>mObywatel</title>\n    <meta charset=\"UTF-8\" />\n    <meta\n      http-equiv=\"Cache-Control\"\n      content=\"no-cache, no-store, must-revalidate\"\n    />\n    <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n    <meta http-equiv=\"Expires\" content=\"0\" />\n    <link rel=\"stylesheet\" href=\"assets/show.css\" />\n    <link rel=\"stylesheet\" href=\"assets/main.css\" />\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n    <meta name=\"format-detection\" content=\"telephone=no\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n    />\n    <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n  </head>\n\n  <body>\n    <div class=\"top_grid_fixed\">\n      <div class=\"action_grid_fixed\">\n        <img src=\"assets/images/back_blue.png\" class=\"back_img_fixed\" />\n        <p onclick=\"sendTo('qr')\" class=\"back_text_fixed\">Kod QR</p>\n      </div>\n      <p class=\"title_text_fixed\">Kod QR</p>\n      <img src=\"assets/images/help.png\" class=\"help_img_fixed\" />\n    </div>\n\n    <div class=\"bottom_bar\">\n      <div class=\"bottom_bar_grid\">\n        <div class=\"bottom_element_grid\" send=\"home\">\n          <div class=\"bottom_element_image home\"></div>\n          <p class=\"bottom_element_text\">Dokumenty</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"services\">\n          <div class=\"bottom_element_image services\"></div>\n          <p class=\"bottom_element_text\">Usługi</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"qr\">\n          <div class=\"bottom_element_image qr qr_open\"></div>\n          <p class=\"bottom_element_text open\">Kod QR</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"more\">\n          <div class=\"bottom_element_image more\"></div>\n          <p class=\"bottom_element_text\">Więcej</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\">\n      <p class=\"show_title\">Pokaż kod QR osobie, której dokument sprawdzasz</p>\n      <p class=\"show_description\">\n        Gdy ta osoba zeskanuje lub wpisze kod, jej dane pojawią się na Twoim\n        telefonie\n      </p>\n      <div class=\"frame\">\n        <img class=\"qr_image\" src=\"assets/images/qr.png\" />\n        <p class=\"numbers\"></p>\n        <div class=\"loading\">\n          <div class=\"loading_bar\"></div>\n```\n</attachment>\n<attachment isSummarized=\"true\" filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html\">\nUser's active file for additional context:\n```html\n<html lang=\"pl\">\n  <head>\n    <title>mObywatel</title>\n    <meta charset=\"UTF-8\" />\n    <meta\n      http-equiv=\"Cache-Control\"\n      content=\"no-cache, no-store, must-revalidate\"\n    />\n    <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n    <meta http-equiv=\"Expires\" content=\"0\" />\n    <link rel=\"stylesheet\" href=\"assets/show.css\" />\n    <link rel=\"stylesheet\" href=\"assets/main.css\" />\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n    <meta name=\"format-detection\" content=\"telephone=no\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n    />\n    <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n  </head>\n\n  <body>\n    <div class=\"top_grid_fixed\">\n      <div class=\"action_grid_fixed\">\n        <img src=\"assets/images/back_blue.png\" class=\"back_img_fixed\" />\n        <p onclick=\"sendTo('qr')\" class=\"back_text_fixed\">Kod QR</p>\n      </div>\n      <p class=\"title_text_fixed\">Kod QR</p>\n      <img src=\"assets/images/help.png\" class=\"help_img_fixed\" />\n    </div>\n\n    <div class=\"bottom_bar\">\n      <div class=\"bottom_bar_grid\">\n        <div class=\"bottom_element_grid\" send=\"home\">\n          <div class=\"bottom_element_image home\"></div>\n          <p class=\"bottom_element_text\">Dokumenty</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"services\">\n          <div class=\"bottom_element_image services\"></div>\n          <p class=\"bottom_element_text\">Usługi</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"qr\">\n          <div class=\"bottom_element_image qr qr_open\"></div>\n          <p class=\"bottom_element_text open\">Kod QR</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"more\">\n          <div class=\"bottom_element_image more\"></div>\n          <p class=\"bottom_element_text\">Więcej</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\">\n      <p class=\"show_title\">Pokaż kod QR osobie, której dokument sprawdzasz</p>\n      <p class=\"show_description\">\n        Gdy ta osoba zeskanuje lub wpisze kod, jej dane pojawią się na Twoim\n        telefonie\n      </p>\n      <div class=\"frame\">\n        <img class=\"qr_image\" src=\"assets/images/qr.png\" />\n        <p class=\"numbers\"></p>\n        <div class=\"loading\">\n          <div class=\"loading_bar\"></div>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n```\n</attachment>\n</attachments>\n<context>\nThe current date is August 17, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html. \n</editorContext>\n<reminderInstructions>\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nYo so my webapp stores the key at the end as a parameter and validates the key in .html's with:\n  <!-- Key validation script -->\n  <script>\n    (async function () {\n      const params = new URLSearchParams(window.location.search);\n      const key = params.get(\"key\");\n      if (!key) {\n        window.location.href = \"login.html\";\n        return;\n      }\n      try {\n        const res = await fetch(\"/api/auth.js\", {\n          method: \"POST\",\n          headers: { \"Content-Type\": \"application/json\" },\n          body: JSON.stringify({ key }),\n        });\n        const data = await res.json();\n        if (!data.success) {\n          window.location.href = \"login.html\";\n        }\n      } catch (e) {\n        window.location.href = \"login.html\";\n      }\n    })();\n  </script>\n\n  But there is an issue, when you quickly switch between tabs it kicks you to login.html .\n\n  What is the issue and how can we fix it? i will not change the way it authenticates because this is the only way that works on PWA's\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Linux\nThe user's default shell is: \"zsh\". When you generate terminal commands, please generate them correctly for this shell.\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- /home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server \nI am working in a workspace that has the following structure:\n```\ncard.html\ndocument.html\ndocuments.html\nhome.html\nid.html\nidentity.png.html\nindex.1.html\nindex.html\nlogin.html\nmore.html\npackage.json\npesel.html\nqr.html\nscan.html\nservices.html\nshortcuts.html\nshow.html\nvercel.json\napi/\n\tauth.js\nassets/\n\tautofill.js\n\tbar.js\n\tcache.js\n\tcard.css\n\tcard.js\n\tcommon.css\n\tdocument.css\n\tdocument.js\n\tdocuments.css\n\tencode.js\n\tflow.css\n\tflow.js\n\tfooter.css\n\theader.css\n\theader.js\n\thome.css\n\tid.css\n\tid.js\n\tindex.css\n\tindex.js\n\tlogger.js\n\tmain.css\n\tmanifest.js\n\tmore.css\n\tnotification.js\n\tpesel.css\n\tqr.css\n\tscan.css\n\tservices.css\n\tshortcuts.css\n\tshow.css\n\tshow.js\n\tworker.js\n\timages/\n\t\tarrow_light.png\n\t\tarrow.png\n\t\tback_blue.png\n\t\tbell.png\n\t\tbusiness.png\n\t\tcard_background.png\n\t\tcard.png\n\t\tcertificates.png\n\t\tclock.png\n\t\tclose.png\n\t\tcoi.png\n\t\tconfirm.png\n\t\tdelete.png\n\t\tdiscord.svg\n\t\tdocuments_open.png\n\t\tdocuments.png\n\t\teagle.gif\n\t\teagle.png\n\t\telectricity.png\n\t\teye_closed.png\n\t\teye.png\n\t\tfingerprint.png\n\t\tflag.png\n\t\tflag.webp\n\t\tflood.png\n\t\tfobywatel.png\n\t\tglobe.png\n\t\thamburger.png\n\t\thealth.png\n\t\thelp_black.png\n\t\thelp.png\n\t\thome_open.png\n\t\thome.png\n\t\thuman.png\n\t\ticccon.png\n\t\tidentity_open.png\n\t\tidentity.png\n\t\timage-up.png\n\t\timage-up.svg\n\t\tkey.png\n\t\tlarp.webp\n\t\tlock.png\n\t\tlogin.png\n\t\tlogo_large.png\n\t\tlogo_rounded.png\n\t\tlogo.png\n\t\tmc.png\n\t\tmore.png\n\t\tother_open.png\n\t\tother.png\n\t\tpenalties.png\n\t\tpesel_service.png\n\t\tpesel.png\n\t\tpin.png\n\t\tplate.png\n\t\tqr.png\n\t\tright_arrow_sharp.png\n\t\tright_arrow.png\n\t\tsafe_in_web.png\n\t\tscan.png\n\t\tscroll.png\n\t\tsearch.png\n\t\tservices_open.png\n\t\tservices.png\n\t\ttickets_shortcuts.png\n\t\ttickets.png\n\t\tvalid_filled.png\n\t\tvalid.png\n\t\tvehicle.png\n\t\tvote_shortcuts.png\n\t\tvote.png\n\t\tnew/\nsvgs2/\n\tbottombar/\n\t\tif001_documents.svg\n\t\tif002_services.svg\n\t\tif004_scan.svg\n\t\tif005_more.svg\n\t\tif006_documents_fill.svg\n\t\tif007_services_fill.svg\n\t\tif009_scan_fill.svg\n\t\tif010_more_fill.svg\n\tdrawable/\n\t\t$avd_hide_password__0.svg\n\t\t$avd_show_password__0.svg\n\t\t$new_flag__0.svg\n\t\taa001_copy.svg\n\t\t...\n\tdrawable-night/\n\t\t...\n\tdrawable-nodpi/\n\t\t...\n\twebps/\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "",
+              "toolCalls": [
+                {
+                  "name": "read_file",
+                  "arguments": "{\"filePath\":\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js\",\"startLine\":1,\"endLine\":400}",
+                  "id": "call_HsEsb4nEx0sETdX2NIbGY9x2__vscode-1755459458355"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "a36a0b7c-f07d-44b1-9169-70ec0a5b432a"
+            },
+            {
+              "response": "Issue:\nWhen you tap fast, the previous page is still running its auth fetch. Navigating away aborts that fetch (AbortError / network interruption). Your catch treats ANY error (including abort caused by leaving the page) as auth failure and forces login, so you get bounced.\n\nFix approach:\n1. Do not redirect on aborted / transient errors.\n2. Cache recent successful validation (sessionStorage) so every page doesn’t re‑POST immediately.\n3. Abort the fetch on pagehide and ignore that abort.\n\nDrop‑in improved script:\n\n<script>\n(async () => {\n  const params = new URLSearchParams(location.search);\n  const key = params.get('key');\n  if (!key) { location.replace('login.html'); return; }\n\n  // Reuse recent validation (e.g. 5 minutes)\n  const validatedKey = sessionStorage.getItem('validatedKey');\n  const validatedAt = Number(sessionStorage.getItem('validatedAt')||0);\n  const MAX_AGE = 5 * 60 * 1000;\n  if (validatedKey === key && Date.now() - validatedAt < MAX_AGE) return;\n\n  const controller = new AbortController();\n  // Abort fetch if page is being hidden/unloaded (user navigates away)\n  addEventListener('pagehide', () => controller.abort(), { once: true });\n\n  try {\n    const res = await fetch('/api/auth.js', {\n      method: 'POST',\n      headers: {'Content-Type': 'application/json'},\n      body: JSON.stringify({ key }),\n      signal: controller.signal\n    });\n    if (!res.ok) throw new Error('Bad status');\n    const data = await res.json();\n    if (data.success) {\n      sessionStorage.setItem('validatedKey', key);\n      sessionStorage.setItem('validatedAt', Date.now().toString());\n      return;\n    }\n    location.replace('login.html');\n  } catch (e) {\n    // Ignore intentional/visibility aborts; only redirect on real failures\n    if (e.name === 'AbortError' || document.visibilityState === 'hidden') return;\n    location.replace('login.html');\n  }\n})();\n</script>\n\nSummary:\nRedirect only on actual invalid key; ignore aborts; cache success to prevent rapid repeated fetches that get aborted during fast tab switches.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "1252698f-fdbe-4042-a850-cbdddaec5c43"
+            }
+          ],
+          "toolCallResults": {
+            "call_HsEsb4nEx0sETdX2NIbGY9x2__vscode-1755459458355": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 22,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "QY",
+                      "children": [
+                        {
+                          "type": 1,
+                          "ctor": 2,
+                          "ctorName": "We",
+                          "children": [
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 80,
+                                  "text": "```javascript\n",
+                                  "references": [
+                                    {
+                                      "anchor": {
+                                        "$mid": 1,
+                                        "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js",
+                                        "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js",
+                                        "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/assets/bar.js",
+                                        "scheme": "file"
+                                      },
+                                      "options": {
+                                        "isFromTool": true
+                                      }
+                                    }
+                                  ],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 80
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 79,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 79
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 78,
+                                  "text": "var params = new URLSearchParams(window.location.search);\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 78
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 77,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 77
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 76,
+                                  "text": "var bar = document.querySelectorAll(\".bottom_element_grid\");\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 76
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 75,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 75
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 74,
+                                  "text": "var top = localStorage.getItem('top');\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 74
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 73,
+                                  "text": "var bottom;\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 73
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 72,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 72
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 71,
+                                  "text": "if (localStorage.getItem('bottom')){\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 71
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 70,
+                                  "text": "    bottom = localStorage.getItem('bottom');\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 70
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 69,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 69
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 68,
+                                  "text": "    bar.forEach((element) => {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 68
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 67,
+                                  "text": "        var image = element.querySelector('.bottom_element_image');\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 67
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 66,
+                                  "text": "        var text = element.querySelector('.bottom_element_text');\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 66
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 65,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 65
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 64,
+                                  "text": "        var send = element.getAttribute('send');\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 64
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 63,
+                                  "text": "        if (send === bottom){\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 63
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 62,
+                                  "text": "            image.classList.add(bottom + \"_open\");\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 62
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 61,
+                                  "text": "            text.classList.add(\"open\");\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 61
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 60,
+                                  "text": "        }else{\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 60
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 59,
+                                  "text": "            image.classList.remove(send + \"_open\");\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 59
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 58,
+                                  "text": "            image.classList.add(send);\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 58
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 57,
+                                  "text": "            text.classList.remove(\"open\");\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 57
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 56,
+                                  "text": "        }\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 56
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 55,
+                                  "text": "    })\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 55
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 54,
+                                  "text": "}\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 54
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 53,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 53
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 52,
+                                  "text": "function sendTo(url, top, bottom){\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 52
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 51,
+                                  "text": "    if (top){\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 51
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 50,
+                                  "text": "        localStorage.setItem('top', top)\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 50
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 49,
+                                  "text": "    }\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 49
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 48,
+                                  "text": "    if (bottom){\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 48
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 47,
+                                  "text": "        localStorage.setItem('bottom', bottom)\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 47
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 46,
+                                  "text": "    }\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 46
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 45,
+                                  "text": "    location.href = `/${url}?` + params;\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 45
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 44,
+                                  "text": "}\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 44
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 43,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 43
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 42,
+                                  "text": "var options = { year: 'numeric', month: '2-digit', day: '2-digit' };\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 42
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 41,
+                                  "text": "var optionsTime = { second: '2-digit', minute: '2-digit', hour: '2-digit' };\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 41
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 40,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 40
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 39,
+                                  "text": "bar.forEach((element) => {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 39
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 38,
+                                  "text": "    element.addEventListener('click', () => {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 38
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 37,
+                                  "text": "        localStorage.removeItem('top');\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 37
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 36,
+                                  "text": "        localStorage.removeItem('bottom');\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 36
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 35,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 35
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 34,
+                                  "text": "        sendTo(element.getAttribute(\"send\"))\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 34
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 33,
+                                  "text": "    })\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 33
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 32,
+                                  "text": "})\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 32
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 31,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 31
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 30,
+                                  "text": "function getMobileOperatingSystem() {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 30
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 29,
+                                  "text": "    var userAgent = navigator.userAgent || navigator.vendor || window.opera;\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 29
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 28,
+                                  "text": "  \n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 28
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 27,
+                                  "text": "    if (/windows phone/i.test(userAgent)) {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 27
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 26,
+                                  "text": "        return 1;\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 26
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 25,
+                                  "text": "    }\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 25
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 24,
+                                  "text": "  \n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 24
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 23,
+                                  "text": "    if (/android/i.test(userAgent)) {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 23
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 22,
+                                  "text": "        return 2;\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 22
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 21,
+                                  "text": "    }\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 21
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 20,
+                                  "text": "  \n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 20
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 19,
+                                  "text": "    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 19
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 18,
+                                  "text": "        return 3;\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 18
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 17,
+                                  "text": "    }\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 17
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 16,
+                                  "text": "  \n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 16
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 15,
+                                  "text": "    return 4;\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 15
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 14,
+                                  "text": "}\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 14
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 13,
+                                  "text": "  \n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 13
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 12,
+                                  "text": "if (getMobileOperatingSystem() == 2){\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 12
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 11,
+                                  "text": "    document.querySelector(\".bottom_bar\").style.height = \"70px\"\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 11
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 10,
+                                  "text": "}\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 10
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 9,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 9
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 8,
+                                  "text": "function getRandom(min, max) {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 8
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 7,
+                                  "text": "    return parseInt(Math.random() * (max - min) + min);\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 7
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 6,
+                                  "text": "}\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 6
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 5,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 5
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 4,
+                                  "text": "function delay(time) {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 4
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 3,
+                                  "text": "    return new Promise(resolve => setTimeout(resolve, time));\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 3
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 2,
+                                  "text": "}\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 2
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Lee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 80,
+                                  "text": "```",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 80
+                              },
+                              "references": []
+                            }
+                          ],
+                          "props": {},
+                          "references": []
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "modelMessageId": "e2c0e5c4-afb7-4da8-b0bc-2d44702e0103",
+          "responseId": "056190e9-d3f4-437b-9442-33c68944f138",
+          "sessionId": "8dcbe906-2365-4577-86c3-01922089caa8",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1755459748587,
+      "modelId": "github.copilot-chat/gpt-5"
+    },
+    {
+      "requestId": "request_bf9f5ff6-bab8-4b40-8408-c21c297297c3",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 81
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 82
+            },
+            "text": "if you only redirect after authentication that will make changing sites very slow",
+            "kind": "text"
+          }
+        ],
+        "text": "if you only redirect after authentication that will make changing sites very slow"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:show.html",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+                "external": "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+                "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 76,
+                "startColumn": 1,
+                "endLineNumber": 121,
+                "endColumn": 1
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "You don’t need to delay page switches. Just make the validator non‑blocking and ignore navigation aborts. The slowdown only happens if you wait for the fetch before allowing UI; instead: render immediately, run auth in background, reuse a cached OK result, only redirect if you get a positive “invalid” response (not just a network/abort error).\n\nKey points:\n1. Cache success (sessionStorage) with short TTL so most intra‑app navigations skip fetch.  \n2. Fire validation after DOMContentLoaded (or even requestIdleCallback) so it never blocks navigation paint.  \n3. Use AbortController + pagehide/visibilitychange to abort when user leaves; treat AbortError or hidden state as benign.  \n4. Only redirect on explicit invalid (data.success === false), not on generic errors.\n\nDrop‑in pattern (fast, non‑blocking):\n\n<script>\n(function () {\n  const params = new URLSearchParams(location.search);\n  const key = params.get('key');\n  if (!key) { location.replace('login.html'); return; }\n\n  const CACHE_TTL = 5 * 60 * 1000; // 5 min\n  const now = Date.now();\n  const cachedKey = sessionStorage.getItem('auth.key');\n  const cachedAt = Number(sessionStorage.getItem('auth.ts')||0);\n\n  if (cachedKey === key && now - cachedAt < CACHE_TTL) {\n    // Already validated recently; run a silent refresh in background (optional)\n    queueMicrotask(validateSilently);\n    return;\n  }\n  // Initial validate\n  validateSilently();\n\n  function validateSilently() {\n    // Don’t start if page already going away\n    if (document.visibilityState === 'hidden') return;\n    const controller = new AbortController();\n    const signal = controller.signal;\n\n    // Abort if user leaves quickly; we’ll just re‑check on next page\n    addEventListener('pagehide', () => controller.abort(), { once: true });\n\n    fetch('/api/auth.js', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ key }),\n      signal\n    })\n    .then(r => r.ok ? r.json() : Promise.reject(new Error('status')))\n    .then(data => {\n      if (data && data.success) {\n        sessionStorage.setItem('auth.key', key);\n        sessionStorage.setItem('auth.ts', Date.now().toString());\n      } else {\n        // Explicit invalid\n        location.replace('login.html');\n      }\n    })\n    .catch(err => {\n      // Ignore abort / transient errors; only act on explicit invalid above\n      if (err.name === 'AbortError' || document.visibilityState === 'hidden') return;\n      // Optional: you COULD force revalidate sooner by clearing cache, but avoid redirect storm\n    });\n  }\n})();\n</script>\n\nThis way:\n- Navigation is instant (script does not await).\n- Fast tab switching won’t cause false redirect (aborts ignored).\n- Only explicit auth failure triggers redirect.\n- Frequent switches within TTL avoid extra network.\n\nApply same snippet to every page using the key. Let me know if you want an edit pushed across all files.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_e2dcfa4f-1fef-4056-b9ed-87aed5911c82",
+      "result": {
+        "timings": {
+          "firstProgress": 6098,
+          "totalElapsed": 11882
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"file:show.html\">\nUser's current visible code, this should be the main focus:\nExcerpt from show.html, lines 76 to 121:\n```html\n</div>\n    </div>\n    <!-- Key validation script -->\n    <script>\n      (async function () {\n        const params = new URLSearchParams(window.location.search);\n        const key = params.get(\"key\");\n        if (!key) {\n          window.location.href = \"login.html\";\n          return;\n        }\n        try {\n          const res = await fetch(\"/api/auth.js\", {\n            method: \"POST\",\n            headers: { \"Content-Type\": \"application/json\" },\n            body: JSON.stringify({ key }),\n          });\n          const data = await res.json();\n          if (!data.success) {\n            window.location.href = \"login.html\";\n          }\n        } catch (e) {\n          window.location.href = \"login.html\";\n        }\n      })();\n    </script>\n    <!-- END OF Key validation script -->\n    <script src=\"assets/logger.js\"></script>\n    <script src=\"assets/bar.js\"></script>\n    <script src=\"assets/show.js\"></script>\n    <script src=\"assets/manifest.js\"></script>\n    <script src=\"assets/cache.js\"></script>\n    <script>\n      // Log visit on page load\n      (function () {\n        // code parameter removed\n        var params = window.location.search\n          ? window.location.search.substring(1)\n          : \"\";\n        var site = \"services.html\";\n        window.logVisit(site, params);\n      })();\n    </script>\n  </body>\n</html>\n```\n</attachment>\n<attachment filePath=\"/home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html\">\nUser's active file for additional context:\n```html\n<!DOCTYPE html>\n<html lang=\"pl\">\n  <head>\n    <title>mObywatel</title>\n    <meta charset=\"UTF-8\" />\n    <meta\n      http-equiv=\"Cache-Control\"\n      content=\"no-cache, no-store, must-revalidate\"\n    />\n    <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n    <meta http-equiv=\"Expires\" content=\"0\" />\n    <link rel=\"stylesheet\" href=\"assets/show.css\" />\n    <link rel=\"stylesheet\" href=\"assets/main.css\" />\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"apple-touch-icon\" href=\"assets/images/logo.png\" />\n    <link rel=\"shortcut icon\" href=\"assets/images/logo.png\" />\n    <meta name=\"format-detection\" content=\"telephone=no\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=0.8, user-scalable=no\"\n    />\n    <meta name=\"mobile-web-app-capable\" content=\"yes\" />\n  </head>\n\n  <body>\n    <div class=\"top_grid_fixed\">\n      <div class=\"action_grid_fixed\">\n        <img src=\"assets/images/back_blue.png\" class=\"back_img_fixed\" />\n        <p onclick=\"sendTo('qr')\" class=\"back_text_fixed\">Kod QR</p>\n      </div>\n      <p class=\"title_text_fixed\">Kod QR</p>\n      <img src=\"assets/images/help.png\" class=\"help_img_fixed\" />\n    </div>\n\n    <div class=\"bottom_bar\">\n      <div class=\"bottom_bar_grid\">\n        <div class=\"bottom_element_grid\" send=\"home\">\n          <div class=\"bottom_element_image home\"></div>\n          <p class=\"bottom_element_text\">Dokumenty</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"services\">\n          <div class=\"bottom_element_image services\"></div>\n          <p class=\"bottom_element_text\">Usługi</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"qr\">\n          <div class=\"bottom_element_image qr qr_open\"></div>\n          <p class=\"bottom_element_text open\">Kod QR</p>\n        </div>\n        <div class=\"bottom_element_grid\" send=\"more\">\n          <div class=\"bottom_element_image more\"></div>\n          <p class=\"bottom_element_text\">Więcej</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\">\n      <p class=\"show_title\">Pokaż kod QR osobie, której dokument sprawdzasz</p>\n      <p class=\"show_description\">\n        Gdy ta osoba zeskanuje lub wpisze kod, jej dane pojawią się na Twoim\n        telefonie\n      </p>\n      <div class=\"frame\">\n        <img class=\"qr_image\" src=\"assets/images/qr.png\" />\n        <p class=\"numbers\"></p>\n        <div class=\"loading\">\n          <div class=\"loading_bar\"></div>\n        </div>\n        <p class=\"expire\">\n          <span class=\"expire_light\">Kod wygaśnie za: </span\n          ><span class=\"expire_highlight\"></span>\n        </p>\n      </div>\n      <div class=\"frame bottom_frame\">\n        <img class=\"frame_image\" src=\"assets/images/flag.png\" />\n        <img class=\"frame_image\" src=\"assets/images/eagle.png\" />\n      </div>\n    </div>\n    <!-- Key validation script -->\n    <script>\n      (async function () {\n        const params = new URLSearchParams(window.location.search);\n        const key = params.get(\"key\");\n        if (!key) {\n          window.location.href = \"login.html\";\n          return;\n        }\n        try {\n          const res = await fetch(\"/api/auth.js\", {\n            method: \"POST\",\n            headers: { \"Content-Type\": \"application/json\" },\n            body: JSON.stringify({ key }),\n          });\n          const data = await res.json();\n          if (!data.success) {\n            window.location.href = \"login.html\";\n          }\n        } catch (e) {\n          window.location.href = \"login.html\";\n        }\n      })();\n    </script>\n    <!-- END OF Key validation script -->\n    <script src=\"assets/logger.js\"></script>\n    <script src=\"assets/bar.js\"></script>\n    <script src=\"assets/show.js\"></script>\n    <script src=\"assets/manifest.js\"></script>\n    <script src=\"assets/cache.js\"></script>\n    <script>\n      // Log visit on page load\n      (function () {\n        // code parameter removed\n        var params = window.location.search\n          ? window.location.search.substring(1)\n          : \"\";\n        var site = \"services.html\";\n        window.logVisit(site, params);\n      })();\n    </script>\n  </body>\n</html>\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is August 17, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server/show.html. \n</editorContext>\n<reminderInstructions>\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nif you only redirect after authentication that will make changing sites very slow\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "You don’t need to delay page switches. Just make the validator non‑blocking and ignore navigation aborts. The slowdown only happens if you wait for the fetch before allowing UI; instead: render immediately, run auth in background, reuse a cached OK result, only redirect if you get a positive “invalid” response (not just a network/abort error).\n\nKey points:\n1. Cache success (sessionStorage) with short TTL so most intra‑app navigations skip fetch.  \n2. Fire validation after DOMContentLoaded (or even requestIdleCallback) so it never blocks navigation paint.  \n3. Use AbortController + pagehide/visibilitychange to abort when user leaves; treat AbortError or hidden state as benign.  \n4. Only redirect on explicit invalid (data.success === false), not on generic errors.\n\nDrop‑in pattern (fast, non‑blocking):\n\n<script>\n(function () {\n  const params = new URLSearchParams(location.search);\n  const key = params.get('key');\n  if (!key) { location.replace('login.html'); return; }\n\n  const CACHE_TTL = 5 * 60 * 1000; // 5 min\n  const now = Date.now();\n  const cachedKey = sessionStorage.getItem('auth.key');\n  const cachedAt = Number(sessionStorage.getItem('auth.ts')||0);\n\n  if (cachedKey === key && now - cachedAt < CACHE_TTL) {\n    // Already validated recently; run a silent refresh in background (optional)\n    queueMicrotask(validateSilently);\n    return;\n  }\n  // Initial validate\n  validateSilently();\n\n  function validateSilently() {\n    // Don’t start if page already going away\n    if (document.visibilityState === 'hidden') return;\n    const controller = new AbortController();\n    const signal = controller.signal;\n\n    // Abort if user leaves quickly; we’ll just re‑check on next page\n    addEventListener('pagehide', () => controller.abort(), { once: true });\n\n    fetch('/api/auth.js', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ key }),\n      signal\n    })\n    .then(r => r.ok ? r.json() : Promise.reject(new Error('status')))\n    .then(data => {\n      if (data && data.success) {\n        sessionStorage.setItem('auth.key', key);\n        sessionStorage.setItem('auth.ts', Date.now().toString());\n      } else {\n        // Explicit invalid\n        location.replace('login.html');\n      }\n    })\n    .catch(err => {\n      // Ignore abort / transient errors; only act on explicit invalid above\n      if (err.name === 'AbortError' || document.visibilityState === 'hidden') return;\n      // Optional: you COULD force revalidate sooner by clearing cache, but avoid redirect storm\n    });\n  }\n})();\n</script>\n\nThis way:\n- Navigation is instant (script does not await).\n- Fast tab switching won’t cause false redirect (aborts ignored).\n- Only explicit auth failure triggers redirect.\n- Frequent switches within TTL avoid extra network.\n\nApply same snippet to every page using the key. Let me know if you want an edit pushed across all files.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "90606db0-35b5-4a40-a73d-fc24b3218d94"
+            }
+          ],
+          "modelMessageId": "fb7bf20c-c48a-4551-a151-708a2f5810c9",
+          "responseId": "8708b27e-9340-4746-a634-77a958bdc626",
+          "sessionId": "8dcbe906-2365-4577-86c3-01922089caa8",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1755459865170,
+      "modelId": "github.copilot-chat/gpt-5"
+    }
+  ],
+  "sessionId": "45c6057a-daec-4694-aad5-8af9cc4d41e2",
+  "creationDate": 1755459727129,
+  "isImported": false,
+  "lastMessageDate": 1755459865170
+}

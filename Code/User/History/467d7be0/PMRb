@@ -1,0 +1,53 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "modules-left": [
+    "custom/power",
+    "custom/wallpaper",
+    "window"
+  ],
+  "modules-center": [
+    "wlr/taskbar"
+  ],
+"modules-right": [
+  "pulseaudio",
+  "memory",
+  "cpu",
+  "clock"
+],
+  "custom/power": {
+    "format": "",
+    "on-click": "wofi-powermenu"
+  },
+  "custom/wallpaper": {
+    "format": "",
+    "on-click": "wofi-wallpaper"
+  },
+  "window": {
+    "max-length": 40
+  },
+  "wlr/taskbar": {
+    "icon-size": 18,
+    "on-click": "activate"
+  },
+  "pulseaudio": {
+    "format": " {volume}%"
+  },
+  "memory": {
+    "format": " {used}G/{total}G"
+  },
+  "cpu": {
+    "format": " {usage}%"
+  },
+  "custom/calendar": {
+    "format": " {output}",
+    "exec": "date +'%d/%m/%Y'",
+    "on-click": "gsimplecal",
+    "interval": 60
+  },
+  "clock": {
+    "format": " {:%H:%M:%S}",
+    "interval": 1
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_51854e49-8e0b-4a25-a452-480a5d33a303",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 899
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 3,
+              "endColumn": 727
+            },
+            "text": "Yo lets do a simple and cool waybar config im running arch with hyprland, we can adjust the details later for now lets do barebones:\nLooks: thin, simple rounded, on the top\noptions i want: total left a power button that brings up wofipowermenu(just make it do a command, ill change it to a correct one), next to that a button that will pop up wallpaper changer(also just make it do a command and ill change it to the correct one), next to that currently focused app name, in the middle i want icons of currenlty open apps (like windows taskbar), and on the total right i want calendar icon and date in DD/MM/YYYY format and next to it in the same container 24h clock in format HH:MM:SS, on the left to the calendar usage of cpu and gpu and how much gb of ram, and to the left of that simple volume icon with % of volume i have set now. If you need to install addiditonal packages/apps i will do that",
+            "kind": "text"
+          }
+        ],
+        "text": "Yo lets do a simple and cool waybar config im running arch with hyprland, we can adjust the details later for now lets do barebones:\nLooks: thin, simple rounded, on the top\noptions i want: total left a power button that brings up wofipowermenu(just make it do a command, ill change it to a correct one), next to that a button that will pop up wallpaper changer(also just make it do a command and ill change it to the correct one), next to that currently focused app name, in the middle i want icons of currenlty open apps (like windows taskbar), and on the total right i want calendar icon and date in DD/MM/YYYY format and next to it in the same container 24h clock in format HH:MM:SS, on the left to the calendar usage of cpu and gpu and how much gb of ram, and to the left of that simple volume icon with % of volume i have set now. If you need to install addiditonal packages/apps i will do that"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:style.css",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/.config/waybar/style.css",
+                "external": "file:///home/avery/.config/waybar/style.css",
+                "path": "/home/avery/.config/waybar/style.css",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 1,
+                "endColumn": 1
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Here's a plan for your Waybar setup:\n\n1. style.css: Thin, rounded, modern look.\n2. config: \n   - Left: Power button (wofipowermenu), Wallpaper button, Focused app name.\n   - Center: Open app icons (taskbar style).\n   - Right: Volume icon + %, RAM/CPU/GPU usage, Calendar icon + date, 24h clock.\n\nLet's start by creating a minimal Waybar config and a matching style. I'll add placeholder commands for the power and wallpaper buttons, and use standard modules for the rest. You can adjust commands and modules later.\n\nFirst, I'll update your style.css for the look. Then, I'll create a ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/.config/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_7f64fea5-6437-4e5c-aac1-8ab6bbc2549b",
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1753634436740,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "667358b0-2dbe-4f49-b65a-38dfabd463da",
+  "creationDate": 1753634423069,
+  "isImported": false,
+  "lastMessageDate": 1753634436740
+}

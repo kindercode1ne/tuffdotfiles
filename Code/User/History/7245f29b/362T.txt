@@ -1,0 +1,8 @@
+root
+admin
+123456
+password
+bhpkomplex
+komplex
+bhp
+

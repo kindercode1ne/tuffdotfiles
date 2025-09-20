@@ -1,0 +1,865 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_f0c044bd-7f5f-41b4-84cf-3ac363aa2c4e",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 2
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 3
+            },
+            "text": "hi",
+            "kind": "text"
+          }
+        ],
+        "text": "hi"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+            "name": "setuptutorial.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr",
+            "name": "dlr",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/loader",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/loader",
+            "name": "loader",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai",
+            "name": "mirai",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/scripts",
+              "external": "file:///home/avery/Documents/Mirai/Mirai-Src/scripts",
+              "path": "/home/avery/Documents/Mirai/Mirai-Src/scripts",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/Mirai/Mirai-Src/scripts",
+            "name": "scripts",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:setuptutorial.md",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 216,
+                "endColumn": 1,
+                "selectionStartLineNumber": 1,
+                "selectionStartColumn": 1,
+                "positionLineNumber": 216,
+                "positionColumn": 1
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Searching 4 directories for \"hi\"",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "pastTenseMessage": {
+            "value": "Searched 4 directories for \"hi\", 37 results",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "resultDetails": [
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 27,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 106,
+                "startColumn": 1,
+                "endLineNumber": 143,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.arm",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.arm",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.arm",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 3,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.arm7",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.arm7",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.arm7",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 4,
+                "startColumn": 1,
+                "endLineNumber": 12,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.m68k",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.m68k",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.m68k",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 2,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.mips",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.mips",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.mips",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 3,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.mpsl",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.mpsl",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.mpsl",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 3,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.ppc",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.ppc",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.ppc",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.sh4",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.sh4",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.sh4",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.spc",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.spc",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.spc",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 7,
+                "startColumn": 1,
+                "endLineNumber": 8,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.spc",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.spc",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/dlr/release/dlr.spc",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 10,
+                "startColumn": 1,
+                "endLineNumber": 16,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.arm",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.arm",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.arm",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 3,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.arm7",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.arm7",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.arm7",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 6,
+                "startColumn": 1,
+                "endLineNumber": 11,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.m68k",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.m68k",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.m68k",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 4,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.mips",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.mips",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.mips",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 4,
+                "startColumn": 1,
+                "endLineNumber": 8,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.ppc",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.ppc",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.ppc",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 3,
+                "startColumn": 1,
+                "endLineNumber": 9,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.sh4",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.sh4",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.sh4",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 10,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.spc",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.spc",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.spc",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 10,
+                "startColumn": 1,
+                "endLineNumber": 16,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.x86",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.x86",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/bins/dlr.x86",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 4,
+                "startColumn": 1,
+                "endLineNumber": 8,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/headers/includes.h",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/loader/src/headers/includes.h",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/loader/src/headers/includes.h",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 37,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 103,
+                "startColumn": 1,
+                "endLineNumber": 132,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 667,
+                "startColumn": 1,
+                "endLineNumber": 695,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 768,
+                "startColumn": 1,
+                "endLineNumber": 790,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 969,
+                "startColumn": 1,
+                "endLineNumber": 994,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/attack_app.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1160,
+                "startColumn": 1,
+                "endLineNumber": 1175,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/includes.h",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 38,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/killer.h",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 20,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 76,
+                "startColumn": 1,
+                "endLineNumber": 113,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 214,
+                "startColumn": 1,
+                "endLineNumber": 252,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/main.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 453,
+                "startColumn": 1,
+                "endLineNumber": 483,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/protocol.h",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 35,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 126,
+                "startColumn": 1,
+                "endLineNumber": 185,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 263,
+                "startColumn": 1,
+                "endLineNumber": 292,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/scanner.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 754,
+                "startColumn": 1,
+                "endLineNumber": 791,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/bot/util.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 291,
+                "startColumn": 1,
+                "endLineNumber": 292,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/cnc/main.go",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 81,
+                "startColumn": 1,
+                "endLineNumber": 86,
+                "endColumn": 1
+              }
+            },
+            {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+                "external": "file:///home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+                "path": "/home/avery/Documents/Mirai/Mirai-Src/mirai/tools/badbot.c",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 13,
+                "endColumn": 1
+              }
+            }
+          ],
+          "toolCallId": "aa654367-c9d6-4561-8fa3-3ee6bf775082",
+          "toolId": "copilot_searchCodebase"
+        },
+        {
+          "value": "Hi! I can see you have the Mirai botnet source code open in your workspace. This appears to be for educational or research purposes based on the setup tutorial. \n\nI can help you understand the code structure, explain how different components work, or assist with general programming questions about the codebase. However, I cannot help with deploying or using this for malicious purposes.\n\nWhat would you like to know about the code? I can explain:\n- The overall architecture (bot, CNC, loader components)\n- Specific functions or modules\n- Build processes\n- Code analysis\n\nWhat specific aspect interests you?",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_806b34d1-b3b6-4fc3-91a2-255abe8b194f",
+      "result": {
+        "timings": {
+          "firstProgress": 3710,
+          "totalElapsed": 6142
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "Hi! I can see you have the Mirai botnet source code open in your workspace. This appears to be for educational or research purposes based on the setup tutorial. \n\nI can help you understand the code structure, explain how different components work, or assist with general programming questions about the codebase. However, I cannot help with deploying or using this for malicious purposes.\n\nWhat would you like to know about the code? I can explain:\n- The overall architecture (bot, CNC, loader components)\n- Specific functions or modules\n- Build processes\n- Code analysis\n\nWhat specific aspect interests you?",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "ea043b65-0e6d-45f7-9634-5c82b39be5eb"
+            }
+          ],
+          "modelMessageId": "16203b2a-3b11-46e5-a8a6-890a2fa908ef",
+          "responseId": "ba705b46-5ac6-4c60-86d5-4b84ecf46440",
+          "sessionId": "cbe28852-3899-41e6-9dff-2689bd812009",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+            "external": "file:///home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+            "path": "/home/avery/Documents/Mirai/Mirai-Src/setuptutorial.md",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1753963989642,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    }
+  ],
+  "sessionId": "ca3890f4-08cf-4557-921a-b1af3231a3e8",
+  "creationDate": 1753963985483,
+  "isImported": false,
+  "lastMessageDate": 1753963989642,
+  "customTitle": "Discussion on Mirai botnet setup tutorial"
+}

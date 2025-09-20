@@ -1,0 +1,13 @@
+2025-08-22 16:42:55.294 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-22 16:42:55.303 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-22 16:42:55.303 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-22 16:42:55.561 [info] Started local extension host with pid 2158.
+2025-08-22 16:42:55.655 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.2]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-22 16:42:55.659 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-22 16:42:56.148 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-22 16:42:56.167 [error] [Extension Host] (node:2158) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-08-22 16:42:58.084 [info] [perf] Render performance baseline is 15ms
+2025-08-22 16:43:26.159 [info] Auto updating outdated extensions. github.copilot-chat
+2025-08-22 16:43:27.339 [error] Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2: ScanningExtension: Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2
+    at $h.scanLocalExtension (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:73959)

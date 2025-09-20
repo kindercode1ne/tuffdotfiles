@@ -1,0 +1,6 @@
+root
+admin
+123456
+password
+
+/home/avery/Documents/Wordlists/mysql.txt

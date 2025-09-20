@@ -1,0 +1,236 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "5008a4a8a8b42ae2baa82fa9082e54336d8fd63c6e8a632a6bb14448d50ca72b",
+    "telemetry.devDeviceId": "41f8cd3b-83c2-4ec1-b753-d2f835a415c9",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1758379777656"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/avery/.config": "__default__profile__",
+            "file:///home/avery/.config/hypr": "__default__profile__",
+            "file:///home/avery/Downloads/arch-hyprland-main": "__default__profile__",
+            "file:///home/avery/Documents": "__default__profile__",
+            "file:///home/avery/Downloads": "__default__profile__",
+            "file:///home/avery/Applications/tor-browser/Browser/Downloads": "__default__profile__",
+            "file:///home/avery/Documents/Mirai/Mirai-Src": "__default__profile__",
+            "file:///home/avery/Documents/Mirai": "__default__profile__",
+            "file:///home/avery/Documents/Stripe": "__default__profile__",
+            "file:///home/avery/Documents/Bruters": "__default__profile__",
+            "file:///home/avery/Documents/Other%20C2%27s": "__default__profile__",
+            "file:///home/avery/Documents/RandomC2s": "__default__profile__",
+            "file:///home/avery/Documents/Bruters/shiftedscan": "__default__profile__",
+            "file:///home/avery/Documents/RandomC2s/Bomba": "__default__profile__",
+            "file:///home/avery/Documents/Exploits": "__default__profile__",
+            "file:///home/avery/Documents/Asciis": "__default__profile__",
+            "file:///home/avery/Documents/Exploits/shift_telnet": "__default__profile__",
+            "file:///home/avery": "__default__profile__",
+            "file:///home/avery/Documents/fobywatelxyz": "__default__profile__",
+            "file:///home/avery/Documents/Wordlists": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel-Vercelready": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel-Vercelready-Shop": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel-vercelready-shop": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/icons": "__default__profile__",
+            "file:///home/avery/Downloads/sigmaboy": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-test-server": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/shop": "__default__profile__",
+            "file:///home/avery/Documents/cwelobywatel/fobwywasdxyz-misc/newversion": "__default__profile__",
+            "file:///home/avery/Documents/thunderhack": "__default__profile__",
+            "file:///home/avery/Documents/lingos": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1758379777656": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#0b0e14",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#565b66",
+            "background": "#0b0e14",
+            "editorBackground": "#0b0e14",
+            "titleBarBackground": "#0b0e14",
+            "titleBarBorder": "#0b0e14",
+            "activityBarBackground": "#0b0e14",
+            "activityBarBorder": "#0b0e14",
+            "sideBarBackground": "#0b0e14",
+            "sideBarBorder": "#0b0e14",
+            "statusBarBackground": "#0b0e14",
+            "statusBarBorder": "#0b0e14",
+            "statusBarNoFolderBackground": "#0f131a"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 0,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 0,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/avery/.config/Code/Backups/1758379777656",
+            "uiState": {
+                "mode": 1,
+                "x": 3847,
+                "y": 46,
+                "width": 1255,
+                "height": 681
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 240,
+            "auxiliaryBarWidth": 409,
+            "workspaces": {
+                "cdc4002f82aa01e39e1d82521cf4846d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "4cb0d02a0237411d11404b8d04de475f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "8feed664e8351e3da4c31e3c9baf72cd": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "37bc0e3a9569f02032bcba39f17da038": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "a4690e951da8b30683c502b3491210d9": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "34c51d59831f8faae5110ec8d190c414": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "cf4dbe7d4d3101f2741006fd98806470": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "449e3c5a75b75332dda4d8923f96876f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "81de44108bf1da5f2aa9866e6b646d91": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "2f45c804d42e4cd2346f3f0610051ab3": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "c6aa3dfd54206854ac094803e17009ef": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "4dde8e58682668c36901134962a53b89": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "95c3a531b4dc40f7c41b23ffc8c08119": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "2b200627eff9ecdec25dd8f01713a670": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "4cb070621c28bc4175f78a9943479579": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "b07ffb17f5bf91fe43b59f94a26bc6a3": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "6dc07f030766355a127cf9d16254a083": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "b81cd854136dcecc88513d96b036a8bb": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "6d9da7afd49384b1c0921606e805ed5e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7dc9dfa78d222cd5c9f0224eb1b01399": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "5674bd69877144de718d18949cc9bbbd": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "859914d94404b8f25ed316e56b516422": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "70ecc9cb83c2eef67f7f07a79797af54": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "f7a21e6fd0a21119d0b65be7c97d7b4a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "5ffc9a3de5c9f6d717f13e6cddb51ee5": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "e412cc5bb63d83a01e51efd8bef6e975": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "0fa2afc9401f525ff45d3dfc054d0a0e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "0315dd5582f28e6914463bfbc27e7ebc": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "68bafeb1cda724898263474aa82197ea": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "ee2340f8c6c1b200e0b14e5ce0f7d23f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "325a6bca7c86f04e7dbc0640c9f5b78f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "9c30e612d697b1b7fdfe429e6414e168": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "13f834b3059580ddb57dd0cff9f42c5b": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    }
+}

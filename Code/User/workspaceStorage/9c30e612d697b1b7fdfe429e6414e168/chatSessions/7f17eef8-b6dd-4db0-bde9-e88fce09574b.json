@@ -1,0 +1,367 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_c29eaca8-bc5a-44c4-901a-ad5e8410758d",
+      "message": {
+        "text": "yo where can i edit it so aimrange can be like 100",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 50
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 51
+            },
+            "text": "yo where can i edit it so aimrange can be like 100",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+              "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+              "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+            "name": "Aura.java",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:Aura.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 72,
+                "startColumn": 1,
+                "endLineNumber": 134,
+                "endColumn": 96
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "You can edit the maximum value for ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "aimRange",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 103,
+                "startColumn": 33,
+                "endLineNumber": 103,
+                "endColumn": 33
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "c6f1c58a-5c71-44a9-a540-580914259926"
+        },
+        {
+          "value": " in the constructor:\n\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\npublic final Setting<Float> aimRange = new Setting<>(\"AimRange\", 3.1f, 0f, 100.0f).addToGroup(advanced);\n// ...existing code...\n````\n\nJust change the `6.0f` (current max) to `100.0f` in the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "Setting",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 42,
+                "startColumn": 29,
+                "endLineNumber": 42,
+                "endColumn": 29
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "bb2eebfa-406b-46d5-95e6-b83ebd68ca36"
+        },
+        {
+          "value": " constructor for ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "aimRange",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 103,
+                "startColumn": 33,
+                "endLineNumber": 103,
+                "endColumn": 33
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "3bb03e69-9aff-4fd4-bf65-3874b628ada9"
+        },
+        {
+          "value": ".",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          },
+          "uris": {}
+        }
+      ],
+      "responseId": "response_b0154d44-6f36-4a3b-8236-458229d37222",
+      "result": {
+        "timings": {
+          "firstProgress": 1506,
+          "totalElapsed": 3092
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\npublic final Setting<Float> aimRange = new Setting<>(\"AimRange\", 3.1f, 0f, 100.0f).addToGroup(advanced);\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "You can edit the maximum value for  in the constructor:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "You can edit the maximum value for `aimRange` in the constructor:\n\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java\n// ...existing code...\npublic final Setting<Float> aimRange = new Setting<>(\"AimRange\", 3.1f, 0f, 100.0f).addToGroup(advanced);\n// ...existing code...\n````\n\nJust change the `6.0f` (current max) to `100.0f` in the `Setting` constructor for `aimRange`.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "de96b66b-6b11-4fdf-a2cd-d01953f38305"
+            }
+          ],
+          "modelMessageId": "f9c18a93-a56d-47cb-bf61-1a4749fe3269",
+          "responseId": "a3cf9813-c841-4cd6-a507-23beaf6bc127",
+          "sessionId": "211b8d3b-e859-4f33-ade4-24c6ccf89f2c",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/combat/Aura.java",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1755875516645,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "7f17eef8-b6dd-4db0-bde9-e88fce09574b",
+  "creationDate": 1755874361004,
+  "isImported": false,
+  "lastMessageDate": 1755875516645,
+  "customTitle": "Editing aimRange maximum value in Aura.java"
+}

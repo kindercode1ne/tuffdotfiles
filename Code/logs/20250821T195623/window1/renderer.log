@@ -1,0 +1,19 @@
+2025-08-21 19:56:23.445 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-21 19:56:23.454 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-21 19:56:23.455 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'mcpConfigurationProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-21 19:56:23.641 [info] Started local extension host with pid 1573.
+2025-08-21 19:56:23.750 [error] [/home/avery/.vscode/extensions/github.copilot-chat-0.30.1]: Extension is not compatible with Code 1.102.3. Extension requires: ^1.103.0-20250728.
+2025-08-21 19:56:24.289 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-08-21 19:56:25.312 [error] [Extension Host] (node:1573) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `exe --trace-warnings ...` to show where the warning was created)
+2025-08-21 19:56:26.444 [info] [perf] Render performance baseline is 15ms
+2025-08-21 19:56:53.229 [info] Auto updating outdated extensions. github.copilot-chat
+2025-08-21 19:56:55.273 [error] Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2: ScanningExtension: Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2
+    at $h.scanLocalExtension (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:73959)
+    at async xh.h (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:79202)
+2025-08-21 19:58:08.475 [info] Auto updating outdated extensions. github.copilot-chat
+2025-08-21 19:58:09.575 [error] Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2: ScanningExtension: Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2
+    at $h.scanLocalExtension (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:73959)
+2025-08-21 20:00:26.727 [info] Auto updating outdated extensions. github.copilot-chat
+2025-08-21 20:00:27.797 [error] Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2: ScanningExtension: Cannot read the extension from /home/avery/.vscode/extensions/github.copilot-chat-0.30.2
+    at $h.scanLocalExtension (file:///opt/visual-studio-code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:73959)

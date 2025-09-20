@@ -1,0 +1,2508 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_73fb3c63-e307-4ba5-bac5-1de517deb33e",
+      "message": {
+        "text": "yo where does the rpc get the text for it?",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 42
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 43
+            },
+            "text": "yo where does the rpc get the text for it?",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:RPC.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 159,
+                "endColumn": 1,
+                "selectionStartLineNumber": 1,
+                "selectionStartColumn": 1,
+                "positionLineNumber": 159,
+                "positionColumn": 1
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "The text shown in the Discord Rich Presence (RPC) is set in the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "presence.details",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 27,
+                "startColumn": 39,
+                "endLineNumber": 27,
+                "endColumn": 39
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "abfde0cc-6f65-4784-9147-09d1986b9656"
+        },
+        {
+          "value": " and ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "presence.state",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 27,
+                "startColumn": 39,
+                "endLineNumber": 27,
+                "endColumn": 39
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "784e9f76-e5c1-4976-b9f0-fe476091347d"
+        },
+        {
+          "value": " fields.\n\n- **",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "presence.details",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 27,
+                "startColumn": 39,
+                "endLineNumber": 27,
+                "endColumn": 39
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "2676f269-1d54-401c-87e4-03a856b9958a"
+        },
+        {
+          "value": "** is set by the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "getDetails()",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 94,
+                "startColumn": 40,
+                "endLineNumber": 94,
+                "endColumn": 40
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "7b5f2310-c70e-4a8f-90b0-8156ab6b64c3"
+        },
+        {
+          "value": " method.  \n  - If you’re on the main menu or multiplayer screens, it picks a random string from either ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "rpc_perebor_en",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 33,
+                "startColumn": 14,
+                "endLineNumber": 33,
+                "endColumn": 14
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "954409b1-63bd-4d43-9771-af5f613059a0"
+        },
+        {
+          "value": " or ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "rpc_perebor_ru",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 34,
+                "startColumn": 14,
+                "endLineNumber": 34,
+                "endColumn": 14
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "bdce8867-95d0-4530-99fb-b14308a7d646"
+        },
+        {
+          "value": " (depending on language).\n  - If you’re on a server, it shows the server IP or a generic message.\n  - If you’re in singleplayer, it shows a singleplayer message.\n\n- **",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "presence.state",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 27,
+                "startColumn": 39,
+                "endLineNumber": 27,
+                "endColumn": 39
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "4be1b1ad-3e71-473b-b36a-554920fb556b"
+        },
+        {
+          "value": "** is set based on the value of ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "smode",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 24,
+                "startColumn": 34,
+                "endLineNumber": 24,
+                "endColumn": 34
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "6c0f4d9f-6b55-4da9-a65f-83324dc047c4"
+        },
+        {
+          "value": ":\n  - ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "Stats",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 24,
+                "startColumn": 75,
+                "endLineNumber": 24,
+                "endColumn": 75
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "9f532c4a-21d1-4ec8-a7dd-eabbfd449e73"
+        },
+        {
+          "value": ": Shows enabled hacks count.\n  - ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "Custom",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 99,
+                "startColumn": 30,
+                "endLineNumber": 99,
+                "endColumn": 30
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "1f320138-302b-47e8-99d9-5504e8b764ce"
+        },
+        {
+          "value": ": Uses the value from the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "state",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 25,
+                "startColumn": 35,
+                "endLineNumber": 25,
+                "endColumn": 35
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "cf1c718b-6963-4039-a02a-927e6311a14f"
+        },
+        {
+          "value": " setting.\n  - ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "Version",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 100,
+                "startColumn": 30,
+                "endLineNumber": 100,
+                "endColumn": 30
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "a7136043-bb1c-4b29-8e7f-43c870d63269"
+        },
+        {
+          "value": ": Shows the mod version.\n\nSo, the text comes from those arrays, the server info, or the custom state setting.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_eba14fe6-cce4-404f-ba0e-2418e3c09c4c",
+      "result": {
+        "timings": {
+          "firstProgress": 465,
+          "totalElapsed": 1822
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "The text shown in the Discord Rich Presence (RPC) is set in the `presence.details` and `presence.state` fields.\n\n- **`presence.details`** is set by the `getDetails()` method.  \n  - If you’re on the main menu or multiplayer screens, it picks a random string from either `rpc_perebor_en` or `rpc_perebor_ru` (depending on language).\n  - If you’re on a server, it shows the server IP or a generic message.\n  - If you’re in singleplayer, it shows a singleplayer message.\n\n- **`presence.state`** is set based on the value of `smode`:\n  - `Stats`: Shows enabled hacks count.\n  - `Custom`: Uses the value from the `state` setting.\n  - `Version`: Shows the mod version.\n\nSo, the text comes from those arrays, the server info, or the custom state setting.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "cee1f2ad-ad8f-4e62-ac93-87e93dede773"
+            }
+          ],
+          "modelMessageId": "c3546bdb-4b5b-46a7-bb13-2f911e98ceab",
+          "responseId": "355f3949-5f7a-4c2d-8973-c99d444eac31",
+          "sessionId": "90cea8b6-4083-4ed6-bb12-cb9a290c0451",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 159,
+              "endColumn": 1
+            }
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1755730382186,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_3c5575c5-1fe6-438e-82fd-4da1349aad9f",
+      "message": {
+        "text": "give me lines",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 13
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 14
+            },
+            "text": "give me lines",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:RPC.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 159,
+                "endColumn": 1,
+                "selectionStartLineNumber": 1,
+                "selectionStartColumn": 1,
+                "positionLineNumber": 159,
+                "positionColumn": 1
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Here are the key lines in ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": " where the Discord Rich Presence text is set:\n\n#### Details text:\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\npresence.details = getDetails();\n// ...existing code...\n````\n\n#### State text:\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\nswitch (smode.getValue()) {\n    case Stats ->\n        presence.state = \"Hacks: \" + Managers.MODULE.getEnabledModules().size() + \" / \" + Managers.MODULE.modules.size();\n    case Custom -> presence.state = state.getValue();\n    case Version -> presence.state = \"v\" + ThunderHack.VERSION +\" for mc 1.21\";\n}\n// ...existing code...\n````\n\n#### Small image text (nickname):\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\nif (nickname.getValue()) {\n    presence.smallImageText = \"logged as - \" + mc.getSession().getUsername();\n    presence.smallImageKey = \"https://minotar.net/helm/\" + mc.getSession().getUsername() + \"/100.png\";\n} else {\n    presence.smallImageText = \"\";\n    presence.smallImageKey = \"\";\n}\n// ...existing code...\n````\n\n#### Large image text:\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\npresence.largeImageText = \"v\" + ThunderHack.VERSION + \" [\" + ThunderHack.GITHUB_HASH + \"]\";\n// ...existing code...\n````\n\nThese lines set the main text fields for Discord RPC.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_96f4ac57-7d00-4906-8cc4-e34281c7b380",
+      "result": {
+        "timings": {
+          "firstProgress": 424,
+          "totalElapsed": 2417
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\npresence.details = getDetails();\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "Here are the key lines in  where the Discord Rich Presence text is set:\n\n#### Details text:\n"
+            },
+            {
+              "code": "// ...existing code...\nswitch (smode.getValue()) {\n    case Stats ->\n        presence.state = \"Hacks: \" + Managers.MODULE.getEnabledModules().size() + \" / \" + Managers.MODULE.modules.size();\n    case Custom -> presence.state = state.getValue();\n    case Version -> presence.state = \"v\" + ThunderHack.VERSION +\" for mc 1.21\";\n}\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "\n#### State text:\n"
+            },
+            {
+              "code": "// ...existing code...\nif (nickname.getValue()) {\n    presence.smallImageText = \"logged as - \" + mc.getSession().getUsername();\n    presence.smallImageKey = \"https://minotar.net/helm/\" + mc.getSession().getUsername() + \"/100.png\";\n} else {\n    presence.smallImageText = \"\";\n    presence.smallImageKey = \"\";\n}\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "\n#### Small image text (nickname):\n"
+            },
+            {
+              "code": "// ...existing code...\npresence.largeImageText = \"v\" + ThunderHack.VERSION + \" [\" + ThunderHack.GITHUB_HASH + \"]\";\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "\n#### Large image text:\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Here are the key lines in `RPC.java` where the Discord Rich Presence text is set:\n\n#### Details text:\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\n// ...existing code...\npresence.details = getDetails();\n// ...existing code...\n````\n\n#### State text:\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\n// ...existing code...\nswitch (smode.getValue()) {\n    case Stats ->\n        presence.state = \"Hacks: \" + Managers.MODULE.getEnabledModules().size() + \" / \" + Managers.MODULE.modules.size();\n    case Custom -> presence.state = state.getValue();\n    case Version -> presence.state = \"v\" + ThunderHack.VERSION +\" for mc 1.21\";\n}\n// ...existing code...\n````\n\n#### Small image text (nickname):\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\n// ...existing code...\nif (nickname.getValue()) {\n    presence.smallImageText = \"logged as - \" + mc.getSession().getUsername();\n    presence.smallImageKey = \"https://minotar.net/helm/\" + mc.getSession().getUsername() + \"/100.png\";\n} else {\n    presence.smallImageText = \"\";\n    presence.smallImageKey = \"\";\n}\n// ...existing code...\n````\n\n#### Large image text:\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\n// ...existing code...\npresence.largeImageText = \"v\" + ThunderHack.VERSION + \" [\" + ThunderHack.GITHUB_HASH + \"]\";\n// ...existing code...\n````\n\nThese lines set the main text fields for Discord RPC.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "da548d28-99d8-402b-82d8-b168479d9db1"
+            }
+          ],
+          "modelMessageId": "9107835a-b395-435e-a75d-a7a0206afe7d",
+          "responseId": "4223616f-c1e1-4de4-b45a-c533d395342e",
+          "sessionId": "90cea8b6-4083-4ed6-bb12-cb9a290c0451",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 159,
+              "endColumn": 1
+            }
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1755730405736,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_ab1e6553-601a-41b7-b8b4-4b3255139fb6",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 89
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 90
+            },
+            "text": "yo i want it to say \"mangohack private\" instead of \"thunderhack recode\" how do i do that?",
+            "kind": "text"
+          }
+        ],
+        "text": "yo i want it to say \"mangohack private\" instead of \"thunderhack recode\" how do i do that?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:RPC.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 159,
+                "endColumn": 1,
+                "selectionStartLineNumber": 1,
+                "selectionStartColumn": 1,
+                "positionLineNumber": 159,
+                "positionColumn": 1
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "To change the Discord Rich Presence text from \"ThunderHack Recode\" to \"mangohack private\", you should update the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "largeImageText",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 88,
+                "startColumn": 22,
+                "endLineNumber": 88,
+                "endColumn": 22
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "1532ab36-af60-465e-9373-035edc21d76b"
+        },
+        {
+          "value": " field in the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "startRpc()",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 78,
+                "startColumn": 9,
+                "endLineNumber": 78,
+                "endColumn": 9
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "a4179aa8-acae-4762-8e37-0097db05fa6e"
+        },
+        {
+          "value": " method.\n\nReplace this line:\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\npresence.largeImageText = \"v\" + ThunderHack.VERSION + \" [\" + ThunderHack.GITHUB_HASH + \"]\";\n// ...existing code...\n````\n\nWith:\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "// ...existing code...\npresence.largeImageText = \"mangohack private\";\n// ...existing code...\n````\n\nThis will make the RPC display \"mangohack private\" as the large image text.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_189b0370-bb9b-4456-89b3-666d5be8a59d",
+      "result": {
+        "timings": {
+          "firstProgress": 590,
+          "totalElapsed": 2592
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\npresence.largeImageText = \"v\" + ThunderHack.VERSION + \" [\" + ThunderHack.GITHUB_HASH + \"]\";\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "To change the Discord Rich Presence text from \"ThunderHack Recode\" to \"mangohack private\", you should update the  field in the  method.\n\nReplace this line:\n"
+            },
+            {
+              "code": "// ...existing code...\npresence.largeImageText = \"mangohack private\";\n// ...existing code...\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "\nWith:\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To change the Discord Rich Presence text from \"ThunderHack Recode\" to \"mangohack private\", you should update the `largeImageText` field in the `startRpc()` method.\n\nReplace this line:\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\n// ...existing code...\npresence.largeImageText = \"v\" + ThunderHack.VERSION + \" [\" + ThunderHack.GITHUB_HASH + \"]\";\n// ...existing code...\n````\n\nWith:\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\n// ...existing code...\npresence.largeImageText = \"mangohack private\";\n// ...existing code...\n````\n\nThis will make the RPC display \"mangohack private\" as the large image text.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "9eb2322b-9c05-4c40-b390-51af94801501"
+            }
+          ],
+          "modelMessageId": "66b37e3d-e025-4435-93eb-51d559031f0e",
+          "responseId": "b466dc1b-3fc1-4338-abf9-813cf7a7c17d",
+          "sessionId": "90cea8b6-4083-4ed6-bb12-cb9a290c0451",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 159,
+              "endColumn": 1
+            }
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1755772316383,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_b30c1b81-40e7-461a-aa5c-7efaa5148a5c",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 69
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 70
+            },
+            "text": "no that will just change the text when you hover over the large image",
+            "kind": "text"
+          }
+        ],
+        "text": "no that will just change the text when you hover over the large image"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:RPC.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 88,
+                "startColumn": 22,
+                "endLineNumber": 88,
+                "endColumn": 35,
+                "selectionStartLineNumber": 88,
+                "selectionStartColumn": 22,
+                "positionLineNumber": 88,
+                "positionColumn": 35
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "You're correct—the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "largeImageText",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 88,
+                "startColumn": 22,
+                "endLineNumber": 88,
+                "endColumn": 22
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "d586eebf-e4e1-4bd1-ae06-6b09e28eb69c"
+        },
+        {
+          "value": " only changes the hover text for the large image.  \nTo change the main line of text in Discord RPC (the one that says \"ThunderHack Recode\" or similar), you need to update the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "getDetails()",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 94,
+                "startColumn": 40,
+                "endLineNumber": 94,
+                "endColumn": 40
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "d537cd8f-6330-473e-b9a9-411ec2a8a5af"
+        },
+        {
+          "value": " method.\n\nCurrently, the main text is set by:\n````java\n// ...existing code...\npresence.details = getDetails();\n// ...existing code...\n````\n\nTo always display `\"mangohack private\"` as the main RPC text, change the ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "getDetails()",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 94,
+                "startColumn": 40,
+                "endLineNumber": 94,
+                "endColumn": 40
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "864be690-e9cf-41fd-814b-36adb0c0c38c"
+        },
+        {
+          "value": " method like this:\n\n````java\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "private String getDetails() {\n    return \"mangohack private\";\n}\n````\n\nThis will make the main RPC text always say \"mangohack private\".",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_56418dfe-6216-4da6-a331-1d48990c8e68",
+      "result": {
+        "timings": {
+          "firstProgress": 632,
+          "totalElapsed": 2290
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "// ...existing code...\npresence.details = getDetails();\n// ...existing code...\n",
+              "language": "java",
+              "markdownBeforeBlock": "You're correct—the  only changes the hover text for the large image.  \nTo change the main line of text in Discord RPC (the one that says \"ThunderHack Recode\" or similar), you need to update the  method.\n\nCurrently, the main text is set by:\n"
+            },
+            {
+              "code": "private String getDetails() {\n    return \"mangohack private\";\n}\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "language": "java",
+              "markdownBeforeBlock": "\nTo always display `\"mangohack private\"` as the main RPC text, change the  method like this:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "You're correct—the `largeImageText` only changes the hover text for the large image.  \nTo change the main line of text in Discord RPC (the one that says \"ThunderHack Recode\" or similar), you need to update the `getDetails()` method.\n\nCurrently, the main text is set by:\n````java\n// ...existing code...\npresence.details = getDetails();\n// ...existing code...\n````\n\nTo always display `\"mangohack private\"` as the main RPC text, change the `getDetails()` method like this:\n\n````java\n// filepath: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\nprivate String getDetails() {\n    return \"mangohack private\";\n}\n````\n\nThis will make the main RPC text always say \"mangohack private\".",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "b78aa553-cec9-4063-a009-03fff90076e8"
+            }
+          ],
+          "modelMessageId": "4575fdc8-1893-44bf-8680-0c3cdb92c891",
+          "responseId": "b93263e7-8926-478d-b752-a043c519fea7",
+          "sessionId": "90cea8b6-4083-4ed6-bb12-cb9a290c0451",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1755772346897,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_91d1c475-936a-4ef0-a201-88371b88438d",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 16
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 17
+            },
+            "text": "change it for me",
+            "kind": "text"
+          }
+        ],
+        "text": "change it for me"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:RPC.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 137,
+                "startColumn": 20,
+                "endLineNumber": 137,
+                "endColumn": 28,
+                "selectionStartLineNumber": 137,
+                "selectionStartColumn": 20,
+                "positionLineNumber": 137,
+                "positionColumn": 28
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "toolInvocationSerialized",
+          "presentation": "hidden",
+          "invocationMessage": "Using \"Apply Patch\"",
+          "isConfirmed": true,
+          "isComplete": true,
+          "toolCallId": "6cc64545-a3fe-4a7d-b658-92d238c9bed6",
+          "toolId": "copilot_applyPatch"
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "id": "4f7bf23f-b202-4e5a-a5c2-d94a97573d3a",
+          "kind": "undoStop"
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          },
+          "isEdit": true
+        },
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "package thunder.hack.features.modules.client;\n\nimport net.minecraft.client.gui.screen.TitleScreen;\nimport net.minecraft.client.gui.screen.multiplayer.AddServerScreen;\nimport net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;\nimport thunder.hack.ThunderHack;\nimport thunder.hack.core.Managers;\nimport thunder.hack.features.modules.Module;\nimport thunder.hack.setting.Setting;\nimport thunder.hack.utility.Timer;\nimport thunder.hack.utility.discord.DiscordEventHandlers;\nimport thunder.hack.utility.discord.DiscordRPC;\nimport thunder.hack.utility.discord.DiscordRichPresence;\n\nimport java.io.*;\nimport java.util.Objects;\n\nimport static thunder.hack.features.modules.client.ClientSettings.isRu;\n\npublic final class RPC extends Module {\n    private static final DiscordRPC rpc = DiscordRPC.INSTANCE;\n    public static Setting<Mode> mode = new Setting<>(\"Picture\", Mode.Recode);\n    public static Setting<Boolean> showIP = new Setting<>(\"ShowIP\", true);\n    public static Setting<sMode> smode = new Setting<>(\"StateMode\", sMode.Stats);\n    public static Setting<String> state = new Setting<>(\"State\", \"Beta? Recode? NextGen?\");\n    public static Setting<Boolean> nickname = new Setting<>(\"Nickname\", true);\n    public static DiscordRichPresence presence = new DiscordRichPresence();\n    public static boolean started;\n    static String String1 = \"none\";\n    private final Timer timer_delay = new Timer();\n    private static Thread thread;\n    String slov;\n    String[] rpc_perebor_en = {\"Parkour\", \"Reporting cheaters\", \"Touching grass\", \"Asks how to bind\", \"Reporting bugs\", \"Watching Kilab\"};\n    String[] rpc_perebor_ru = {\"Паркурит\", \"Репортит читеров\", \"Трогает траву\", \"Спрашивает как забиндить\", \"Репортит баги\", \"Смотрит Флюгера\"};\n    int randomInt;\n\n    public RPC() {\n        super(\"DiscordRPC\", Category.CLIENT);\n    }\n\n    public static void readFile() {\n        try {\n            File file = new File(\"ThunderHackRecode/misc/RPC.txt\");\n            if (file.exists()) {\n                try (BufferedReader reader = new BufferedReader(new FileReader(file))) {\n                    while (reader.ready()) {\n                        String1 = reader.readLine();\n                    }\n                }\n            }\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void WriteFile(String url1, String url2) {\n        File file = new File(\"ThunderHackRecode/misc/RPC.txt\");\n        try {\n            file.createNewFile();\n            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {\n                writer.write(url1 + \"SEPARATOR\" + url2 + '\\n');\n            } catch (Exception ignored) {\n            }\n        } catch (Exception ignored) {\n        }\n    }\n\n    @Override\n    public void onDisable() {\n        started = false;\n        if (thread != null && !thread.isInterrupted()) {\n            thread.interrupt();\n        }\n        rpc.Discord_Shutdown();\n    }\n\n    @Override\n    public void onUpdate() {\n        startRpc();\n    }\n\n    public void startRpc() {\n        if (isDisabled()) return;\n        if (!started) {\n            started = true;\n            DiscordEventHandlers handlers = new DiscordEventHandlers();\n            rpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\n            presence.startTimestamp = (System.currentTimeMillis() / 1000L);\n            presence.largeImageText = \"mangohack private 6.7\";\n            rpc.Discord_UpdatePresence(presence);\n\n            thread = new Thread(() -> {\n                while (!Thread.currentThread().isInterrupted()) {\n                    rpc.Discord_RunCallbacks();\n                    presence.details = getDetails();\n\n                    switch (smode.getValue()) {\n                        case Stats ->\n                                presence.state = \"Hacks: \" + Managers.MODULE.getEnabledModules().size() + \" / \" + Managers.MODULE.modules.size();\n                        case Custom -> presence.state = state.getValue();\n                        case Version -> presence.state = \"v\" + ThunderHack.VERSION +\" for mc 1.21\";\n                    }\n\n                    if (nickname.getValue()) {\n                        presence.smallImageText = \"logged as - \" + mc.getSession().getUsername();\n                        presence.smallImageKey = \"https://minotar.net/helm/\" + mc.getSession().getUsername() + \"/100.png\";\n                    } else {\n                        presence.smallImageText = \"\";\n                        presence.smallImageKey = \"\";\n                    }\n\n                    presence.button_label_1 = \"Download\";\n                    presence.button_url_1 = \"https://czarnesukibialesukichcemiecsukikazd.vercel.app\";\n\n                    switch (mode.getValue()) {\n                        case Recode -> presence.largeImageKey = \"https://i.imgur.com/eari3DT.png\";\n                        case MegaCute ->\n                                presence.largeImageKey = \"https://media1.tenor.com/images/6bcbfcc0be97d029613b54f97845bc59/tenor.gif?itemid=26823781\";\n                        case Custom -> {\n                            readFile();\n                            presence.largeImageKey = String1.split(\"SEPARATOR\")[0];\n                            if (!Objects.equals(String1.split(\"SEPARATOR\")[1], \"none\")) {\n                                presence.smallImageKey = String1.split(\"SEPARATOR\")[1];\n                            }\n                        }\n                    }\n                    rpc.Discord_UpdatePresence(presence);\n                    try {\n                        Thread.sleep(2000L);\n                    } catch (InterruptedException ignored) {\n                    }\n                }\n            }, \"TH-RPC-Handler\");\n            thread.start();\n        }\n    }\n\n    private String getDetails() {\n        return \"mangohack private\";\n    }\n\n    public enum Mode {Custom, MegaCute, Recode}\n\n    public enum sMode {Custom, Stats, Version}\n}\n",
+                "range": {
+                  "startLineNumber": 1,
+                  "startColumn": 1,
+                  "endLineNumber": 146,
+                  "endColumn": 1
+                }
+              }
+            ],
+            [
+              {
+                "text": "",
+                "range": {
+                  "startLineNumber": 146,
+                  "startColumn": 1,
+                  "endLineNumber": 160,
+                  "endColumn": 1
+                }
+              }
+            ],
+            []
+          ],
+          "done": true
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "value": "Done! The main Discord RPC text will now always say \"mangohack private\". No other logic will override it.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_8078ea3a-0d1b-4da7-a0d5-0b8d2d7c50ad",
+      "result": {
+        "timings": {
+          "firstProgress": 6067,
+          "totalElapsed": 9655
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"file:RPC.java\">\nUser's active selection, this should be the main focus:\nExcerpt from RPC.java, lines 137 to 137:\n```java\ngetDetai\n```\n</attachment>\n<attachment filePath=\"/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\">\nUser's active file for additional context:\n```java\npackage thunder.hack.features.modules.client;\n\nimport net.minecraft.client.gui.screen.TitleScreen;\nimport net.minecraft.client.gui.screen.multiplayer.AddServerScreen;\nimport net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;\nimport thunder.hack.ThunderHack;\nimport thunder.hack.core.Managers;\nimport thunder.hack.features.modules.Module;\nimport thunder.hack.setting.Setting;\nimport thunder.hack.utility.Timer;\nimport thunder.hack.utility.discord.DiscordEventHandlers;\nimport thunder.hack.utility.discord.DiscordRPC;\nimport thunder.hack.utility.discord.DiscordRichPresence;\n\nimport java.io.*;\nimport java.util.Objects;\n\nimport static thunder.hack.features.modules.client.ClientSettings.isRu;\n\npublic final class RPC extends Module {\n    private static final DiscordRPC rpc = DiscordRPC.INSTANCE;\n    public static Setting<Mode> mode = new Setting<>(\"Picture\", Mode.Recode);\n    public static Setting<Boolean> showIP = new Setting<>(\"ShowIP\", true);\n    public static Setting<sMode> smode = new Setting<>(\"StateMode\", sMode.Stats);\n    public static Setting<String> state = new Setting<>(\"State\", \"Beta? Recode? NextGen?\");\n    public static Setting<Boolean> nickname = new Setting<>(\"Nickname\", true);\n    public static DiscordRichPresence presence = new DiscordRichPresence();\n    public static boolean started;\n    static String String1 = \"none\";\n    private final Timer timer_delay = new Timer();\n    private static Thread thread;\n    String slov;\n    String[] rpc_perebor_en = {\"Parkour\", \"Reporting cheaters\", \"Touching grass\", \"Asks how to bind\", \"Reporting bugs\", \"Watching Kilab\"};\n    String[] rpc_perebor_ru = {\"Паркурит\", \"Репортит читеров\", \"Трогает траву\", \"Спрашивает как забиндить\", \"Репортит баги\", \"Смотрит Флюгера\"};\n    int randomInt;\n\n    public RPC() {\n        super(\"DiscordRPC\", Category.CLIENT);\n    }\n\n    public static void readFile() {\n        try {\n            File file = new File(\"ThunderHackRecode/misc/RPC.txt\");\n            if (file.exists()) {\n                try (BufferedReader reader = new BufferedReader(new FileReader(file))) {\n                    while (reader.ready()) {\n                        String1 = reader.readLine();\n                    }\n                }\n            }\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void WriteFile(String url1, String url2) {\n        File file = new File(\"ThunderHackRecode/misc/RPC.txt\");\n        try {\n            file.createNewFile();\n            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {\n                writer.write(url1 + \"SEPARATOR\" + url2 + '\\n');\n            } catch (Exception ignored) {\n            }\n        } catch (Exception ignored) {\n        }\n    }\n\n    @Override\n    public void onDisable() {\n        started = false;\n        if (thread != null && !thread.isInterrupted()) {\n            thread.interrupt();\n        }\n        rpc.Discord_Shutdown();\n    }\n\n    @Override\n    public void onUpdate() {\n        startRpc();\n    }\n\n    public void startRpc() {\n        if (isDisabled()) return;\n        if (!started) {\n            started = true;\n            DiscordEventHandlers handlers = new DiscordEventHandlers();\n            rpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\n            presence.startTimestamp = (System.currentTimeMillis() / 1000L);\n            presence.largeImageText = \"mangohack private 6.7\";\n            rpc.Discord_UpdatePresence(presence);\n\n            thread = new Thread(() -> {\n                while (!Thread.currentThread().isInterrupted()) {\n                    rpc.Discord_RunCallbacks();\n                    presence.details = getDetails();\n\n                    switch (smode.getValue()) {\n                        case Stats ->\n                                presence.state = \"Hacks: \" + Managers.MODULE.getEnabledModules().size() + \" / \" + Managers.MODULE.modules.size();\n                        case Custom -> presence.state = state.getValue();\n                        case Version -> presence.state = \"v\" + ThunderHack.VERSION +\" for mc 1.21\";\n                    }\n\n                    if (nickname.getValue()) {\n                        presence.smallImageText = \"logged as - \" + mc.getSession().getUsername();\n                        presence.smallImageKey = \"https://minotar.net/helm/\" + mc.getSession().getUsername() + \"/100.png\";\n                    } else {\n                        presence.smallImageText = \"\";\n                        presence.smallImageKey = \"\";\n                    }\n\n                    presence.button_label_1 = \"Download\";\n                    presence.button_url_1 = \"https://czarnesukibialesukichcemiecsukikazd.vercel.app\";\n\n                    switch (mode.getValue()) {\n                        case Recode -> presence.largeImageKey = \"https://i.imgur.com/eari3DT.png\";\n                        case MegaCute ->\n                                presence.largeImageKey = \"https://media1.tenor.com/images/6bcbfcc0be97d029613b54f97845bc59/tenor.gif?itemid=26823781\";\n                        case Custom -> {\n                            readFile();\n                            presence.largeImageKey = String1.split(\"SEPARATOR\")[0];\n                            if (!Objects.equals(String1.split(\"SEPARATOR\")[1], \"none\")) {\n                                presence.smallImageKey = String1.split(\"SEPARATOR\")[1];\n                            }\n                        }\n                    }\n                    rpc.Discord_UpdatePresence(presence);\n                    try {\n                        Thread.sleep(2000L);\n                    } catch (InterruptedException ignored) {\n                    }\n                }\n            }, \"TH-RPC-Handler\");\n            thread.start();\n        }\n    }\n\n    private String getDetails() {\n        String result = \"\";\n\n        if (mc.currentScreen instanceof MultiplayerScreen || mc.currentScreen instanceof AddServerScreen || mc.currentScreen instanceof TitleScreen) {\n            if(timer_delay.passedMs(60 * 1000)){\n                randomInt = (int)(Math.random() * (5 - 0 + 1) + 0);\n                slov = isRu() ? rpc_perebor_ru[randomInt] : rpc_perebor_en[randomInt];\n                timer_delay.reset();\n            }\n            result = slov;\n        } else if (mc.getCurrentServerEntry() != null) {\n            result = isRu() ? (showIP.getValue() ? \"Играет на \" + mc.getCurrentServerEntry().address : \"Играет на сервере\") : (showIP.getValue() ? \"Playing on \" + mc.getCurrentServerEntry().address : \"Playing on server\");\n        } else if (mc.isInSingleplayer()) {\n            result = isRu() ? \"Читерит в одиночке\" : \"SinglePlayer hacker\";\n        }\n        return result;\n    }\n\n    public enum Mode {Custom, MegaCute, Recode}\n\n    public enum sMode {Custom, Stats, Version}\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is August 21, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java. The current selection is from line 137 to line 137.\n</editorContext>\n<reminderInstructions>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nchange it for me (See <attachments> above for file contents. You may not need to search or read the file again.)\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "",
+              "toolCalls": [
+                {
+                  "name": "apply_patch",
+                  "arguments": "{\"explanation\":\"Change the getDetails() method to always return 'mangohack private' for Discord RPC main text.\",\"input\":\"*** Begin Patch\\n*** Update File: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\\n@@   private String getDetails() {\\n-        String result = \\\"\\\";\\n-\\n-        if (mc.currentScreen instanceof MultiplayerScreen || mc.currentScreen instanceof AddServerScreen || mc.currentScreen instanceof TitleScreen) {\\n-            if(timer_delay.passedMs(60 * 1000)){\\n-                randomInt = (int)(Math.random() * (5 - 0 + 1) + 0);\\n-                slov = isRu() ? rpc_perebor_ru[randomInt] : rpc_perebor_en[randomInt];\\n-                timer_delay.reset();\\n-            }\\n-            result = slov;\\n-        } else if (mc.getCurrentServerEntry() != null) {\\n-            result = isRu() ? (showIP.getValue() ? \\\"Играет на \\\" + mc.getCurrentServerEntry().address : \\\"Играет на сервере\\\") : (showIP.getValue() ? \\\"Playing on \\\" + mc.getCurrentServerEntry().address : \\\"Playing on server\\\");\\n-        } else if (mc.isInSingleplayer()) {\\n-            result = isRu() ? \\\"Читерит в одиночке\\\" : \\\"SinglePlayer hacker\\\";\\n-        }\\n-        return result;\\n+        return \\\"mangohack private\\\";\\n*** End Patch\"}",
+                  "id": "call_ATeBUDbowb3amuGSUh89uihC__vscode-1755771668103"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "ed77ffe9-5e8b-4082-9ddb-a183b960630f"
+            },
+            {
+              "response": "Done! The main Discord RPC text will now always say \"mangohack private\". No other logic will override it.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "e1106a67-072c-4719-8dc8-66f6ede828ef"
+            }
+          ],
+          "toolCallResults": {
+            "call_ATeBUDbowb3amuGSUh89uihC__vscode-1755771668103": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 22,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "zf",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "The following files were successfully edited:",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "modelMessageId": "9c671779-16ce-4328-bdc3-5acb7faa66ff",
+          "responseId": "006df76a-5579-4c62-81f2-719d617af6ec",
+          "sessionId": "0c756758-0e97-40a0-89f4-6079d3085036",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1755772400656,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_e3d79ebc-22ef-46f5-93a0-181be8461b8d",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 220
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 221
+            },
+            "text": "no that only changed the smaler RPC text, the main one still says ThunderHack recode. Maybe that depends on the bot/application's name? in this line: \"rpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\" ?",
+            "kind": "text"
+          }
+        ],
+        "text": "no that only changed the smaler RPC text, the main one still says ThunderHack recode. Maybe that depends on the bot/application's name? in this line: \"rpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\" ?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:RPC.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 86,
+                "startColumn": 13,
+                "endLineNumber": 86,
+                "endColumn": 79,
+                "selectionStartLineNumber": 86,
+                "selectionStartColumn": 79,
+                "positionLineNumber": 86,
+                "positionColumn": 13
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Yes, you are correct—the main bold text at the top of Discord Rich Presence is the name of the Discord application (bot) itself.  \nThis is set by the application ID in the line:\n```java\nrpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\n```\nTo change that main text, you need to create a new Discord application at the Discord Developer Portal, set its name to \"mangohack private\", and use its new application ID here.\n\nSteps:\n1. Go to the Discord Developer Portal: https://discord.com/developers/applications\n2. Create a new application and name it \"mangohack private\".\n3. Copy the new application (client) ID.\n4. Replace `\"1093053626198523935\"` in your code with your new application ID.\n\nThis will update the main RPC text to your desired name. The text is not controlled by your code, but by the Discord application you use.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_906eff1c-aaa6-4c73-86bd-ecec87d063d9",
+      "result": {
+        "timings": {
+          "firstProgress": 1671,
+          "totalElapsed": 8990
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "rpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\n",
+              "language": "java",
+              "markdownBeforeBlock": "Yes, you are correct—the main bold text at the top of Discord Rich Presence is the name of the Discord application (bot) itself.  \nThis is set by the application ID in the line:\n"
+            }
+          ],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"file:RPC.java\">\nUser's active selection, this should be the main focus:\nExcerpt from RPC.java, lines 86 to 86:\n```java\nrpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\n```\n</attachment>\n<attachment filePath=\"/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\">\nUser's active file for additional context:\n```java\npackage thunder.hack.features.modules.client;\n\nimport net.minecraft.client.gui.screen.TitleScreen;\nimport net.minecraft.client.gui.screen.multiplayer.AddServerScreen;\nimport net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;\nimport thunder.hack.ThunderHack;\nimport thunder.hack.core.Managers;\nimport thunder.hack.features.modules.Module;\nimport thunder.hack.setting.Setting;\nimport thunder.hack.utility.Timer;\nimport thunder.hack.utility.discord.DiscordEventHandlers;\nimport thunder.hack.utility.discord.DiscordRPC;\nimport thunder.hack.utility.discord.DiscordRichPresence;\n\nimport java.io.*;\nimport java.util.Objects;\n\nimport static thunder.hack.features.modules.client.ClientSettings.isRu;\n\npublic final class RPC extends Module {\n    private static final DiscordRPC rpc = DiscordRPC.INSTANCE;\n    public static Setting<Mode> mode = new Setting<>(\"Picture\", Mode.Recode);\n    public static Setting<Boolean> showIP = new Setting<>(\"ShowIP\", true);\n    public static Setting<sMode> smode = new Setting<>(\"StateMode\", sMode.Stats);\n    public static Setting<String> state = new Setting<>(\"State\", \"Beta? Recode? NextGen?\");\n    public static Setting<Boolean> nickname = new Setting<>(\"Nickname\", true);\n    public static DiscordRichPresence presence = new DiscordRichPresence();\n    public static boolean started;\n    static String String1 = \"none\";\n    private final Timer timer_delay = new Timer();\n    private static Thread thread;\n    String slov;\n    String[] rpc_perebor_en = {\"Parkour\", \"Reporting cheaters\", \"Touching grass\", \"Asks how to bind\", \"Reporting bugs\", \"Watching Kilab\"};\n    String[] rpc_perebor_ru = {\"Паркурит\", \"Репортит читеров\", \"Трогает траву\", \"Спрашивает как забиндить\", \"Репортит баги\", \"Смотрит Флюгера\"};\n    int randomInt;\n\n    public RPC() {\n        super(\"DiscordRPC\", Category.CLIENT);\n    }\n\n    public static void readFile() {\n        try {\n            File file = new File(\"ThunderHackRecode/misc/RPC.txt\");\n            if (file.exists()) {\n                try (BufferedReader reader = new BufferedReader(new FileReader(file))) {\n                    while (reader.ready()) {\n                        String1 = reader.readLine();\n                    }\n                }\n            }\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void WriteFile(String url1, String url2) {\n        File file = new File(\"ThunderHackRecode/misc/RPC.txt\");\n        try {\n            file.createNewFile();\n            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {\n                writer.write(url1 + \"SEPARATOR\" + url2 + '\\n');\n            } catch (Exception ignored) {\n            }\n        } catch (Exception ignored) {\n        }\n    }\n\n    @Override\n    public void onDisable() {\n        started = false;\n        if (thread != null && !thread.isInterrupted()) {\n            thread.interrupt();\n        }\n        rpc.Discord_Shutdown();\n    }\n\n    @Override\n    public void onUpdate() {\n        startRpc();\n    }\n\n    public void startRpc() {\n        if (isDisabled()) return;\n        if (!started) {\n            started = true;\n            DiscordEventHandlers handlers = new DiscordEventHandlers();\n            rpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\n            presence.startTimestamp = (System.currentTimeMillis() / 1000L);\n            presence.largeImageText = \"mangohack private 6.7\";\n            rpc.Discord_UpdatePresence(presence);\n\n            thread = new Thread(() -> {\n                while (!Thread.currentThread().isInterrupted()) {\n                    rpc.Discord_RunCallbacks();\n                    presence.details = getDetails();\n\n                    switch (smode.getValue()) {\n                        case Stats ->\n                                presence.state = \"Hacks: \" + Managers.MODULE.getEnabledModules().size() + \" / \" + Managers.MODULE.modules.size();\n                        case Custom -> presence.state = state.getValue();\n                        case Version -> presence.state = \"v\" + ThunderHack.VERSION +\" for mc 1.21\";\n                    }\n\n                    if (nickname.getValue()) {\n                        presence.smallImageText = \"logged as - \" + mc.getSession().getUsername();\n                        presence.smallImageKey = \"https://minotar.net/helm/\" + mc.getSession().getUsername() + \"/100.png\";\n                    } else {\n                        presence.smallImageText = \"\";\n                        presence.smallImageKey = \"\";\n                    }\n\n                    presence.button_label_1 = \"Download\";\n                    presence.button_url_1 = \"https://czarnesukibialesukichcemiecsukikazd.vercel.app\";\n\n                    switch (mode.getValue()) {\n                        case Recode -> presence.largeImageKey = \"https://i.imgur.com/eari3DT.png\";\n                        case MegaCute ->\n                                presence.largeImageKey = \"https://media1.tenor.com/images/6bcbfcc0be97d029613b54f97845bc59/tenor.gif?itemid=26823781\";\n                        case Custom -> {\n                            readFile();\n                            presence.largeImageKey = String1.split(\"SEPARATOR\")[0];\n                            if (!Objects.equals(String1.split(\"SEPARATOR\")[1], \"none\")) {\n                                presence.smallImageKey = String1.split(\"SEPARATOR\")[1];\n                            }\n                        }\n                    }\n                    rpc.Discord_UpdatePresence(presence);\n                    try {\n                        Thread.sleep(2000L);\n                    } catch (InterruptedException ignored) {\n                    }\n                }\n            }, \"TH-RPC-Handler\");\n            thread.start();\n        }\n    }\n\n    private String getDetails() {\n        String result = \"\";\n\n        if (mc.currentScreen instanceof MultiplayerScreen || mc.currentScreen instanceof AddServerScreen || mc.currentScreen instanceof TitleScreen) {\n            if(timer_delay.passedMs(60 * 1000)){\n                randomInt = (int)(Math.random() * (5 - 0 + 1) + 0);\n                slov = isRu() ? rpc_perebor_ru[randomInt] : rpc_perebor_en[randomInt];\n                timer_delay.reset();\n            }\n            result = slov;\n        } else if (mc.getCurrentServerEntry() != null) {\n            result = isRu() ? (showIP.getValue() ? \"Играет на \" + mc.getCurrentServerEntry().address : \"Играет на сервере\") : (showIP.getValue() ? \"Playing on \" + mc.getCurrentServerEntry().address : \"Playing on server\");\n        } else if (mc.isInSingleplayer()) {\n            result = isRu() ? \"Читерит в одиночке\" : \"SinglePlayer hacker\";\n        }\n        return result;\n    }\n\n    public enum Mode {Custom, MegaCute, Recode}\n\n    public enum sMode {Custom, Stats, Version}\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is August 21, 2025.\nThe user has taken some actions between the last request and now:\n- Made manual edits to /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\nSo be sure to check the current file contents before making any new edits.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java. The current selection is from line 86 to line 86.\n</editorContext>\n<reminderInstructions>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nno that only changed the smaler RPC text, the main one still says ThunderHack recode. Maybe that depends on the bot/application's name? in this line: \"rpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\" ? (See <attachments> above for file contents. You may not need to search or read the file again.)\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "Yes, you are correct—the main bold text at the top of Discord Rich Presence is the name of the Discord application (bot) itself.  \nThis is set by the application ID in the line:\n```java\nrpc.Discord_Initialize(\"1093053626198523935\", handlers, true, \"\");\n```\nTo change that main text, you need to create a new Discord application at the Discord Developer Portal, set its name to \"mangohack private\", and use its new application ID here.\n\nSteps:\n1. Go to the Discord Developer Portal: https://discord.com/developers/applications\n2. Create a new application and name it \"mangohack private\".\n3. Copy the new application (client) ID.\n4. Replace `\"1093053626198523935\"` in your code with your new application ID.\n\nThis will update the main RPC text to your desired name. The text is not controlled by your code, but by the Discord application you use.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "7c3263c1-22ac-4af4-981f-adcb99858c9d"
+            }
+          ],
+          "modelMessageId": "a86c55e7-cad6-4026-b657-9c4f36f14661",
+          "responseId": "e1444755-062d-4d4d-8b1a-8d5d4cac77de",
+          "sessionId": "0c756758-0e97-40a0-89f4-6079d3085036",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1755772736704,
+      "editedFileEvents": [
+        {
+          "eventKind": 3,
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        }
+      ],
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_18bd1384-6c9b-42f1-80b4-c5d6ca116d35",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 51
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 52
+            },
+            "text": "How to i disable the showing changelog in the menu?",
+            "kind": "text"
+          }
+        ],
+        "text": "How to i disable the showing changelog in the menu?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+              "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+              "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+            "name": "MainMenuScreen.java",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+              "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+              "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+              "scheme": "file"
+            },
+            "id": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+            "name": "ThunderUtility.java",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:ThunderUtility.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 51,
+                "startColumn": 1,
+                "endLineNumber": 114,
+                "endColumn": 48
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "To disable the changelog display in the main menu, remove or comment out the code in `MainMenuScreen.java` that draws the changelog.  \nSpecifically, in the `render()` method, find this block:\n\n```java\nint offsetY = 10;\nfor (String change : ThunderUtility.changeLog) {\n    String prefix = getPrefix(change);\n    FontRenderers.sf_medium.drawString(context.getMatrices(), prefix, 10, offsetY, Render2DEngine.applyOpacity(-1, 0.4f));\n    offsetY += 10;\n}\n```\n\nYou can simply comment out or delete these lines.  \nThis will prevent the changelog from being shown in the menu.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_98cd4677-9802-4b09-aa7a-9661e80170d8",
+      "result": {
+        "timings": {
+          "firstProgress": 1898,
+          "totalElapsed": 3425
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "int offsetY = 10;\nfor (String change : ThunderUtility.changeLog) {\n    String prefix = getPrefix(change);\n    FontRenderers.sf_medium.drawString(context.getMatrices(), prefix, 10, offsetY, Render2DEngine.applyOpacity(-1, 0.4f));\n    offsetY += 10;\n}\n",
+              "language": "java",
+              "markdownBeforeBlock": "To disable the changelog display in the main menu, remove or comment out the code in `MainMenuScreen.java` that draws the changelog.  \nSpecifically, in the `render()` method, find this block:\n\n"
+            }
+          ],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"MainMenuScreen.java\" filePath=\"/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java\">\n```java\npackage thunder.hack.gui.mainmenu;\n\nimport com.mojang.blaze3d.systems.RenderSystem;\nimport net.minecraft.client.gui.DrawContext;\nimport net.minecraft.client.gui.screen.Screen;\nimport net.minecraft.client.gui.screen.TitleScreen;\nimport net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;\nimport net.minecraft.client.gui.screen.option.OptionsScreen;\nimport net.minecraft.client.gui.screen.world.SelectWorldScreen;\nimport net.minecraft.client.resource.language.I18n;\nimport net.minecraft.text.Text;\nimport net.minecraft.util.Formatting;\nimport net.minecraft.util.Util;\nimport org.jetbrains.annotations.NotNull;\nimport thunder.hack.api.IAddon;\nimport thunder.hack.core.Managers;\nimport thunder.hack.core.manager.client.ModuleManager;\nimport thunder.hack.gui.font.FontRenderers;\nimport thunder.hack.utility.ThunderUtility;\nimport thunder.hack.utility.render.Render2DEngine;\nimport thunder.hack.utility.render.TextureStorage;\n\nimport java.awt.*;\nimport java.net.URI;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Locale;\n\nimport static thunder.hack.features.modules.Module.mc;\n\npublic class MainMenuScreen extends Screen {\n    private final List<MainMenuButton> buttons = new ArrayList<>();\n    public boolean confirm = false;\n    public static int ticksActive;\n\n    protected MainMenuScreen() {\n        super(Text.of(\"THMainMenuScreen\"));\n        INSTANCE = this;\n\n        buttons.add(new MainMenuButton(-110, -70, I18n.translate(\"menu.singleplayer\").toUpperCase(Locale.ROOT), () -> mc.setScreen(new SelectWorldScreen(this))));\n        buttons.add(new MainMenuButton(4, -70, I18n.translate(\"menu.multiplayer\").toUpperCase(Locale.ROOT), () -> mc.setScreen(new MultiplayerScreen(this))));\n        buttons.add(new MainMenuButton(-110, -29, I18n.translate(\"menu.options\")\n                .toUpperCase(Locale.ROOT)\n                .replace(\".\", \"\"), () -> mc.setScreen(new OptionsScreen(this, mc.options))));\n        buttons.add(new MainMenuButton(4, -29, \"CLICKGUI\", () -> ModuleManager.clickGui.setGui()));\n        buttons.add(new MainMenuButton(-110, 12, I18n.translate(\"menu.quit\").toUpperCase(Locale.ROOT), mc::scheduleStop, true));\n    }\n\n    private static MainMenuScreen INSTANCE = new MainMenuScreen();\n\n    public static MainMenuScreen getInstance() {\n        ticksActive = 0;\n\n        if (INSTANCE == null) {\n            INSTANCE = new MainMenuScreen();\n        }\n        return INSTANCE;\n    }\n\n    @Override\n    public void tick() {\n        ticksActive++;\n\n        if (ticksActive > 400) {\n            ticksActive = 0;\n        }\n    }\n\n    @Override\n    public void render(@NotNull DrawContext context, int mouseX, int mouseY, float delta) {\n        float halfOfWidth = mc.getWindow().getScaledWidth() / 2f;\n        float halfOfHeight = mc.getWindow().getScaledHeight() / 2f;\n\n        float mainX = halfOfWidth - 120f;\n        float mainY = halfOfHeight - 80f;\n        float mainWidth = 240f;\n        float mainHeight = 140;\n\n        // Render2DEngine.drawMainMenuShader(context.getMatrices(), 0, 0, halfOfWidth * 2f, halfOfHeight * 2);\n        renderBackground(context, mouseX, mouseY, delta);\n\n        Render2DEngine.drawHudBase(context.getMatrices(), mainX, mainY, mainWidth, mainHeight, 20);\n\n        buttons.forEach(b -> b.onRender(context, mouseX, mouseY));\n\n        boolean hoveredLogo = Render2DEngine.isHovered(mouseX, mouseY, (int) (halfOfWidth - 120), (int) (halfOfHeight - 130), 210, 50);\n\n        FontRenderers.thglitchBig.drawCenteredString(context.getMatrices(), \"mangohack v6.7\", (int) (halfOfWidth), (int) (halfOfHeight - 120), new Color(255, 255, 255, hoveredLogo ? 230 : 180).getRGB());\n\n        boolean hovered = Render2DEngine.isHovered(mouseX, mouseY, halfOfWidth - 50, halfOfHeight + 70, 100, 10);\n\n        FontRenderers.sf_medium.drawCenteredString(context.getMatrices(), \"Back to default menu\", halfOfWidth, halfOfHeight + 70, hovered ? -1 : Render2DEngine.applyOpacity(-1, 0.6f));\n        //  FontRenderers.sf_medium.drawString(context.getMatrices(), \"By Pan4ur & 06ED\", halfOfWidth * 2 - FontRenderers.sf_medium.getStringWidth(\"By Pan4ur & 06ED\") - 5f, halfOfHeight * 2 - 10, Render2DEngine.applyOpacity(-1, 0.4f));\n\n        onlineText:\n        {\n            String onlineUsers = String.format(\"online: %s%s\", Formatting.DARK_GREEN, Managers.TELEMETRY.getOnlinePlayers().size());\n\n            FontRenderers.sf_bold.drawCenteredString(context.getMatrices(), onlineUsers, halfOfWidth, halfOfHeight * 2 - 15, Color.GREEN);\n\n            context.getMatrices().push();\n            context.getMatrices().translate(halfOfWidth - 10 - FontRenderers.sf_medium.getStringWidth(onlineUsers) / 2f, halfOfHeight * 2 - 17, 0);\n            Render2DEngine.drawBloom(context.getMatrices(), Render2DEngine.applyOpacity(Color.GREEN, 0.6f), 9f);\n            context.getMatrices().pop();\n\n            context.getMatrices().push();\n            context.getMatrices().translate(halfOfWidth - 10 - FontRenderers.sf_medium.getStringWidth(onlineUsers) / 2f, halfOfHeight * 2 - 17, 0);\n            Render2DEngine.drawBloom(context.getMatrices(), Render2DEngine.applyOpacity(Color.GREEN, (float) (0.5f + (Math.sin((double) System.currentTimeMillis() / 500)) / 2f)), 9f);\n            context.getMatrices().pop();\n\n        }\n\n        Render2DEngine.drawHudBase(context.getMatrices(), mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30, 5, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        RenderSystem.setShaderColor(1f, 1f, 1f, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        context.drawTexture(TextureStorage.thTeam, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30, 0, 0, 30, 30, 30, 30);\n        RenderSystem.setShaderColor(1f, 1f, 1f, 1f);\n\n        Render2DEngine.drawHudBase(context.getMatrices(), mc.getWindow().getScaledWidth() - 80, mc.getWindow().getScaledHeight() - 40, 30, 30, 5, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 80, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        RenderSystem.setShaderColor(1f, 1f, 1f, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 80, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        context.drawTexture(TextureStorage.donation, mc.getWindow().getScaledWidth() - 79, mc.getWindow().getScaledHeight() - 39, 28, 28, 0, 0, 30, 30, 30, 30);\n        RenderSystem.setShaderColor(1f, 1f, 1f, 1f);\n\n        int offsetY = 10;\n        for (String change : ThunderUtility.changeLog) {\n            String prefix = getPrefix(change);\n            FontRenderers.sf_medium.drawString(context.getMatrices(), prefix, 10, offsetY, Render2DEngine.applyOpacity(-1, 0.4f));\n            offsetY += 10;\n        }\n\n        int totalAddonsLoaded = Managers.ADDON.getTotalAddons();\n        String addonsText = \"Addons Loaded: \" + totalAddonsLoaded;\n        int screenWidth = mc.getWindow().getScaledWidth();\n        int textWidth = (int) FontRenderers.sf_bold.getStringWidth(addonsText);\n        int textX = screenWidth - textWidth - 5;\n        FontRenderers.sf_bold.drawString(context.getMatrices(), addonsText, textX, 5, Color.WHITE.getRGB());\n\n        int offset = 0;\n        for (IAddon addon : Managers.ADDON.getAddons()) {\n            // for (String addon : Arrays.asList(\"Addon\", \"Addon2\", \"Addon3\", \"Addon4\", \"Addon5\")) {\n            textWidth = (int) FontRenderers.sf_bold.getStringWidth(addon.getName() + \" |\");\n            textX = screenWidth - textWidth - 5;\n            FontRenderers.sf_bold.drawString(context.getMatrices(), addon.getName() + Formatting.WHITE + \" |\", textX, 13 + offset, Color.GRAY.getRGB());\n            offset += 9;\n        }\n    }\n\n    private static @NotNull String getPrefix(@NotNull String change) {\n        String prefix = \"\";\n        if (change.contains(\"[+]\")) {\n            change = change.replace(\"[+] \", \"\");\n            prefix = Formatting.GREEN + \"[+] \" + Formatting.RESET;\n        } else if (change.contains(\"[-]\")) {\n            change = change.replace(\"[-] \", \"\");\n            prefix = Formatting.RED + \"[-] \" + Formatting.RESET;\n        } else if (change.contains(\"[/]\")) {\n            change = change.replace(\"[/] \", \"\");\n            prefix = Formatting.LIGHT_PURPLE + \"[/] \" + Formatting.RESET;\n        } else if (change.contains(\"[*]\")) {\n            change = change.replace(\"[*] \", \"\");\n            prefix = Formatting.GOLD + \"[*] \" + Formatting.RESET;\n        }\n        return prefix + change;\n    }\n\n    @Override\n    public boolean mouseClicked(double mouseX, double mouseY, int button) {\n        float halfOfWidth = mc.getWindow().getScaledWidth() / 2f;\n        float halfOfHeight = mc.getWindow().getScaledHeight() / 2f;\n        buttons.forEach(b -> b.onClick((int) mouseX, (int) mouseY));\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, halfOfWidth - 50, halfOfHeight + 70, 100, 10)) {\n            confirm = true;\n            mc.setScreen(new TitleScreen());\n            confirm = false;\n        }\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 40, 40))\n            mc.setScreen(CreditsScreen.getInstance());\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 90, mc.getWindow().getScaledHeight() - 40, 40, 40))\n            Util.getOperatingSystem().open(URI.create(\"https://t.me/xyzz7777\"));\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, (int) (halfOfWidth - 157), (int) (halfOfHeight - 140), 300, 70))\n            Util.getOperatingSystem().open(URI.create(\"https://czarnesukibialesukichcemiecsukikazd.vercel.app\"));\n\n        return super.mouseClicked(mouseX, mouseY, button);\n    }\n}\n```\n</attachment>\n<attachment id=\"ThunderUtility.java\" filePath=\"/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java\">\n```java\npackage thunder.hack.utility;\n\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\nimport net.fabricmc.loader.api.metadata.Person;\nimport net.minecraft.client.texture.NativeImage;\nimport net.minecraft.client.texture.NativeImageBackedTexture;\nimport net.minecraft.util.Formatting;\nimport net.minecraft.util.Identifier;\nimport org.jetbrains.annotations.NotNull;\nimport thunder.hack.ThunderHack;\nimport thunder.hack.utility.math.MathUtility;\n\nimport java.io.*;\nimport java.net.URL;\nimport java.nio.charset.StandardCharsets;\nimport java.util.ArrayList;\nimport java.util.Enumeration;\nimport java.util.List;\nimport java.util.Objects;\nimport java.util.concurrent.atomic.AtomicReference;\nimport java.util.jar.JarFile;\nimport java.util.jar.Manifest;\n\nimport static thunder.hack.core.manager.client.ConfigManager.IMAGES_FOLDER;\nimport static thunder.hack.features.modules.Module.mc;\n\npublic final class ThunderUtility {\n    public static List<String> changeLog = new ArrayList<>();\n    public static List<String> starGazer = new ArrayList<>();\n\n    public static @NotNull String getAuthors() {\n        List<String> names = ThunderHack.MOD_META.getAuthors()\n                .stream()\n                .map(Person::getName)\n                .toList();\n\n        return String.join(\", \", names);\n    }\n\n    public static String solveName(String notSolved) {\n        AtomicReference<String> mb = new AtomicReference<>(\"FATAL ERROR\");\n        Objects.requireNonNull(mc.getNetworkHandler()).getListedPlayerListEntries().forEach(player -> {\n            if (notSolved.contains(player.getProfile().getName())) {\n                mb.set(player.getProfile().getName());\n            }\n        });\n\n        return mb.get();\n    }\n\n    public static Identifier getCustomImg(String name) throws IOException {\n        return mc.getTextureManager().registerDynamicTexture(\"th-\" + name + \"-\" + (int) MathUtility.random(0, 1000), new NativeImageBackedTexture(NativeImage.read(new FileInputStream(IMAGES_FOLDER + \"/\" + name + \".png\"))));\n    }\n\n    public static void syncVersion() {\n        try {\n            if (!new BufferedReader(new InputStreamReader(new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/syncVersion121.txt\").openStream())).readLine().equals(ThunderHack.VERSION))\n                ThunderHack.isOutdated = true;\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void parseStarGazer() {\n        List<String> starGazers = new ArrayList<>();\n\n        try {\n            for (int page = 1; page <= 3; page++) {\n                URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/stargazers?per_page=100&page=\" + page);\n                BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));\n                StringBuilder response = new StringBuilder();\n                String inputLine;\n\n                while ((inputLine = in.readLine()) != null) {\n                    response.append(inputLine);\n                }\n                in.close();\n\n                JsonArray jsonArray = JsonParser.parseString(response.toString()).getAsJsonArray();\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    starGazers.add(jsonObject.getAsJsonPrimitive(\"login\").getAsString());\n                }\n\n                Thread.sleep(1500);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static void syncContributors() {\n        try {\n            URL list = new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/thTeam.txt\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(list.openStream(), StandardCharsets.UTF_8));\n            String inputLine;\n            int i = 0;\n            while ((inputLine = in.readLine()) != null) {\n                ThunderHack.contributors[i] = inputLine.trim();\n                i++;\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static String readManifestField(String fieldName) {\n        try {\n            Enumeration<URL> en = Thread.currentThread().getContextClassLoader().getResources(JarFile.MANIFEST_NAME);\n            while (en.hasMoreElements()) {\n                try {\n                    URL url = en.nextElement();\n                    InputStream is = url.openStream();\n                    if (is != null) {\n                        String s = new Manifest(is).getMainAttributes().getValue(fieldName);\n                        if (s != null)\n                            return s;\n                    }\n                } catch (Exception ignored) {\n                }\n            }\n        } catch (Exception ignored) {\n        }\n        return \"0\";\n    }\n\n\n    public static void parseCommits() {\n        try {\n            URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/commits?per_page=50\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream(), StandardCharsets.UTF_8));\n\n            changeLog.add(\"Changelog [Recode; Date: \" + ThunderHack.BUILD_DATE + \"; GitHash:\" + ThunderHack.GITHUB_HASH + \"]\");\n            changeLog.add(\"\\n\");\n\n            String inputLine;\n            while ((inputLine = in.readLine()) != null) {\n                JsonArray jsonArray = JsonParser.parseString(inputLine).getAsJsonArray();\n\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    JsonObject commitObject = jsonObject.getAsJsonObject(\"commit\");\n                    JsonObject authorObject = commitObject.getAsJsonObject(\"author\");\n\n                    String name = authorObject.get(\"name\").getAsString().replace(\"\\n\", \"\");\n                    String date = authorObject.get(\"date\").getAsString().replace(\"\\n\", \"\");\n                    String info = commitObject.get(\"message\").getAsString().replace(\"\\n\", \"\");\n\n                    if (name.contains(\"ImgBot\") || info.startsWith(\"Merge\") || info.startsWith(\"Revert\")) {\n                        continue;\n                    }\n\n                    String formattedDate = Formatting.GRAY + date.split(\"T\")[0] + Formatting.RESET;\n                    String formattedName = \"@\" + Formatting.RED + name + Formatting.RESET;\n\n                    changeLog.add(\"- \" + info + \" [\" + formattedDate + \"]  (\" + formattedName + \")\");\n                }\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n</attachment>\n<attachment id=\"file:ThunderUtility.java\">\nUser's current visible code, this should be the main focus:\nExcerpt from ThunderUtility.java, lines 51 to 114:\n```java\n}\n\n    public static Identifier getCustomImg(String name) throws IOException {\n        return mc.getTextureManager().registerDynamicTexture(\"th-\" + name + \"-\" + (int) MathUtility.random(0, 1000), new NativeImageBackedTexture(NativeImage.read(new FileInputStream(IMAGES_FOLDER + \"/\" + name + \".png\"))));\n    }\n\n    public static void syncVersion() {\n        try {\n            if (!new BufferedReader(new InputStreamReader(new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/syncVersion121.txt\").openStream())).readLine().equals(ThunderHack.VERSION))\n                ThunderHack.isOutdated = true;\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void parseStarGazer() {\n        List<String> starGazers = new ArrayList<>();\n\n        try {\n            for (int page = 1; page <= 3; page++) {\n                URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/stargazers?per_page=100&page=\" + page);\n                BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));\n                StringBuilder response = new StringBuilder();\n                String inputLine;\n\n                while ((inputLine = in.readLine()) != null) {\n                    response.append(inputLine);\n                }\n                in.close();\n\n                JsonArray jsonArray = JsonParser.parseString(response.toString()).getAsJsonArray();\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    starGazers.add(jsonObject.getAsJsonPrimitive(\"login\").getAsString());\n                }\n\n                Thread.sleep(1500);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static void syncContributors() {\n        try {\n            URL list = new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/thTeam.txt\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(list.openStream(), StandardCharsets.UTF_8));\n            String inputLine;\n            int i = 0;\n            while ((inputLine = in.readLine()) != null) {\n                ThunderHack.contributors[i] = inputLine.trim();\n                i++;\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static String readManifestField(String fieldName) {\n        try {\n            Enumeration<URL> en = Thread.currentThread().getContextClassLoader().getResources(JarFile.MANIFEST_NAME);\n            while (en.hasMoreElements()) {\n                try {\n                    URL url = en.nextElement();\n```\n</attachment>\n<attachment filePath=\"/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java\">\nUser's active file for additional context:\n```java\npackage thunder.hack.utility;\n\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\nimport net.fabricmc.loader.api.metadata.Person;\nimport net.minecraft.client.texture.NativeImage;\nimport net.minecraft.client.texture.NativeImageBackedTexture;\nimport net.minecraft.util.Formatting;\nimport net.minecraft.util.Identifier;\nimport org.jetbrains.annotations.NotNull;\nimport thunder.hack.ThunderHack;\nimport thunder.hack.utility.math.MathUtility;\n\nimport java.io.*;\nimport java.net.URL;\nimport java.nio.charset.StandardCharsets;\nimport java.util.ArrayList;\nimport java.util.Enumeration;\nimport java.util.List;\nimport java.util.Objects;\nimport java.util.concurrent.atomic.AtomicReference;\nimport java.util.jar.JarFile;\nimport java.util.jar.Manifest;\n\nimport static thunder.hack.core.manager.client.ConfigManager.IMAGES_FOLDER;\nimport static thunder.hack.features.modules.Module.mc;\n\npublic final class ThunderUtility {\n    public static List<String> changeLog = new ArrayList<>();\n    public static List<String> starGazer = new ArrayList<>();\n\n    public static @NotNull String getAuthors() {\n        List<String> names = ThunderHack.MOD_META.getAuthors()\n                .stream()\n                .map(Person::getName)\n                .toList();\n\n        return String.join(\", \", names);\n    }\n\n    public static String solveName(String notSolved) {\n        AtomicReference<String> mb = new AtomicReference<>(\"FATAL ERROR\");\n        Objects.requireNonNull(mc.getNetworkHandler()).getListedPlayerListEntries().forEach(player -> {\n            if (notSolved.contains(player.getProfile().getName())) {\n                mb.set(player.getProfile().getName());\n            }\n        });\n\n        return mb.get();\n    }\n\n    public static Identifier getCustomImg(String name) throws IOException {\n        return mc.getTextureManager().registerDynamicTexture(\"th-\" + name + \"-\" + (int) MathUtility.random(0, 1000), new NativeImageBackedTexture(NativeImage.read(new FileInputStream(IMAGES_FOLDER + \"/\" + name + \".png\"))));\n    }\n\n    public static void syncVersion() {\n        try {\n            if (!new BufferedReader(new InputStreamReader(new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/syncVersion121.txt\").openStream())).readLine().equals(ThunderHack.VERSION))\n                ThunderHack.isOutdated = true;\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void parseStarGazer() {\n        List<String> starGazers = new ArrayList<>();\n\n        try {\n            for (int page = 1; page <= 3; page++) {\n                URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/stargazers?per_page=100&page=\" + page);\n                BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));\n                StringBuilder response = new StringBuilder();\n                String inputLine;\n\n                while ((inputLine = in.readLine()) != null) {\n                    response.append(inputLine);\n                }\n                in.close();\n\n                JsonArray jsonArray = JsonParser.parseString(response.toString()).getAsJsonArray();\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    starGazers.add(jsonObject.getAsJsonPrimitive(\"login\").getAsString());\n                }\n\n                Thread.sleep(1500);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static void syncContributors() {\n        try {\n            URL list = new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/thTeam.txt\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(list.openStream(), StandardCharsets.UTF_8));\n            String inputLine;\n            int i = 0;\n            while ((inputLine = in.readLine()) != null) {\n                ThunderHack.contributors[i] = inputLine.trim();\n                i++;\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static String readManifestField(String fieldName) {\n        try {\n            Enumeration<URL> en = Thread.currentThread().getContextClassLoader().getResources(JarFile.MANIFEST_NAME);\n            while (en.hasMoreElements()) {\n                try {\n                    URL url = en.nextElement();\n                    InputStream is = url.openStream();\n                    if (is != null) {\n                        String s = new Manifest(is).getMainAttributes().getValue(fieldName);\n                        if (s != null)\n                            return s;\n                    }\n                } catch (Exception ignored) {\n                }\n            }\n        } catch (Exception ignored) {\n        }\n        return \"0\";\n    }\n\n\n    public static void parseCommits() {\n        try {\n            URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/commits?per_page=50\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream(), StandardCharsets.UTF_8));\n\n            changeLog.add(\"Changelog [Recode; Date: \" + ThunderHack.BUILD_DATE + \"; GitHash:\" + ThunderHack.GITHUB_HASH + \"]\");\n            changeLog.add(\"\\n\");\n\n            String inputLine;\n            while ((inputLine = in.readLine()) != null) {\n                JsonArray jsonArray = JsonParser.parseString(inputLine).getAsJsonArray();\n\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    JsonObject commitObject = jsonObject.getAsJsonObject(\"commit\");\n                    JsonObject authorObject = commitObject.getAsJsonObject(\"author\");\n\n                    String name = authorObject.get(\"name\").getAsString().replace(\"\\n\", \"\");\n                    String date = authorObject.get(\"date\").getAsString().replace(\"\\n\", \"\");\n                    String info = commitObject.get(\"message\").getAsString().replace(\"\\n\", \"\");\n\n                    if (name.contains(\"ImgBot\") || info.startsWith(\"Merge\") || info.startsWith(\"Revert\")) {\n                        continue;\n                    }\n\n                    String formattedDate = Formatting.GRAY + date.split(\"T\")[0] + Formatting.RESET;\n                    String formattedName = \"@\" + Formatting.RED + name + Formatting.RESET;\n\n                    changeLog.add(\"- \" + info + \" [\" + formattedDate + \"]  (\" + formattedName + \")\");\n                }\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is August 21, 2025.\nThe user has taken some actions between the last request and now:\n- Made manual edits to /home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java\nSo be sure to check the current file contents before making any new edits.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java. \n</editorContext>\n<reminderInstructions>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nHow to i disable the showing changelog in the menu? (See <attachments> above for file contents. You may not need to search or read the file again.)\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To disable the changelog display in the main menu, remove or comment out the code in `MainMenuScreen.java` that draws the changelog.  \nSpecifically, in the `render()` method, find this block:\n\n```java\nint offsetY = 10;\nfor (String change : ThunderUtility.changeLog) {\n    String prefix = getPrefix(change);\n    FontRenderers.sf_medium.drawString(context.getMatrices(), prefix, 10, offsetY, Render2DEngine.applyOpacity(-1, 0.4f));\n    offsetY += 10;\n}\n```\n\nYou can simply comment out or delete these lines.  \nThis will prevent the changelog from being shown in the menu.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "8e44db3e-fc07-4eab-ab23-ad5ddf7b2f38"
+            }
+          ],
+          "modelMessageId": "33173d84-3fed-44bc-bb6e-e187feff9901",
+          "responseId": "44492f1e-4936-4d51-9ab6-3b5af1e531d0",
+          "sessionId": "0c756758-0e97-40a0-89f4-6079d3085036",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1755773622784,
+      "editedFileEvents": [
+        {
+          "eventKind": 3,
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/features/modules/client/RPC.java",
+            "scheme": "file"
+          }
+        }
+      ],
+      "modelId": "github.copilot-chat/gpt-4.1"
+    },
+    {
+      "requestId": "request_a8ea256b-6ef0-42db-b9f8-c05b08ee42b6",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 10
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 11
+            },
+            "text": "You do it.",
+            "kind": "text"
+          }
+        ],
+        "text": "You do it."
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.viewport",
+            "name": "file:ThunderUtility.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 51,
+                "startColumn": 1,
+                "endLineNumber": 114,
+                "endColumn": 48
+              }
+            },
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "toolInvocationSerialized",
+          "presentation": "hidden",
+          "invocationMessage": "Using \"Apply Patch\"",
+          "isConfirmed": true,
+          "isComplete": true,
+          "toolCallId": "37cee189-e72e-49b0-9437-415763a4f5e0",
+          "toolId": "copilot_applyPatch"
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "id": "a80ec234-d895-4449-98f9-a55def330eb0",
+          "kind": "undoStop"
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+            "scheme": "file"
+          },
+          "isEdit": true
+        },
+        {
+          "kind": "textEditGroup",
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+            "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+            "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+            "scheme": "file"
+          },
+          "edits": [
+            [
+              {
+                "text": "package thunder.hack.gui.mainmenu;\n\nimport com.mojang.blaze3d.systems.RenderSystem;\nimport net.minecraft.client.gui.DrawContext;\nimport net.minecraft.client.gui.screen.Screen;\nimport net.minecraft.client.gui.screen.TitleScreen;\nimport net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen;\nimport net.minecraft.client.gui.screen.option.OptionsScreen;\nimport net.minecraft.client.gui.screen.world.SelectWorldScreen;\nimport net.minecraft.client.resource.language.I18n;\nimport net.minecraft.text.Text;\nimport net.minecraft.util.Formatting;\nimport net.minecraft.util.Util;\nimport org.jetbrains.annotations.NotNull;\nimport thunder.hack.api.IAddon;\nimport thunder.hack.core.Managers;\nimport thunder.hack.core.manager.client.ModuleManager;\nimport thunder.hack.gui.font.FontRenderers;\nimport thunder.hack.utility.ThunderUtility;\nimport thunder.hack.utility.render.Render2DEngine;\nimport thunder.hack.utility.render.TextureStorage;\n\nimport java.awt.*;\nimport java.net.URI;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Locale;\n\nimport static thunder.hack.features.modules.Module.mc;\n\npublic class MainMenuScreen extends Screen {\n    private final List<MainMenuButton> buttons = new ArrayList<>();\n    public boolean confirm = false;\n    public static int ticksActive;\n\n    protected MainMenuScreen() {\n        super(Text.of(\"THMainMenuScreen\"));\n        INSTANCE = this;\n\n        buttons.add(new MainMenuButton(-110, -70, I18n.translate(\"menu.singleplayer\").toUpperCase(Locale.ROOT), () -> mc.setScreen(new SelectWorldScreen(this))));\n        buttons.add(new MainMenuButton(4, -70, I18n.translate(\"menu.multiplayer\").toUpperCase(Locale.ROOT), () -> mc.setScreen(new MultiplayerScreen(this))));\n        buttons.add(new MainMenuButton(-110, -29, I18n.translate(\"menu.options\")\n                .toUpperCase(Locale.ROOT)\n                .replace(\".\", \"\"), () -> mc.setScreen(new OptionsScreen(this, mc.options))));\n        buttons.add(new MainMenuButton(4, -29, \"CLICKGUI\", () -> ModuleManager.clickGui.setGui()));\n        buttons.add(new MainMenuButton(-110, 12, I18n.translate(\"menu.quit\").toUpperCase(Locale.ROOT), mc::scheduleStop, true));\n    }\n\n    private static MainMenuScreen INSTANCE = new MainMenuScreen();\n\n    public static MainMenuScreen getInstance() {\n        ticksActive = 0;\n\n        if (INSTANCE == null) {\n            INSTANCE = new MainMenuScreen();\n        }\n        return INSTANCE;\n    }\n\n    @Override\n    public void tick() {\n        ticksActive++;\n\n        if (ticksActive > 400) {\n            ticksActive = 0;\n        }\n    }\n\n    @Override\n    public void render(@NotNull DrawContext context, int mouseX, int mouseY, float delta) {\n        float halfOfWidth = mc.getWindow().getScaledWidth() / 2f;\n        float halfOfHeight = mc.getWindow().getScaledHeight() / 2f;\n\n        float mainX = halfOfWidth - 120f;\n        float mainY = halfOfHeight - 80f;\n        float mainWidth = 240f;\n        float mainHeight = 140;\n\n        // Render2DEngine.drawMainMenuShader(context.getMatrices(), 0, 0, halfOfWidth * 2f, halfOfHeight * 2);\n        renderBackground(context, mouseX, mouseY, delta);\n\n        Render2DEngine.drawHudBase(context.getMatrices(), mainX, mainY, mainWidth, mainHeight, 20);\n\n        buttons.forEach(b -> b.onRender(context, mouseX, mouseY));\n\n        boolean hoveredLogo = Render2DEngine.isHovered(mouseX, mouseY, (int) (halfOfWidth - 120), (int) (halfOfHeight - 130), 210, 50);\n\n        FontRenderers.thglitchBig.drawCenteredString(context.getMatrices(), \"mangohack v6.7\", (int) (halfOfWidth), (int) (halfOfHeight - 120), new Color(255, 255, 255, hoveredLogo ? 230 : 180).getRGB());\n\n        boolean hovered = Render2DEngine.isHovered(mouseX, mouseY, halfOfWidth - 50, halfOfHeight + 70, 100, 10);\n\n        FontRenderers.sf_medium.drawCenteredString(context.getMatrices(), \"Back to default menu\", halfOfWidth, halfOfHeight + 70, hovered ? -1 : Render2DEngine.applyOpacity(-1, 0.6f));\n        //  FontRenderers.sf_medium.drawString(context.getMatrices(), \"By Pan4ur & 06ED\", halfOfWidth * 2 - FontRenderers.sf_medium.getStringWidth(\"By Pan4ur & 06ED\") - 5f, halfOfHeight * 2 - 10, Render2DEngine.applyOpacity(-1, 0.4f));\n\n        onlineText:\n        {\n            String onlineUsers = String.format(\"online: %s%s\", Formatting.DARK_GREEN, Managers.TELEMETRY.getOnlinePlayers().size());\n\n            FontRenderers.sf_bold.drawCenteredString(context.getMatrices(), onlineUsers, halfOfWidth, halfOfHeight * 2 - 15, Color.GREEN);\n\n            context.getMatrices().push();\n            context.getMatrices().translate(halfOfWidth - 10 - FontRenderers.sf_medium.getStringWidth(onlineUsers) / 2f, halfOfHeight * 2 - 17, 0);\n            Render2DEngine.drawBloom(context.getMatrices(), Render2DEngine.applyOpacity(Color.GREEN, 0.6f), 9f);\n            context.getMatrices().pop();\n\n            context.getMatrices().push();\n            context.getMatrices().translate(halfOfWidth - 10 - FontRenderers.sf_medium.getStringWidth(onlineUsers) / 2f, halfOfHeight * 2 - 17, 0);\n            Render2DEngine.drawBloom(context.getMatrices(), Render2DEngine.applyOpacity(Color.GREEN, (float) (0.5f + (Math.sin((double) System.currentTimeMillis() / 500)) / 2f)), 9f);\n            context.getMatrices().pop();\n\n        }\n\n        Render2DEngine.drawHudBase(context.getMatrices(), mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30, 5, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        RenderSystem.setShaderColor(1f, 1f, 1f, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        context.drawTexture(TextureStorage.thTeam, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 30, 30, 0, 0, 30, 30, 30, 30);\n        RenderSystem.setShaderColor(1f, 1f, 1f, 1f);\n\n        Render2DEngine.drawHudBase(context.getMatrices(), mc.getWindow().getScaledWidth() - 80, mc.getWindow().getScaledHeight() - 40, 30, 30, 5, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 80, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        RenderSystem.setShaderColor(1f, 1f, 1f, Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 80, mc.getWindow().getScaledHeight() - 40, 30, 30) ? 0.7f : 1f);\n        context.drawTexture(TextureStorage.donation, mc.getWindow().getScaledWidth() - 79, mc.getWindow().getScaledHeight() - 39, 28, 28, 0, 0, 30, 30, 30, 30);\n        RenderSystem.setShaderColor(1f, 1f, 1f, 1f);\n\n        // int offsetY = 10;\n        // for (String change : ThunderUtility.changeLog) {\n        //     String prefix = getPrefix(change);\n        //     FontRenderers.sf_medium.drawString(context.getMatrices(), prefix, 10, offsetY, Render2DEngine.applyOpacity(-1, 0.4f));\n        //     offsetY += 10;\n        // }\n\n        int totalAddonsLoaded = Managers.ADDON.getTotalAddons();\n        String addonsText = \"Addons Loaded: \" + totalAddonsLoaded;\n        int screenWidth = mc.getWindow().getScaledWidth();\n        int textWidth = (int) FontRenderers.sf_bold.getStringWidth(addonsText);\n        int textX = screenWidth - textWidth - 5;\n        FontRenderers.sf_bold.drawString(context.getMatrices(), addonsText, textX, 5, Color.WHITE.getRGB());\n\n        int offset = 0;\n        for (IAddon addon : Managers.ADDON.getAddons()) {\n            // for (String addon : Arrays.asList(\"Addon\", \"Addon2\", \"Addon3\", \"Addon4\", \"Addon5\")) {\n            textWidth = (int) FontRenderers.sf_bold.getStringWidth(addon.getName() + \" |\");\n            textX = screenWidth - textWidth - 5;\n            FontRenderers.sf_bold.drawString(context.getMatrices(), addon.getName() + Formatting.WHITE + \" |\", textX, 13 + offset, Color.GRAY.getRGB());\n            offset += 9;\n        }\n    }\n\n    private static @NotNull String getPrefix(@NotNull String change) {\n        String prefix = \"\";\n        if (change.contains(\"[+]\")) {\n            change = change.replace(\"[+] \", \"\");\n            prefix = Formatting.GREEN + \"[+] \" + Formatting.RESET;\n        } else if (change.contains(\"[-]\")) {\n            change = change.replace(\"[-] \", \"\");\n            prefix = Formatting.RED + \"[-] \" + Formatting.RESET;\n        } else if (change.contains(\"[/]\")) {\n            change = change.replace(\"[/] \", \"\");\n            prefix = Formatting.LIGHT_PURPLE + \"[/] \" + Formatting.RESET;\n        } else if (change.contains(\"[*]\")) {\n            change = change.replace(\"[*] \", \"\");\n            prefix = Formatting.GOLD + \"[*] \" + Formatting.RESET;\n        }\n        return prefix + change;\n    }\n\n    @Override\n    public boolean mouseClicked(double mouseX, double mouseY, int button) {\n        float halfOfWidth = mc.getWindow().getScaledWidth() / 2f;\n        float halfOfHeight = mc.getWindow().getScaledHeight() / 2f;\n        buttons.forEach(b -> b.onClick((int) mouseX, (int) mouseY));\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, halfOfWidth - 50, halfOfHeight + 70, 100, 10)) {\n            confirm = true;\n            mc.setScreen(new TitleScreen());\n            confirm = false;\n        }\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 40, mc.getWindow().getScaledHeight() - 40, 40, 40))\n            mc.setScreen(CreditsScreen.getInstance());\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, mc.getWindow().getScaledWidth() - 90, mc.getWindow().getScaledHeight() - 40, 40, 40))\n            Util.getOperatingSystem().open(URI.create(\"https://t.me/xyzz7777\"));\n\n        if (Render2DEngine.isHovered(mouseX, mouseY, (int) (halfOfWidth - 157), (int) (halfOfHeight - 140), 300, 70))\n            Util.getOperatingSystem().open(URI.create(\"https://czarnesukibialesukichcemiecsukikazd.vercel.app\"));\n\n        return super.mouseClicked(mouseX, mouseY, button);\n    }\n}\n",
+                "range": {
+                  "startLineNumber": 1,
+                  "startColumn": 1,
+                  "endLineNumber": 190,
+                  "endColumn": 1
+                }
+              }
+            ],
+            []
+          ],
+          "done": true
+        },
+        {
+          "value": "\n```\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "uris": {}
+        },
+        {
+          "value": "The changelog display in the main menu has been disabled. The code that draws `ThunderUtility.changeLog` is now commented out, so it will no longer appear.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_3b15e773-00e2-4812-bad8-ac82b42ba198",
+      "result": {
+        "timings": {
+          "firstProgress": 5249,
+          "totalElapsed": 9065
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"file:ThunderUtility.java\">\nUser's current visible code, this should be the main focus:\nExcerpt from ThunderUtility.java, lines 51 to 114:\n```java\n}\n\n    public static Identifier getCustomImg(String name) throws IOException {\n        return mc.getTextureManager().registerDynamicTexture(\"th-\" + name + \"-\" + (int) MathUtility.random(0, 1000), new NativeImageBackedTexture(NativeImage.read(new FileInputStream(IMAGES_FOLDER + \"/\" + name + \".png\"))));\n    }\n\n    public static void syncVersion() {\n        try {\n            if (!new BufferedReader(new InputStreamReader(new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/syncVersion121.txt\").openStream())).readLine().equals(ThunderHack.VERSION))\n                ThunderHack.isOutdated = true;\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void parseStarGazer() {\n        List<String> starGazers = new ArrayList<>();\n\n        try {\n            for (int page = 1; page <= 3; page++) {\n                URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/stargazers?per_page=100&page=\" + page);\n                BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));\n                StringBuilder response = new StringBuilder();\n                String inputLine;\n\n                while ((inputLine = in.readLine()) != null) {\n                    response.append(inputLine);\n                }\n                in.close();\n\n                JsonArray jsonArray = JsonParser.parseString(response.toString()).getAsJsonArray();\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    starGazers.add(jsonObject.getAsJsonPrimitive(\"login\").getAsString());\n                }\n\n                Thread.sleep(1500);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static void syncContributors() {\n        try {\n            URL list = new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/thTeam.txt\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(list.openStream(), StandardCharsets.UTF_8));\n            String inputLine;\n            int i = 0;\n            while ((inputLine = in.readLine()) != null) {\n                ThunderHack.contributors[i] = inputLine.trim();\n                i++;\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static String readManifestField(String fieldName) {\n        try {\n            Enumeration<URL> en = Thread.currentThread().getContextClassLoader().getResources(JarFile.MANIFEST_NAME);\n            while (en.hasMoreElements()) {\n                try {\n                    URL url = en.nextElement();\n```\n</attachment>\n<attachment filePath=\"/home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java\">\nUser's active file for additional context:\n```java\npackage thunder.hack.utility;\n\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\nimport net.fabricmc.loader.api.metadata.Person;\nimport net.minecraft.client.texture.NativeImage;\nimport net.minecraft.client.texture.NativeImageBackedTexture;\nimport net.minecraft.util.Formatting;\nimport net.minecraft.util.Identifier;\nimport org.jetbrains.annotations.NotNull;\nimport thunder.hack.ThunderHack;\nimport thunder.hack.utility.math.MathUtility;\n\nimport java.io.*;\nimport java.net.URL;\nimport java.nio.charset.StandardCharsets;\nimport java.util.ArrayList;\nimport java.util.Enumeration;\nimport java.util.List;\nimport java.util.Objects;\nimport java.util.concurrent.atomic.AtomicReference;\nimport java.util.jar.JarFile;\nimport java.util.jar.Manifest;\n\nimport static thunder.hack.core.manager.client.ConfigManager.IMAGES_FOLDER;\nimport static thunder.hack.features.modules.Module.mc;\n\npublic final class ThunderUtility {\n    public static List<String> changeLog = new ArrayList<>();\n    public static List<String> starGazer = new ArrayList<>();\n\n    public static @NotNull String getAuthors() {\n        List<String> names = ThunderHack.MOD_META.getAuthors()\n                .stream()\n                .map(Person::getName)\n                .toList();\n\n        return String.join(\", \", names);\n    }\n\n    public static String solveName(String notSolved) {\n        AtomicReference<String> mb = new AtomicReference<>(\"FATAL ERROR\");\n        Objects.requireNonNull(mc.getNetworkHandler()).getListedPlayerListEntries().forEach(player -> {\n            if (notSolved.contains(player.getProfile().getName())) {\n                mb.set(player.getProfile().getName());\n            }\n        });\n\n        return mb.get();\n    }\n\n    public static Identifier getCustomImg(String name) throws IOException {\n        return mc.getTextureManager().registerDynamicTexture(\"th-\" + name + \"-\" + (int) MathUtility.random(0, 1000), new NativeImageBackedTexture(NativeImage.read(new FileInputStream(IMAGES_FOLDER + \"/\" + name + \".png\"))));\n    }\n\n    public static void syncVersion() {\n        try {\n            if (!new BufferedReader(new InputStreamReader(new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/syncVersion121.txt\").openStream())).readLine().equals(ThunderHack.VERSION))\n                ThunderHack.isOutdated = true;\n        } catch (Exception ignored) {\n        }\n    }\n\n    public static void parseStarGazer() {\n        List<String> starGazers = new ArrayList<>();\n\n        try {\n            for (int page = 1; page <= 3; page++) {\n                URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/stargazers?per_page=100&page=\" + page);\n                BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));\n                StringBuilder response = new StringBuilder();\n                String inputLine;\n\n                while ((inputLine = in.readLine()) != null) {\n                    response.append(inputLine);\n                }\n                in.close();\n\n                JsonArray jsonArray = JsonParser.parseString(response.toString()).getAsJsonArray();\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    starGazers.add(jsonObject.getAsJsonPrimitive(\"login\").getAsString());\n                }\n\n                Thread.sleep(1500);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static void syncContributors() {\n        try {\n            URL list = new URL(\"https://raw.githubusercontent.com/Pan4ur/THRecodeUtil/main/thTeam.txt\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(list.openStream(), StandardCharsets.UTF_8));\n            String inputLine;\n            int i = 0;\n            while ((inputLine = in.readLine()) != null) {\n                ThunderHack.contributors[i] = inputLine.trim();\n                i++;\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static String readManifestField(String fieldName) {\n        try {\n            Enumeration<URL> en = Thread.currentThread().getContextClassLoader().getResources(JarFile.MANIFEST_NAME);\n            while (en.hasMoreElements()) {\n                try {\n                    URL url = en.nextElement();\n                    InputStream is = url.openStream();\n                    if (is != null) {\n                        String s = new Manifest(is).getMainAttributes().getValue(fieldName);\n                        if (s != null)\n                            return s;\n                    }\n                } catch (Exception ignored) {\n                }\n            }\n        } catch (Exception ignored) {\n        }\n        return \"0\";\n    }\n\n\n    public static void parseCommits() {\n        try {\n            URL url = new URL(\"https://api.github.com/repos/Pan4ur/ThunderHack-Recode/commits?per_page=50\");\n            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream(), StandardCharsets.UTF_8));\n\n            changeLog.add(\"Changelog [Recode; Date: \" + ThunderHack.BUILD_DATE + \"; GitHash:\" + ThunderHack.GITHUB_HASH + \"]\");\n            changeLog.add(\"\\n\");\n\n            String inputLine;\n            while ((inputLine = in.readLine()) != null) {\n                JsonArray jsonArray = JsonParser.parseString(inputLine).getAsJsonArray();\n\n                for (int i = 0; i < jsonArray.size(); i++) {\n                    JsonObject jsonObject = jsonArray.get(i).getAsJsonObject();\n                    JsonObject commitObject = jsonObject.getAsJsonObject(\"commit\");\n                    JsonObject authorObject = commitObject.getAsJsonObject(\"author\");\n\n                    String name = authorObject.get(\"name\").getAsString().replace(\"\\n\", \"\");\n                    String date = authorObject.get(\"date\").getAsString().replace(\"\\n\", \"\");\n                    String info = commitObject.get(\"message\").getAsString().replace(\"\\n\", \"\");\n\n                    if (name.contains(\"ImgBot\") || info.startsWith(\"Merge\") || info.startsWith(\"Revert\")) {\n                        continue;\n                    }\n\n                    String formattedDate = Formatting.GRAY + date.split(\"T\")[0] + Formatting.RESET;\n                    String formattedName = \"@\" + Formatting.RED + name + Formatting.RESET;\n\n                    changeLog.add(\"- \" + info + \" [\" + formattedDate + \"]  (\" + formattedName + \")\");\n                }\n            }\n            in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is August 21, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/Documents/thunderhack/src/main/java/thunder/hack/utility/ThunderUtility.java. \n</editorContext>\n<reminderInstructions>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nYou do it. (See <attachments> above for file contents. You may not need to search or read the file again.)\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "",
+              "toolCalls": [
+                {
+                  "name": "apply_patch",
+                  "arguments": "{\"explanation\":\"Disable changelog display in the main menu by commenting out the code that draws ThunderUtility.changeLog in MainMenuScreen.java.\",\"input\":\"*** Begin Patch\\n*** Update File: /home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java\\n@@     public void render(@NotNull DrawContext context, int mouseX, int mouseY, float delta) {\\n-        int offsetY = 10;\\n-        for (String change : ThunderUtility.changeLog) {\\n-            String prefix = getPrefix(change);\\n-            FontRenderers.sf_medium.drawString(context.getMatrices(), prefix, 10, offsetY, Render2DEngine.applyOpacity(-1, 0.4f));\\n-            offsetY += 10;\\n-        }\\n+        // int offsetY = 10;\\n+        // for (String change : ThunderUtility.changeLog) {\\n+        //     String prefix = getPrefix(change);\\n+        //     FontRenderers.sf_medium.drawString(context.getMatrices(), prefix, 10, offsetY, Render2DEngine.applyOpacity(-1, 0.4f));\\n+        //     offsetY += 10;\\n+        // }\\n*** End Patch\"}",
+                  "id": "call_OIm3m5wsN28O7Dr4Ttp4V0Rh__vscode-1755771668104"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "3e8ef2ef-7b34-418d-b0c8-30abe01883a9"
+            },
+            {
+              "response": "The changelog display in the main menu has been disabled. The code that draws `ThunderUtility.changeLog` is now commented out, so it will no longer appear.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "9fb15df6-b846-4c6d-81c4-437430f13877"
+            }
+          ],
+          "toolCallResults": {
+            "call_OIm3m5wsN28O7Dr4Ttp4V0Rh__vscode-1755771668104": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 22,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "zf",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "The following files were successfully edited:",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/gui/mainmenu/MainMenuScreen.java",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "modelMessageId": "9ad7e8ee-adb6-4fb8-8204-cbdecc6ec1d4",
+          "responseId": "b64d06ab-73b4-4300-b0ac-3f4b99571c68",
+          "sessionId": "0c756758-0e97-40a0-89f4-6079d3085036",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1755773679478,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "2e1bf0ef-d93b-4537-a84a-6e67d0ba1bb1",
+  "creationDate": 1755728857408,
+  "isImported": false,
+  "lastMessageDate": 1755773679478,
+  "customTitle": "Discord Rich Presence text source explanation"
+}

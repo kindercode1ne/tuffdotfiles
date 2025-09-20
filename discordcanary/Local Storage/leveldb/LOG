@@ -1,0 +1,8 @@
+2025/09/20-16:49:12.856 22ab Reusing MANIFEST /home/avery/.config/discordcanary/Local Storage/leveldb/MANIFEST-000001
+2025/09/20-16:49:12.859 22ab Recovering log #268
+2025/09/20-16:49:12.859 22ab Level-0 table #272: started
+2025/09/20-16:49:12.865 22ab Level-0 table #272: 85465 bytes OK
+2025/09/20-16:49:12.872 22ab Delete type=0 #268
+2025/09/20-16:54:05.666 22ac Level-0 table #275: started
+2025/09/20-16:54:05.682 22ac Level-0 table #275: 1824886 bytes OK
+2025/09/20-16:54:05.688 22ac Delete type=0 #273

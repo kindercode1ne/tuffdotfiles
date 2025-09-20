@@ -1,0 +1,173 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_d943dad4-9f71-4f53-8386-d77f4c4f2cd9",
+      "message": {
+        "text": "This is a minecraft mod, this file replaces the splash screen, how do i add an image to this in the top corner",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 110
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 111
+            },
+            "text": "This is a minecraft mod, this file replaces the splash screen, how do i add an image to this in the top corner",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:MixinSplashOverlay.java",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/injection/MixinSplashOverlay.java",
+                "external": "file:///home/avery/Documents/thunderhack/src/main/java/thunder/hack/injection/MixinSplashOverlay.java",
+                "path": "/home/avery/Documents/thunderhack/src/main/java/thunder/hack/injection/MixinSplashOverlay.java",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 124,
+                "endColumn": 1,
+                "selectionStartLineNumber": 1,
+                "selectionStartColumn": 1,
+                "positionLineNumber": 124,
+                "positionColumn": 1
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "To add an image to the top corner of the splash screen in your mod, you should use the `context.drawTexture` method to render your image at the desired position. Here’s how you can do it:\n\n1. Place your image (e.g., PNG) in your mod’s resources folder (e.g., `src/main/resources/assets/<modid>/textures/gui/top_corner.png`).\n2. Load the image as a `Identifier` (e.g., `new Identifier(\"yourmodid\", \"textures/gui/top_corner.png\")`).\n3. In your `renderCustom` method, call `context.drawTexture` with the coordinates for the top corner (e.g., x=5, y=5 for top-left).\n\nExample addition inside `renderCustom`:\n```java\nimport net.minecraft.util.Identifier;\n// ...existing code...\n\nIdentifier topCornerImage = new Identifier(\"yourmodid\", \"textures/gui/top_corner.png\");\ncontext.drawTexture(topCornerImage, 5, 5, 0, 0, imageWidth, imageHeight, imageWidth, imageHeight);\n\n// ...existing code...\n```\nReplace `yourmodid`, `imageWidth`, and `imageHeight` with your actual mod ID and image dimensions.\n\nThis will render your image in the top-left corner of the splash screen. If you want it in the top-right, adjust the x coordinate accordingly (e.g., `i - imageWidth - 5`). Let me know if you want the code added directly!",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/thunderhack/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_86b17298-cf7b-4666-a022-0f11e50c24c6",
+      "result": {
+        "timings": {
+          "firstProgress": 1296,
+          "totalElapsed": 4322
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "import net.minecraft.util.Identifier;\n// ...existing code...\n\nIdentifier topCornerImage = new Identifier(\"yourmodid\", \"textures/gui/top_corner.png\");\ncontext.drawTexture(topCornerImage, 5, 5, 0, 0, imageWidth, imageHeight, imageWidth, imageHeight);\n\n// ...existing code...\n",
+              "language": "java",
+              "markdownBeforeBlock": "To add an image to the top corner of the splash screen in your mod, you should use the `context.drawTexture` method to render your image at the desired position. Here’s how you can do it:\n\n1. Place your image (e.g., PNG) in your mod’s resources folder (e.g., `src/main/resources/assets/<modid>/textures/gui/top_corner.png`).\n2. Load the image as a `Identifier` (e.g., `new Identifier(\"yourmodid\", \"textures/gui/top_corner.png\")`).\n3. In your `renderCustom` method, call `context.drawTexture` with the coordinates for the top corner (e.g., x=5, y=5 for top-left).\n\nExample addition inside `renderCustom`:\n"
+            }
+          ],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"file:MixinSplashOverlay.java\">\nUser's active selection:\nExcerpt from MixinSplashOverlay.java, lines 1 to 124:\n```java\npackage thunder.hack.injection;\n\nimport com.mojang.blaze3d.platform.GlStateManager;\nimport com.mojang.blaze3d.systems.RenderSystem;\nimport net.minecraft.client.MinecraftClient;\nimport net.minecraft.client.gui.DrawContext;\nimport net.minecraft.client.gui.screen.SplashOverlay;\nimport net.minecraft.resource.ResourceReload;\nimport net.minecraft.util.Util;\nimport net.minecraft.util.math.MathHelper;\nimport org.spongepowered.asm.mixin.Final;\nimport org.spongepowered.asm.mixin.Mixin;\nimport org.spongepowered.asm.mixin.Shadow;\nimport org.spongepowered.asm.mixin.injection.At;\nimport org.spongepowered.asm.mixin.injection.Inject;\nimport thunder.hack.features.modules.client.ClientSettings;\nimport org.spongepowered.asm.mixin.injection.callback.CallbackInfo;\nimport thunder.hack.core.manager.client.ModuleManager;\nimport thunder.hack.utility.render.Render2DEngine;\nimport thunder.hack.utility.render.TextureStorage;\n\nimport java.awt.*;\nimport java.util.Optional;\nimport java.util.function.Consumer;\n\nimport static thunder.hack.features.modules.Module.mc;\n\n@Mixin(SplashOverlay.class)\npublic abstract class MixinSplashOverlay {\n    @Final @Shadow private boolean reloading;\n    @Shadow private float progress;\n    @Shadow private long reloadCompleteTime = -1L;\n    @Shadow private long reloadStartTime = -1L;\n    @Final @Shadow private ResourceReload reload;\n    @Final @Shadow private Consumer<Optional<Throwable>> exceptionHandler;\n\n    @Inject(method = \"render\", at = @At(\"HEAD\"), cancellable = true)\n    public void render(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {\n        if(ModuleManager.unHook.isEnabled() || !ClientSettings.customLoadingScreen.getValue())\n            return;\n        ci.cancel();\n        renderCustom(context, mouseX, mouseY, delta);\n    }\n\n    public void renderCustom(DrawContext context, int mouseX, int mouseY, float delta) {\n        int i = mc.getWindow().getScaledWidth();\n        int j = mc.getWindow().getScaledHeight();\n        long l = Util.getMeasuringTimeMs();\n        if (reloading && reloadStartTime == -1L) {\n            reloadStartTime = l;\n        }\n\n        float f = reloadCompleteTime > -1L ? (float) (l - reloadCompleteTime) / 1000.0F : -1.0F;\n        float g = reloadStartTime > -1L ? (float) (l - reloadStartTime) / 500.0F : -1.0F;\n        float h;\n        int k;\n        if (f >= 1.0F) {\n            if (mc.currentScreen != null)\n                mc.currentScreen.render(context, 0, 0, delta);\n\n            k = MathHelper.ceil((1.0F - MathHelper.clamp(f - 1.0F, 0.0F, 1.0F)) * 255.0F);\n            context.fill(0, 0, i, j, withAlpha(new Color(0x070015).getRGB(), k));\n            h = 1.0F - MathHelper.clamp(f - 1.0F, 0.0F, 1.0F);\n        } else if (reloading) {\n            if (mc.currentScreen != null && g < 1.0F)\n                mc.currentScreen.render(context, mouseX, mouseY, delta);\n\n            k = MathHelper.ceil(MathHelper.clamp((double) g, 0.15, 1.0) * 255.0);\n            context.fill(0, 0, i, j, withAlpha(new Color(0x070015).getRGB(), k));\n            h = MathHelper.clamp(g, 0.0F, 1.0F);\n        } else {\n            k = new Color(0x070015).getRGB();\n            float m = (float) (k >> 16 & 255) / 255.0F;\n            float n = (float) (k >> 8 & 255) / 255.0F;\n            float o = (float) (k & 255) / 255.0F;\n            GlStateManager._clearColor(m, n, o, 1.0F);\n            GlStateManager._clear(16384, MinecraftClient.IS_SYSTEM_MAC);\n            h = 1.0F;\n        }\n\n        k = (int) ((double) context.getScaledWindowWidth() * 0.5);\n        int p = (int) ((double) context.getScaledWindowHeight() * 0.5);\n\n        RenderSystem.enableBlend();\n        RenderSystem.blendFunc(770, 1);\n\n        RenderSystem.setShaderColor(0.1F, 0.1F, 0.1F, h);\n        context.drawTexture(TextureStorage.thLogo, k - 150, p - 35, 0, 0, 300, 70, 300, 70);\n        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, h);\n        Render2DEngine.addWindow(context.getMatrices(),k - 150, p - 35, k - 150 + (300 * progress), p + 35, 1f);\n        context.drawTexture(TextureStorage.thLogo, k - 150, p - 35, 0, 0, 300, 70, 300, 70);\n        Render2DEngine.popWindow();\n\n        float t = this.reload.getProgress();\n        this.progress = MathHelper.clamp(this.progress * 0.95F + t * 0.050000012F, 0.0F, 1.0F);\n\n        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);\n        RenderSystem.defaultBlendFunc();\n        RenderSystem.disableBlend();\n\n        if (f >= 2.0F) {\n            mc.setOverlay(null);\n        }\n\n        if (reloadCompleteTime == -1L && reload.isComplete() && (!reloading || g >= 2.0F)) {\n            try {\n                reload.throwException();\n                exceptionHandler.accept(Optional.empty());\n            } catch (Throwable var23) {\n                exceptionHandler.accept(Optional.of(var23));\n            }\n\n            reloadCompleteTime = Util.getMeasuringTimeMs();\n            if (mc.currentScreen != null) {\n                mc.currentScreen.init(mc, mc.getWindow().getScaledWidth(), mc.getWindow().getScaledHeight());\n            }\n        }\n    }\n\n    private static int withAlpha(int color, int alpha) {\n        return color & 16777215 | alpha << 24;\n    }\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is August 21, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/avery/Documents/thunderhack/src/main/java/thunder/hack/injection/MixinSplashOverlay.java. The current selection is from line 1 to line 124.\n</editorContext>\n<reminderInstructions>\nYou are an agent - you must keep going until the user's query is completely resolved, before ending your turn and yielding back to the user. ONLY terminate your turn when you are sure that the problem is solved, or you absolutely cannot continue.\nYou take action when possible- the user is expecting YOU to take action and go to work for them. Don't ask unnecessary questions about the details if you can simply DO something useful instead.\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\n\n</reminderInstructions>\n<userRequest>\nThis is a minecraft mod, this file replaces the splash screen, how do i add an image to this in the top corner (See <attachments> above for file contents. You may not need to search or read the file again.)\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Linux\nThe user's default shell is: \"zsh\". When you generate terminal commands, please generate them correctly for this shell.\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- /home/avery/Documents/thunderhack \nI am working in a workspace that has the following structure:\n```\nbuild.gradle\ngradle.properties\ngradlew\ngradlew.bat\njitpack.yml\nLICENSE\nsettings.gradle\nbuild/\n\tclasses/\n\t\tjava/\n\t\t\tmain/\n\tdevlibs/\n\t\tthunderhack-1.7-dev.jar\n\t\tthunderhack-1.7-sources.jar\n\tgenerated/\n\t\tsources/\n\t\t\tannotationProcessor/\n\t\t\theaders/\n\tlibs/\n\t\tthunderhack-1.7-sources.jar\n\t\tthunderhack-1.7.jar\n\tloom-cache/\n\t\tmixin-map-net.fabricmc.yarn.1_21.1.21+build.2-v2.main.tiny\n\t\tremapped_working/\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.meteordevelopment-baritone-1.21-SNAPSHOT-sources.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.meteordevelopment-baritone-1.21-SNAPSHOT.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-api-0.100.3+1.21-sources.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-api-0.100.3+1.21.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-api-base-0.4.42+6573ed8cd1-sources.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-api-base-0.4.42+6573ed8cd1.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-api-lookup-api-v1-1.6.67+b5597344d1-sources.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-api-lookup-api-v1-1.6.67+b5597344d1.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-biome-api-v1-13.0.28+6fc22b99d1-sources.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-biome-api-v1-13.0.28+6fc22b99d1.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-block-api-v1-1.0.22+0af3f5a7d1-sources.jar\n\t\t\tnet_fabricmc_yarn_1_21_1_21_build_2_v2.net.fabricmc.fabric-api-fabric-block-api-v1-1.0.22+0af3f5a7d1.jar\n\t\t\t...\n\tprocessIncludeJars/\n\tresources/\n\t\tmain/\n\t\t\tfabric.mod.json\n\t\t\ticon.png\n\t\t\tthunderhack.accesswidener\n\t\t\tthunderhack.mixins.json\n\t\t\t...\n\ttmp/\n\t\tcompileJava/\n\t\t\t...\n\t\tjar/\n\t\tremapJar/\n\t\tremapSourcesJar/\n\t\tsourcesJar/\ngradle/\n\twrapper/\n\t\tgradle-wrapper.jar\n\t\tgradle-wrapper.properties\nsrc/\n\tmain/\n\t\tjava/\n\t\tresources/\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To add an image to the top corner of the splash screen in your mod, you should use the `context.drawTexture` method to render your image at the desired position. Here’s how you can do it:\n\n1. Place your image (e.g., PNG) in your mod’s resources folder (e.g., `src/main/resources/assets/<modid>/textures/gui/top_corner.png`).\n2. Load the image as a `Identifier` (e.g., `new Identifier(\"yourmodid\", \"textures/gui/top_corner.png\")`).\n3. In your `renderCustom` method, call `context.drawTexture` with the coordinates for the top corner (e.g., x=5, y=5 for top-left).\n\nExample addition inside `renderCustom`:\n```java\nimport net.minecraft.util.Identifier;\n// ...existing code...\n\nIdentifier topCornerImage = new Identifier(\"yourmodid\", \"textures/gui/top_corner.png\");\ncontext.drawTexture(topCornerImage, 5, 5, 0, 0, imageWidth, imageHeight, imageWidth, imageHeight);\n\n// ...existing code...\n```\nReplace `yourmodid`, `imageWidth`, and `imageHeight` with your actual mod ID and image dimensions.\n\nThis will render your image in the top-left corner of the splash screen. If you want it in the top-right, adjust the x coordinate accordingly (e.g., `i - imageWidth - 5`). Let me know if you want the code added directly!",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "58b7605a-0404-4176-9a04-4d7e64140d89"
+            }
+          ],
+          "modelMessageId": "aa447a70-c9ad-42ec-b7be-7df77614c0fa",
+          "responseId": "274fc599-22ff-47c4-baac-08941aad816c",
+          "sessionId": "3e0d9fdb-7147-49ea-9916-6dc5a58c6c3f",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1755799169462,
+      "modelId": "github.copilot-chat/gpt-4.1"
+    }
+  ],
+  "sessionId": "c603d9c2-536d-45b7-8868-74304249b681",
+  "creationDate": 1755777303312,
+  "isImported": false,
+  "lastMessageDate": 1755799169462
+}

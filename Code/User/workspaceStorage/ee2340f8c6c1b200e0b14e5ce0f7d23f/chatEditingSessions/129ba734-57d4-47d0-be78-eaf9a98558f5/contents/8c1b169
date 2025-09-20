@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>cwelshop</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="color-scheme" content="dark light" />
+  </head>
+  <body>
+    <header>
+      <h1>cwelshop!</h1>
+      <div class="search-bar">
+        <input
+          id="search"
+          type="text"
+          placeholder="Search products..."
+          autocomplete="off"
+        />
+      </div>
+      <div class="category-filter" id="categoryFilter"></div>
+      <button id="cart-btn" aria-haspopup="dialog" aria-controls="cart-drawer">
+        <span>Cart</span>
+        <span id="cart-count" aria-live="polite">0</span>
+      </button>
+    </header>
+
+    <main class="wrapper">
+      <section>
+        <h2 style="margin-top: 0">Products</h2>
+        <div id="productGrid" class="grid products" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <!-- Cart Drawer -->
+    <aside
+      id="cart-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cartTitle"
+    >
+      <header
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+        "
+      >
+        <h2 id="cartTitle" style="margin: 0; font-size: 1.1rem">Your Cart</h2>
+        <button id="closeCart" class="remove-btn" aria-label="Close cart">
+          ✕
+        </button>
+      </header>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total-line">
+          <span>Subtotal</span><span id="cartSubtotal">$0.00</span>
+        </div>
+        <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+        <small style="color: #6b7280"
+          >No automatic payment capture. Manual confirmation after you pay via
+          selected method.</small
+        >
+      </div>
+    </aside>
+
+    <!-- Checkout Modal -->
+    <div class="dialog-backdrop" id="checkoutModal" aria-hidden="true">
+      <div
+        class="dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="checkoutTitle"
+      >
+        <button
+          class="close-modal"
+          id="closeCheckout"
+          aria-label="Close checkout"
+        >
+          ✕
+        </button>
+        <h2 id="checkoutTitle">Checkout</h2>
+        <div class="notice warn">
+          This flow uses manual payment methods (DM / ticket / crypto / PayPal).
+          After sending your payment, we will activate the access key you
+          submit.
+        </div>
+
+        <section>
+          <h3
+            style="
+              margin: 0.25rem 0 0.5rem;
+              font-size: 0.9rem;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              opacity: 0.85;
+            "
+          >
+            1. Choose Payment Method
+          </h3>
+          <div class="payment-methods" id="paymentMethods">
+            <button data-method="instagram" type="button">
+              Instagram Ticket
+            </button>
+            <button data-method="discord" type="button">Discord Ticket</button>
+            <button data-method="telegram" type="button">Telegram DM</button>
+            <button data-method="crypto" type="button">Crypto</button>
+            <button data-method="paypal" type="button">PayPal</button>
+          </div>
+        </section>
+
+        <form id="checkoutForm" novalidate>
+          <h3
+            style="
+              margin: 0.75rem 0 0.5rem;
+              font-size: 0.9rem;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              opacity: 0.85;
+            "
+          >
+            2. Contact & Access Key
+          </h3>
+          <div style="display: grid; gap: 1rem">
+            <div>
+              <label for="contactHandle"
+                >Contact (Instagram @ / Discord tag / Telegram @ / Email)</label
+              >
+              <input
+                id="contactHandle"
+                name="contact"
+                type="text"
+                required
+                placeholder="e.g. @yourhandle or user#1234"
+              />
+              <small class="help"
+                >We will reach out here if clarification needed.</small
+              >
+            </div>
+            <div>
+              <label for="accessKey">Desired Access Key</label>
+              <input
+                id="accessKey"
+                name="accessKey"
+                type="text"
+                required
+                minlength="4"
+                maxlength="40"
+                placeholder="Choose a key you'll use to login"
+              />
+              <small class="help"
+                >Will be tied to your purchase once payment confirmed.</small
+              >
+            </div>
+          </div>
+
+          <h3
+            style="
+              margin: 1rem 0 0.5rem;
+              font-size: 0.9rem;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              opacity: 0.85;
+            "
+          >
+            3. Instructions
+          </h3>
+          <div class="instructions" id="methodInstructions">
+            <p>Select a payment method above to view specific instructions.</p>
+          </div>
+
+          <h3
+            style="
+              margin: 1rem 0 0.5rem;
+              font-size: 0.9rem;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              opacity: 0.85;
+            "
+          >
+            4. Submit Order Request
+          </h3>
+          <div class="notice" id="pendingSummary">
+            Fill details to generate summary.
+          </div>
+          <button id="submitOrder" type="submit" class="checkout-btn" disabled>
+            Send Order to Webhook
+          </button>
+          <small class="help"
+            >This sends your cart, contact, access key & chosen payment method
+            to our processing webhook.</small
+          >
+        </form>
+      </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="dialog-backdrop" id="productModal" aria-hidden="true">
+      <div
+        class="dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="productModalTitle"
+      >
+        <button
+          class="close-modal"
+          id="closeProductModal"
+          aria-label="Close product details"
+        >
+          ✕
+        </button>
+        <h2
+          id="productModalTitle"
+          style="margin: 0.2rem 0 0.6rem; font-size: 1.05rem"
+        ></h2>
+        <div
+          id="productModalBody"
+          style="display: flex; flex-direction: column; gap: 1rem"
+        ></div>
+        <div
+          style="
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+          "
+        >
+          <button id="productAddToCart">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Placeholder shop interface. Replace webhook URL & crypto amount before
+        production.
+      </p>
+    </footer>
+
+    <script>
+      // ----- Config -----
+      const WEBHOOK_URL = "https://example.com/your-webhook"; // TODO: replace with real webhook endpoint
+      const CRYPTO_ADDRESS = "0xYOURCRYPTOADDRESSPLACEHOLDER";
+      const CRYPTO_AMOUNT_PLACEHOLDER = "0.0123"; // Replace with required amount
+      const PAYPAL_PLACEHOLDER = "your-paypal-email@example.com";
+      const TELEGRAM_USERNAME = "@YourTelegram";
+      const DISCORD_SERVER = "discord.gg/yourinvite";
+      const INSTAGRAM_PROFILE = "@your_instagram";
+
+      // Example product data
+      const products = [
+        {
+          id: "p1",
+          name: "Starter Plan",
+          price: 10,
+          category: "plans",
+          badge: "Popular",
+          desc: "Basic access tier with core features.",
+          longDesc:
+            "Ideal for individuals evaluating the platform. Includes core endpoints and standard rate limits.",
+          images: ["https://via.placeholder.com/640x360?text=Starter+Plan"],
+        },
+        {
+          id: "p2",
+          name: "Pro Plan",
+          price: 25,
+          category: "plans",
+          badge: "Hot",
+          desc: "Extended limits & premium support.",
+          longDesc:
+            "Great for teams that need higher quotas, faster responses and early feature access.",
+          images: [
+            "https://i.pinimg.com/736x/b6/e7/1f/b6e71fa7fb99d32584988c171f34e9f8.jpg",
+            "https://i.pinimg.com/736x/30/dd/96/30dd969df64c9b5f76ced4efd7ea1e65.jpg",
+          ],
+        },
+        {
+          id: "p3",
+          name: "Enterprise Plan",
+          price: 60,
+          category: "plans",
+          badge: "Value",
+          desc: "High limits + priority integration help.",
+          longDesc:
+            "Custom scaling, SLA, direct line with engineering. Best for production critical workloads.",
+          images: [
+            "https://i.pinimg.com/736x/e3/b3/48/e3b348292b5f51ed15d19248d6f920f0.jpg",
+          ],
+        },
+        {
+          id: "p4",
+          name: "Add-on: Extra Seats",
+          price: 15,
+          category: "addons",
+          desc: "Increase concurrent usage seats.",
+          longDesc:
+            "Purchase additional simultaneous user seats for your organization.",
+          images: ["https://i.pinimg.com/1200x/ee/d0/54/eed0542e60557c0a315c169c292463e9.jpg"],
+        },
+        {
+          id: "p5",
+          name: "Add-on: Priority Queue",
+          price: 12,
+          category: "addons",
+          desc: "Jump the processing queue for faster results.",
+          longDesc:
+            "Move your jobs ahead with reduced latency under peak load.",
+          images: ["https://i.pinimg.com/736x/5d/6b/44/5d6b447b85520e08bcf9747b3b4a606b.jpg"],
+        },
+      ];
+
+      // ----- State -----
+      const state = {
+        cart: [], // {id, name, price, qty}
+        method: null,
+      };
+
+      // ----- Elements -----
+      const productGrid = document.getElementById("productGrid");
+      const cartBtn = document.getElementById("cart-btn");
+      const cartDrawer = document.getElementById("cart-drawer");
+      const closeCartBtn = document.getElementById("closeCart");
+      const cartItemsEl = document.getElementById("cart-items");
+      const cartSubtotalEl = document.getElementById("cartSubtotal");
+      const cartCountEl = document.getElementById("cart-count");
+      const checkoutBtn = document.getElementById("checkoutBtn");
+      const checkoutModal = document.getElementById("checkoutModal");
+      const closeCheckoutBtn = document.getElementById("closeCheckout");
+      const paymentMethodsEl = document.getElementById("paymentMethods");
+      const methodInstructions = document.getElementById("methodInstructions");
+      const checkoutForm = document.getElementById("checkoutForm");
+      const contactHandle = document.getElementById("contactHandle");
+      const accessKey = document.getElementById("accessKey");
+      const pendingSummary = document.getElementById("pendingSummary");
+      const submitOrderBtn = document.getElementById("submitOrder");
+      const searchInput = document.getElementById("search");
+      const categoryFilter = document.getElementById("categoryFilter");
+
+      // ----- Render Products -----
+      function renderProducts(list) {
+        productGrid.innerHTML = "";
+        list.forEach((p) => {
+          const card = document.createElement("div");
+          card.className = "product";
+          card.innerHTML = `
+            ${p.badge ? `<span class="badge">${p.badge}</span>` : ""}
+            <h3>${p.name}</h3>
+            <div style="font-size:.75rem;color:#9ca3af;line-height:1.3;">${
+              p.desc || ""
+            }</div>
+            <div class="price">${p.price.toFixed(2)}zł</div>
+            <div class="actions">
+              <button data-add="${p.id}">Add to Cart</button>
+              <button data-view="${p.id}" class="view-btn">View</button>
+            </div>`;
+          productGrid.appendChild(card);
+        });
+      }
+
+      // ----- Categories -----
+      const categories = [...new Set(products.map((p) => p.category))];
+      function renderCategories() {
+        categoryFilter.innerHTML =
+          '<button data-cat="all" class="active" type="button">All</button>' +
+          categories
+            .map((c) => `<button data-cat="${c}" type="button">${c}</button>`)
+            .join("");
+      }
+      renderCategories();
+
+      categoryFilter.addEventListener("click", (e) => {
+        if (e.target.matches("button[data-cat]")) {
+          const cat = e.target.getAttribute("data-cat");
+          categoryFilter
+            .querySelectorAll("button")
+            .forEach((b) => b.classList.remove("active"));
+          e.target.classList.add("active");
+          filterProducts();
+        }
+      });
+
+      // ----- Filtering -----
+      function filterProducts() {
+        const term = searchInput.value.trim().toLowerCase();
+        const activeCatBtn = categoryFilter.querySelector("button.active");
+        const cat = activeCatBtn
+          ? activeCatBtn.getAttribute("data-cat")
+          : "all";
+        const filtered = products.filter((p) => {
+          const matchCat = cat === "all" || p.category === cat;
+          const matchTerm =
+            !term ||
+            p.name.toLowerCase().includes(term) ||
+            (p.desc || "").toLowerCase().includes(term);
+          return matchCat && matchTerm;
+        });
+        renderProducts(filtered);
+      }
+      searchInput.addEventListener("input", filterProducts);
+
+      // Initial render
+      renderProducts(products);
+
+      // Add to cart handler via delegation
+      productGrid.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-add]");
+        if (!btn) return;
+        const id = btn.getAttribute("data-add");
+        const prod = products.find((p) => p.id === id);
+        if (!prod) return;
+        const existing = state.cart.find((i) => i.id === id);
+        if (existing) existing.qty += 1;
+        else
+          state.cart.push({
+            id: prod.id,
+            name: prod.name,
+            price: prod.price,
+            qty: 1,
+          });
+        updateCartUI();
+        openCart();
+      });
+
+      function updateCartUI() {
+        cartItemsEl.innerHTML = "";
+        if (state.cart.length === 0) {
+          cartItemsEl.innerHTML =
+            '<div style="opacity:.6;font-size:.85rem;">Cart empty.</div>';
+        } else {
+          state.cart.forEach((item) => {
+            const div = document.createElement("div");
+            div.className = "cart-item";
+            div.innerHTML = `
+          <div style="display:flex;flex-direction:column;gap:2px;">
+            <h4>${item.name}</h4>
+            <small>$${item.price.toFixed(2)} each</small>
+          </div>
+          <div class="qty-controls">
+            <button data-dec="${
+              item.id
+            }" aria-label="Decrease quantity">-</button>
+            <span>${item.qty}</span>
+            <button data-inc="${
+              item.id
+            }" aria-label="Increase quantity">+</button>
+            <button class="remove-btn" data-remove="${
+              item.id
+            }" aria-label="Remove item">✕</button>
+          </div>
+        `;
+            cartItemsEl.appendChild(div);
+          });
+        }
+        const subtotal = state.cart.reduce((s, i) => s + i.price * i.qty, 0);
+        cartSubtotalEl.textContent = "$" + subtotal.toFixed(2);
+        cartCountEl.textContent = state.cart.reduce((s, i) => s + i.qty, 0);
+        generateSummary();
+      }
+
+      cartItemsEl.addEventListener("click", (e) => {
+        const dec = e.target.closest("button[data-dec]");
+        const inc = e.target.closest("button[data-inc]");
+        const rem = e.target.closest("button[data-remove]");
+        if (dec) {
+          const id = dec.getAttribute("data-dec");
+          const item = state.cart.find((i) => i.id === id);
+          if (item) {
+            item.qty = Math.max(1, item.qty - 1);
+          }
+        }
+        if (inc) {
+          const id = inc.getAttribute("data-inc");
+          const item = state.cart.find((i) => i.id === id);
+          if (item) {
+            item.qty += 1;
+          }
+        }
+        if (rem) {
+          const id = rem.getAttribute("data-remove");
+          state.cart = state.cart.filter((i) => i.id !== id);
+        }
+        updateCartUI();
+      });
+
+      function openCart() {
+        cartDrawer.classList.add("open");
+      }
+      function closeCart() {
+        cartDrawer.classList.remove("open");
+      }
+      cartBtn.addEventListener("click", openCart);
+      closeCartBtn.addEventListener("click", closeCart);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeCart();
+          closeCheckout();
+        }
+      });
+
+      // Checkout
+      checkoutBtn.addEventListener("click", () => {
+        if (state.cart.length === 0) {
+          alert("Cart empty");
+          return;
+        }
+        checkoutModal.classList.add("open");
+        checkoutModal.setAttribute("aria-hidden", "false");
+      });
+      function closeCheckout() {
+        checkoutModal.classList.remove("open");
+        checkoutModal.setAttribute("aria-hidden", "true");
+      }
+      closeCheckoutBtn.addEventListener("click", closeCheckout);
+      checkoutModal.addEventListener("click", (e) => {
+        if (e.target === checkoutModal) closeCheckout();
+      });
+
+      paymentMethodsEl.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-method]");
+        if (!btn) return;
+        paymentMethodsEl
+          .querySelectorAll("button")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.method = btn.getAttribute("data-method");
+        renderMethodInstructions();
+        generateSummary();
+      });
+
+      function renderMethodInstructions() {
+        let html = "";
+        switch (state.method) {
+          case "instagram":
+            html = `<p>Open Instagram and send a message to <strong>${INSTAGRAM_PROFILE}</strong> with your access key <code>${escapeHtml(
+              accessKey.value || "[YOUR_KEY]"
+            )}</code> and screenshot of payment if already sent.</p>`;
+            break;
+          case "discord":
+            html = `<p>Create a ticket in our Discord <strong>${DISCORD_SERVER}</strong> referencing access key <code>${escapeHtml(
+              accessKey.value || "[YOUR_KEY]"
+            )}</code>. Provide payment proof after you pay.</p>`;
+            break;
+          case "telegram":
+            html = `<p>DM <strong>${TELEGRAM_USERNAME}</strong> on Telegram referencing access key <code>${escapeHtml(
+              accessKey.value || "[YOUR_KEY]"
+            )}</code>. Send payment proof after paying.</p>`;
+            break;
+          case "crypto":
+            html = `<p>Send <strong>${CRYPTO_AMOUNT_PLACEHOLDER} (placeholder)</strong> in your chosen crypto to address:<br><code>${CRYPTO_ADDRESS}</code><br>Name or memo (if available) should include your access key <code>${escapeHtml(
+              accessKey.value || "YOUR_KEY"
+            )}</code>. After sending, submit transaction hash via contact channel.</p>`;
+            break;
+          case "paypal":
+            html = `<p>Send the total amount to PayPal: <strong>${PAYPAL_PLACEHOLDER}</strong>. In the payment note put your access key <code>${escapeHtml(
+              accessKey.value || "YOUR_KEY"
+            )}</code>. Then submit this form.</p>`;
+            break;
+          default:
+            html = "<p>Select a payment method to see instructions.</p>";
+        }
+        methodInstructions.innerHTML = html;
+      }
+
+      function escapeHtml(str) {
+        return str.replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            }[c])
+        );
+      }
+
+      function generateSummary() {
+        if (
+          !state.method ||
+          state.cart.length === 0 ||
+          !contactHandle.value.trim() ||
+          !accessKey.value.trim()
+        ) {
+          submitOrderBtn.disabled = true;
+          pendingSummary.className = "notice warn";
+          pendingSummary.textContent =
+            "Fill cart, pick payment method, and enter contact + access key.";
+          return;
+        }
+        const total = state.cart
+          .reduce((s, i) => s + i.price * i.qty, 0)
+          .toFixed(2);
+        const lines = state.cart
+          .map((i) => `${i.qty} x ${i.name} ($${(i.price * i.qty).toFixed(2)})`)
+          .join("; ");
+        pendingSummary.className = "notice ok";
+        pendingSummary.innerHTML = `<strong>Summary:</strong> ${escapeHtml(
+          lines
+        )} | Total: $${total} | Method: ${escapeHtml(
+          state.method
+        )} | Contact: ${escapeHtml(
+          contactHandle.value.trim()
+        )} | Key: <code>${escapeHtml(accessKey.value.trim())}</code>`;
+        submitOrderBtn.disabled = false;
+      }
+
+      ["input", "change"].forEach((ev) => {
+        contactHandle.addEventListener(ev, generateSummary);
+        accessKey.addEventListener(ev, () => {
+          renderMethodInstructions();
+          generateSummary();
+        });
+      });
+
+      checkoutForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        generateSummary();
+        if (submitOrderBtn.disabled) return;
+        submitOrderBtn.disabled = true;
+        submitOrderBtn.textContent = "Sending...";
+
+        const payload = {
+          paymentMethod: state.method,
+          contact: contactHandle.value.trim(),
+          accessKey: accessKey.value.trim(),
+          cart: state.cart.map((i) => ({
+            id: i.id,
+            name: i.name,
+            qty: i.qty,
+            unitPrice: i.price,
+            lineTotal: +(i.price * i.qty).toFixed(2),
+          })),
+          total: state.cart.reduce((s, i) => s + i.price * i.qty, 0),
+          timestamp: new Date().toISOString(),
+          userAgent: navigator.userAgent,
+        };
+
+        try {
+          const res = await fetch(WEBHOOK_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          if (!res.ok) throw new Error("Webhook error " + res.status);
+          submitOrderBtn.textContent = "Sent!";
+          pendingSummary.className = "notice ok";
+          pendingSummary.innerHTML +=
+            "<br><br>Order request sent. Follow the instructions above to complete payment if not already.";
+          // Optionally clear cart
+          // state.cart = []; updateCartUI();
+        } catch (err) {
+          console.error(err);
+          submitOrderBtn.disabled = false;
+          submitOrderBtn.textContent = "Send Order to Webhook";
+          pendingSummary.className = "notice danger";
+          pendingSummary.textContent =
+            "Failed to send to webhook: " + err.message;
+        }
+      });
+
+      // Product modal logic
+      const productModal = document.getElementById("productModal");
+      const closeProductModalBtn = document.getElementById("closeProductModal");
+      const productModalTitle = document.getElementById("productModalTitle");
+      const productModalBody = document.getElementById("productModalBody");
+      const productAddToCartBtn = document.getElementById("productAddToCart");
+      let currentProductId = null;
+
+      function openProductModal(prod) {
+        currentProductId = prod.id;
+        productModalTitle.textContent = prod.name;
+        productModalBody.innerHTML = buildProductBody(prod);
+        productModal.classList.add("open");
+        productModal.setAttribute("aria-hidden", "false");
+      }
+      function closeProductModal() {
+        productModal.classList.remove("open");
+        productModal.setAttribute("aria-hidden", "true");
+        currentProductId = null;
+      }
+      closeProductModalBtn.addEventListener("click", closeProductModal);
+      productModal.addEventListener("click", (e) => {
+        if (e.target === productModal) closeProductModal();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeProductModal();
+      });
+
+      function buildProductBody(prod) {
+        const imgs = (prod.images || [])
+          .map(
+            (src, i) => `<div class="pm-image${
+              i === 0 ? " active" : ""
+            }" data-index="${i}" style="position:relative;">
+            <img src="${src}" alt="${prod.name} image ${
+              i + 1
+            }" style="width:100%;border-radius:12px;border:1px solid var(--border);object-fit:cover;aspect-ratio:16/9;" loading="lazy" />
+          </div>`
+          )
+          .join("");
+        const carousel =
+          prod.images && prod.images.length > 1
+            ? `
+          <div style="display:flex;gap:.5rem;justify-content:center;margin-top:.5rem;flex-wrap:wrap;">
+            ${prod.images
+              .map(
+                (_, i) =>
+                  `<button type="button" class="pm-dot" data-goto="${i}" style="width:10px;height:10px;border-radius:50%;background:${
+                    i === 0 ? "var(--accent)" : "#2d3643"
+                  };border:none;padding:0;cursor:pointer;"></button>`
+              )
+              .join("")}
+          </div>`
+            : "";
+        return `
+          <div>
+            <div class="pm-carousel" style="position:relative;">${imgs}</div>
+            ${carousel}
+          </div>
+          <div style="font-size:.8rem;line-height:1.45;color:#cbd5e1;">${escapeHtml(
+            prod.longDesc || prod.desc || ""
+          )}</div>
+          <div style="font-weight:600;font-size:1rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">$${prod.price.toFixed(
+            2
+          )}</div>
+        `;
+      }
+
+      productGrid.addEventListener("click", (e) => {
+        const viewBtn = e.target.closest("button[data-view]");
+        if (viewBtn) {
+          const id = viewBtn.getAttribute("data-view");
+          const prod = products.find((p) => p.id === id);
+          if (prod) openProductModal(prod);
+        }
+      });
+
+      productModalBody?.addEventListener("click", (e) => {
+        const dot = e.target.closest("button.pm-dot");
+        if (!dot) return;
+        const idx = +dot.getAttribute("data-goto");
+        const images = productModalBody.querySelectorAll(".pm-image");
+        images.forEach((im) => im.classList.remove("active"));
+        const target = productModalBody.querySelector(
+          `.pm-image[data-index="${idx}"]`
+        );
+        if (target) target.classList.add("active");
+        productModalBody
+          .querySelectorAll(".pm-dot")
+          .forEach(
+            (d, i) =>
+              (d.style.background = i === idx ? "var(--accent)" : "#2d3643")
+          );
+      });
+
+      productAddToCartBtn.addEventListener("click", () => {
+        if (!currentProductId) return;
+        const prod = products.find((p) => p.id === currentProductId);
+        if (!prod) return;
+        const existing = state.cart.find((i) => i.id === prod.id);
+        if (existing) existing.qty += 1;
+        else
+          state.cart.push({
+            id: prod.id,
+            name: prod.name,
+            price: prod.price,
+            qty: 1,
+          });
+        updateCartUI();
+        closeProductModal();
+        openCart();
+      });
+    </script>
+  </body>
+</html>

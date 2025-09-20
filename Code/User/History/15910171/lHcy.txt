@@ -1,0 +1,4 @@
+install zmap
+lookup how to scan with zmap for telnet
+
+python bruter.py <list> <threads> <output file>

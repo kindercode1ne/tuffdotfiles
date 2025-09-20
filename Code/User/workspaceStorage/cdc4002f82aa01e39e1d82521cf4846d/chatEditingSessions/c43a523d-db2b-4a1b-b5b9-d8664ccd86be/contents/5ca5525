@@ -1,0 +1,48 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "modules-left": [
+    "custom/power",
+    "custom/wallpaper",
+    "window"
+  ],
+  "modules-center": [
+    "wlr/taskbar"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "memory",
+    "cpu",
+    "clock"
+  ],
+  "custom/power": {
+    "format": "",
+    "on-click": "/home/avery/.config/wofi/scripts/wofipowermenu.py"
+  },
+  "custom/wallpaper": {
+    "format": "",
+    "on-click": "/home/avery/.config/wofi/scripts/wofithemeswitcher.py"
+  },
+  "window": {
+    "max-length": 40
+  },
+  "wlr/taskbar": {
+    "icon-size": 18,
+    "on-click": "activate"
+  },
+  "pulseaudio": {
+    "format": " {volume}%"
+  },
+  "memory": {
+    "format": " {used}G/{total}G"
+  },
+  "cpu": {
+    "format": " {usage}%"
+  },
+  "clock": {
+    "format": " {:%d/%m/%Y  %H:%M:%S}",
+    "interval": 1,
+    "on-click": "gsimplecal"
+  }
+}

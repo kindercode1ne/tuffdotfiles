@@ -1,0 +1,912 @@
+{
+  "version": 3,
+  "requesterUsername": "averyyuwu",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/209247362",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_2ad5cd18-4faf-450a-bb8a-62b1642d5c52",
+      "message": {
+        "text": "Yo how could i run like only this file because i need to just change up and test the asciis",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 91
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 92
+            },
+            "text": "Yo how could i run like only this file because i need to just change up and test the asciis",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:admin.go",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "external": "file:///home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "path": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 331,
+                "endColumn": 1,
+                "selectionStartLineNumber": 1,
+                "selectionStartColumn": 1,
+                "positionLineNumber": 331,
+                "positionColumn": 1
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "You can't run just this ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/RandomC2s/Bomba/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "fsPath": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+            "external": "file:///home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+            "path": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": " file alone because it depends on several external components that aren't defined in this file:\n\n- ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/RandomC2s/Bomba/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "database",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 61,
+                "startColumn": 29,
+                "endLineNumber": 61,
+                "endColumn": 29
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "external": "file:///home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "path": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "5a61a329-cf3e-498c-90c3-1ce5a31603ff"
+        },
+        {
+          "value": " (for login/user management)\n- ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/RandomC2s/Bomba/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "clientList",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 75,
+                "startColumn": 16,
+                "endLineNumber": 75,
+                "endColumn": 16
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "external": "file:///home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "path": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "eee3188a-afdf-4dd3-9aca-771ab3952e8c"
+        },
+        {
+          "value": " (for bot management)\n- `AccountInfo` struct\n- ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/RandomC2s/Bomba/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "name": "NewAttack",
+            "kind": 12,
+            "containerName": "",
+            "location": {
+              "range": {
+                "startLineNumber": 265,
+                "startColumn": 21,
+                "endLineNumber": 265,
+                "endColumn": 21
+              },
+              "uri": {
+                "$mid": 1,
+                "fsPath": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "external": "file:///home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "path": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+                "scheme": "file"
+              }
+            }
+          },
+          "resolveId": "329bc6ab-098b-4003-9661-e0497155b05b"
+        },
+        {
+          "value": " function\n- Various imports and dependencies\n\nHowever, here are a few approaches to test just the ASCII art and terminal output:\n\n## Option 1: Create a minimal test version\n\n````go\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/RandomC2s/Bomba/",
+            "scheme": "file"
+          }
+        },
+        {
+          "kind": "codeblockUri",
+          "uri": {
+            "$mid": 1,
+            "external": "file:///home/avery/Documents/RandomC2s/Bomba/test_ascii.go",
+            "path": "/home/avery/Documents/RandomC2s/Bomba/test_ascii.go",
+            "scheme": "file"
+          }
+        },
+        {
+          "value": "package main\n\nimport (\n    \"fmt\"\n    \"net\"\n    \"time\"\n)\n\nfunc main() {\n    // Create a mock connection that writes to stdout\n    conn := &MockConn{}\n    \n    // Test the ASCII art\n    testASCII(conn)\n}\n\ntype MockConn struct{}\n\nfunc (m *MockConn) Write(b []byte) (int, error) {\n    fmt.Print(string(b))\n    return len(b), nil\n}\n\nfunc (m *MockConn) Read(b []byte) (int, error) { return 0, nil }\nfunc (m *MockConn) Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetWriteDeadline(t time.Time) error { return nil }\n\nfunc testASCII(conn net.Conn) {\n    // Clear screen and show ASCII\n    conn.Write([]byte(\"\\033[2J\\033[1;1H\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    conn.Write([]byte(\"\\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[0m ██╔══██╗██║     ██║╚══███╔╝╚══███╔╝██╔══██╗██╔══██╗██╔══██╗\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[90m ██████╔╝██║     ██║  ███╔╝   ███╔╝ ███████║██████╔╝██║  ██║      \\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[1;36m ██╔══██╗██║     ██║ ███╔╝   ███╔╝  ██╔══██║██╔══██╗██║  ██║\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[0m ██████╔╝███████╗██║███████╗███████╗██║  ██║██║  ██║██████╔╝\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[90m ╚═════╝ ╚══════╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    \n    // Test help menu\n    conn.Write([]byte(\"\\033[01;37m ╔-════════════════════════════════════-╗   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m METHODS : \\033[01;37mATTACK PUSSY    \\033[01;37m  ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m ADMIN : \\033[01;37mADD ADMIN    \\033[01;37m║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m BOTS : \\033[01;37mNUMBER BOTS    \\033[01;37m   ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m CREDITS : \\033[01;37mCREDITS   \\033[01;37m ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m CLS/CLEAR : \\033[01;37mCLEAR TERMINAL    \\033[01;37m ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ╚-════════════════════════════════════-╝ \\033[0m \\r\\n\"))\n}\n````\n\nThen run:\n```bash\ncd /home/avery/Documents/RandomC2s/Bomba\ngo run test_ascii.go\n```\n\n## Option 2: Quick terminal test\n\nYou can also just echo the ASCII directly in your terminal to see how it looks:\n\n```bash\necho -e \"\\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗\\x1b[0m\"\n```\n\nThis way you can quickly iterate on the ASCII art without needing the full application running.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/avery/Documents/RandomC2s/Bomba/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "responseId": "response_f39a4e67-a8c9-4c06-ac0c-597cef1d9e90",
+      "result": {
+        "timings": {
+          "firstProgress": 2032,
+          "totalElapsed": 21914
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "package main\n\nimport (\n    \"fmt\"\n    \"net\"\n    \"time\"\n)\n\nfunc main() {\n    // Create a mock connection that writes to stdout\n    conn := &MockConn{}\n    \n    // Test the ASCII art\n    testASCII(conn)\n}\n\ntype MockConn struct{}\n\nfunc (m *MockConn) Write(b []byte) (int, error) {\n    fmt.Print(string(b))\n    return len(b), nil\n}\n\nfunc (m *MockConn) Read(b []byte) (int, error) { return 0, nil }\nfunc (m *MockConn) Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetWriteDeadline(t time.Time) error { return nil }\n\nfunc testASCII(conn net.Conn) {\n    // Clear screen and show ASCII\n    conn.Write([]byte(\"\\033[2J\\033[1;1H\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    conn.Write([]byte(\"\\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[0m ██╔══██╗██║     ██║╚══███╔╝╚══███╔╝██╔══██╗██╔══██╗██╔══██╗\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[90m ██████╔╝██║     ██║  ███╔╝   ███╔╝ ███████║██████╔╝██║  ██║      \\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[1;36m ██╔══██╗██║     ██║ ███╔╝   ███╔╝  ██╔══██║██╔══██╗██║  ██║\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[0m ██████╔╝███████╗██║███████╗███████╗██║  ██║██║  ██║██████╔╝\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[90m ╚═════╝ ╚══════╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    \n    // Test help menu\n    conn.Write([]byte(\"\\033[01;37m ╔-════════════════════════════════════-╗   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m METHODS : \\033[01;37mATTACK PUSSY    \\033[01;37m  ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m ADMIN : \\033[01;37mADD ADMIN    \\033[01;37m║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m BOTS : \\033[01;37mNUMBER BOTS    \\033[01;37m   ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m CREDITS : \\033[01;37mCREDITS   \\033[01;37m ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m CLS/CLEAR : \\033[01;37mCLEAR TERMINAL    \\033[01;37m ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ╚-════════════════════════════════════-╝ \\033[0m \\r\\n\"))\n}\n",
+              "resource": {
+                "$mid": 1,
+                "path": "/home/avery/Documents/RandomC2s/Bomba/test_ascii.go",
+                "scheme": "file"
+              },
+              "language": "go",
+              "markdownBeforeBlock": "You can't run just this  file alone because it depends on several external components that aren't defined in this file:\n\n-  (for login/user management)\n-  (for bot management)\n- `AccountInfo` struct\n-  function\n- Various imports and dependencies\n\nHowever, here are a few approaches to test just the ASCII art and terminal output:\n\n## Option 1: Create a minimal test version\n\n"
+            },
+            {
+              "code": "cd /home/avery/Documents/RandomC2s/Bomba\ngo run test_ascii.go\n",
+              "language": "bash",
+              "markdownBeforeBlock": "\nThen run:\n"
+            },
+            {
+              "code": "echo -e \"\\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗\\x1b[0m\"\n",
+              "language": "bash",
+              "markdownBeforeBlock": "\n## Option 2: Quick terminal test\n\nYou can also just echo the ASCII directly in your terminal to see how it looks:\n\n"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "You can't run just this `admin.go` file alone because it depends on several external components that aren't defined in this file:\n\n- `database` (for login/user management)\n- `clientList` (for bot management)\n- `AccountInfo` struct\n- `NewAttack` function\n- Various imports and dependencies\n\nHowever, here are a few approaches to test just the ASCII art and terminal output:\n\n## Option 1: Create a minimal test version\n\n````go\n// filepath: /home/avery/Documents/RandomC2s/Bomba/test_ascii.go\npackage main\n\nimport (\n    \"fmt\"\n    \"net\"\n    \"time\"\n)\n\nfunc main() {\n    // Create a mock connection that writes to stdout\n    conn := &MockConn{}\n    \n    // Test the ASCII art\n    testASCII(conn)\n}\n\ntype MockConn struct{}\n\nfunc (m *MockConn) Write(b []byte) (int, error) {\n    fmt.Print(string(b))\n    return len(b), nil\n}\n\nfunc (m *MockConn) Read(b []byte) (int, error) { return 0, nil }\nfunc (m *MockConn) Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetWriteDeadline(t time.Time) error { return nil }\n\nfunc testASCII(conn net.Conn) {\n    // Clear screen and show ASCII\n    conn.Write([]byte(\"\\033[2J\\033[1;1H\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    conn.Write([]byte(\"\\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[0m ██╔══██╗██║     ██║╚══███╔╝╚══███╔╝██╔══██╗██╔══██╗██╔══██╗\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[90m ██████╔╝██║     ██║  ███╔╝   ███╔╝ ███████║██████╔╝██║  ██║      \\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[1;36m ██╔══██╗██║     ██║ ███╔╝   ███╔╝  ██╔══██║██╔══██╗██║  ██║\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[0m ██████╔╝███████╗██║███████╗███████╗██║  ██║██║  ██║██████╔╝\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\x1b[90m ╚═════╝ ╚══════╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝\t\t\\x1b[0m \\r\\n\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    conn.Write([]byte(\"\\r\\n\"))\n    \n    // Test help menu\n    conn.Write([]byte(\"\\033[01;37m ╔-════════════════════════════════════-╗   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m METHODS : \\033[01;37mATTACK PUSSY    \\033[01;37m  ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m ADMIN : \\033[01;37mADD ADMIN    \\033[01;37m║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m BOTS : \\033[01;37mNUMBER BOTS    \\033[01;37m   ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m CREDITS : \\033[01;37mCREDITS   \\033[01;37m ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ║ \\033[01;36m CLS/CLEAR : \\033[01;37mCLEAR TERMINAL    \\033[01;37m ║   \\033[0m \\r\\n\"))\n    conn.Write([]byte(\"\\033[01;37m ╚-════════════════════════════════════-╝ \\033[0m \\r\\n\"))\n}\n````\n\nThen run:\n```bash\ncd /home/avery/Documents/RandomC2s/Bomba\ngo run test_ascii.go\n```\n\n## Option 2: Quick terminal test\n\nYou can also just echo the ASCII directly in your terminal to see how it looks:\n\n```bash\necho -e \"\\x1b[1;36m ██████╗ ██╗     ██╗███████╗███████╗ █████╗ ██████╗ ██████╗\\x1b[0m\"\n```\n\nThis way you can quickly iterate on the ASCII art without needing the full application running.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "35e72a2b-c45e-4e1d-b7a8-c337115d5900"
+            }
+          ],
+          "modelMessageId": "690e0e39-91ac-4a9d-9d73-e592e2f11049",
+          "responseId": "4f7e9105-09c3-4646-89b0-54af716a922e",
+          "sessionId": "d5e49d4a-ba49-4403-99df-336bc47d8389",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": false,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "requester": {
+            "name": "averyyuwu",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/209247362",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "ask"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+              "external": "file:///home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+              "path": "/home/avery/Documents/RandomC2s/Bomba/cnc/admin.go",
+              "scheme": "file"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 331,
+              "endColumn": 1
+            }
+          }
+        }
+      ],
+      "codeCitations": [
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close()"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error {"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockCo"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr()"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr {"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockCo"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *Mock"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDe"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error {"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockCo"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDe"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error {"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockCo"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetWrite"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetWriteDeadline(t"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetWriteDeadline(t time.Time) error"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/kellydunn/go-opc/blob/807c76889fe050f39bdd402abcd82a1d2d20f653/server_test.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "MIT",
+          "snippet": ") Close() error { return nil }\nfunc (m *MockConn) LocalAddr() net.Addr { return nil }\nfunc (m *MockConn) RemoteAddr() net.Addr { return nil }\nfunc (m *MockConn) SetDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetReadDeadline(t time.Time) error { return nil }\nfunc (m *MockConn) SetWriteDeadline(t time.Time) error { return"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m "
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-════"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-════════════════════════"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-════════════════════════════════════-"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-════════════════════════════════════-╗   "
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-════════════════════════════════════-╗   \\033"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-════════════════════════════════════-╗   \\033[0m \\r"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "(\"\\033[01;37m ╔-════════════════════════════════════-╗   \\033[0m \\r\\n\")"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte(\"\\033[01;"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte(\"\\033[01;37m "
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte(\"\\033[01;37m ╚-════════════"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte(\"\\033[01;37m ╚-════════════════════════════════"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte(\"\\033[01;37m ╚-════════════════════════════════════-"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte(\"\\033[01;37m ╚-════════════════════════════════════-╝"
+        },
+        {
+          "kind": "codeCitation",
+          "value": {
+            "$mid": 1,
+            "path": "/vilw/miraii/blob/e01cdb069808acd7b83f2df646f94a96ac056835/cnc/admin.go",
+            "scheme": "https",
+            "authority": "github.com"
+          },
+          "license": "unknown",
+          "snippet": "[]byte(\"\\033[01;37m ╚-════════════════════════════════════-╝ \\033[0m"
+        }
+      ],
+      "timestamp": 1754219208764,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    }
+  ],
+  "sessionId": "18763cbd-8023-4820-b431-5cc5cf155a6b",
+  "creationDate": 1754219193378,
+  "isImported": false,
+  "lastMessageDate": 1754219208764,
+  "customTitle": "Testing ASCII output in Go application"
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Version Available</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+        font-family: "Share Tech Mono", monospace;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 6vw;
+        line-height: 1.2;
+      }
+
+      .h1box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 70vw;
+        background-color: black;
+        -webkit-box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, 1);
+      }
+
+      .button {
+        margin-top: 5vw;
+        padding: 4vw 10vw;
+        font-size: 4.5vw;
+        color: #ffffff;
+        background: none;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+        border-radius: 1vw;
+      }
+
+      .button:hover,
+      .button:active {
+        color: black;
+        background: #ffffff;
+        box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+      }
+      beam-background canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h1box">
+      <h1>⚡ elo jest nowa wersja! ⚡</h1>
+    </div>
+    <a href="https://example.com" class="button">Przejdź do nowej wersji</a>
+
+    <div id="beam-background" class="beam-bg"></div>
+
+    <script>
+      // Vanilla JS conversion of BackgroundBeamsWithCollision
+      // Generate a bunch of beams across the width; we'll also enforce a minimum active count.
+      function generateInitialBeams(count = 1) {
+        const w = window.innerWidth;
+        const arr = [];
+        for (let i = 0; i < count; i++) {
+          const x = Math.random() * w;
+          const dur = rand(3.5, 9); // varied speed
+          const delay = Math.random() * 2.5; // staggered start
+          const rep = rand(0.05, 0.4); // tiny downtime
+          const sizeClassRand = Math.random();
+          let cls = "";
+          if (sizeClassRand < 0.2) cls = "h-6";
+          else if (sizeClassRand < 0.35) cls = "h-12";
+          else if (sizeClassRand < 0.45) cls = "h-20";
+          arr.push({
+            initialX: x,
+            translateX: x,
+            duration: dur,
+            repeatDelay: rep,
+            delay,
+            className: cls,
+          });
+        }
+        return arr;
+      }
+      const beamConfig = generateInitialBeams();
+
+      // Inject minimal styles (kept inline to avoid external CSS change)
+      const style = document.createElement("style");
+      style.textContent = `
+        .beam-bg {position:fixed;inset:0;overflow:hidden;z-index:-1;display:block;background:#000;} 
+        .beam {position:absolute;top:-250px;width:3px;border-radius:999px;background:linear-gradient(to top,var(--beam-color-stop,#6366f1),rgba(255,255,255,0));mix-blend-mode:screen;filter:drop-shadow(0 0 6px rgba(255,255,255,0.4));} 
+        .beam.h-6 {height:90px;} .beam.h-12 {height:180px;} .beam.h-20 {height:300px;} .beam:not(.h-6):not(.h-12):not(.h-20){height:140px;} 
+        .explosion {position:absolute;pointer-events:none;} 
+        .explosion-core {position:absolute;left:50%;top:0;width:80px;height:4px;margin-left:-40px;border-radius:50%;background:linear-gradient(90deg,rgba(255,255,255,0),var(--explosion-color,#a855f7),rgba(255,255,255,0));filter:blur(3px);opacity:0;animation:coreFade 1.5s ease-out forwards;} 
+        @keyframes coreFade {0%{opacity:0}10%{opacity:1}90%{opacity:.4}100%{opacity:0}} 
+        .spark {position:absolute;width:6px;height:6px;border-radius:50%;background:radial-gradient(circle,var(--spark-color,#818cf8),rgba(0,0,0,0));opacity:0.9;animation:spark 1.2s ease-out forwards;} 
+        @keyframes spark {0%{transform:translate(0,0) scale(1);opacity:1}80%{opacity:.4}100%{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}} 
+      `;
+      document.head.appendChild(style);
+
+      const parentEl = document.getElementById("beam-background");
+
+      function rand(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      function createBeam(cfg) {
+        const el = document.createElement("div");
+        el.className = "beam" + (cfg.className ? " " + cfg.className : "");
+        el.style.left = (cfg.initialX || 0) + "px";
+        // color within gradient range
+        el.style.setProperty("--beam-color-stop", pickGradientColor());
+        parentEl.appendChild(el);
+        const state = {
+          el,
+          cfg,
+          startTime: performance.now() + (cfg.delay || 0) * 1000,
+          pausedUntil: (cfg.delay || 0) * 1000,
+          cycle: 0,
+        };
+        return state;
+      }
+
+      // Color utilities (gradient between #17e3a6 and #e31798)
+      const COLOR_START = { r: 23, g: 227, b: 166 }; // #17e3a6
+      const COLOR_END = { r: 227, g: 23, b: 152 }; // #e31798
+      function lerp(a, b, t) {
+        return a + (b - a) * t;
+      }
+      function pickGradientColor(t = Math.random()) {
+        const r = Math.round(lerp(COLOR_START.r, COLOR_END.r, t));
+        const g = Math.round(lerp(COLOR_START.g, COLOR_END.g, t));
+        const b = Math.round(lerp(COLOR_START.b, COLOR_END.b, t));
+        return `rgb(${r},${g},${b})`;
+      }
+
+      const beams = beamConfig.map(createBeam);
+
+      // Allow on-the-fly supplemental beams if active on-screen beams drop below threshold
+      const MIN_ACTIVE_BEAMS = 3;
+      const MAX_TOTAL_BEAMS = 40;
+      function ensureMinActive(t) {
+        const active = beams.filter(
+          (b) =>
+            t >= b.startTime &&
+            (t - b.startTime) / ((b.cfg.duration || 8) * 1000) < 1
+        ).length;
+        if (active < MIN_ACTIVE_BEAMS && beams.length < MAX_TOTAL_BEAMS) {
+          const needed = Math.min(
+            MIN_ACTIVE_BEAMS - active,
+            MAX_TOTAL_BEAMS - beams.length
+          );
+          for (let i = 0; i < needed; i++) {
+            const [cfg] = generateInitialBeams(1);
+            cfg.delay = 0; // start immediately
+            const nb = createBeam(cfg);
+            nb.startTime = performance.now();
+            beams.push(nb);
+          }
+        }
+      }
+
+      function spawnExplosion(x, y) {
+        const explosion = document.createElement("div");
+        explosion.className = "explosion";
+        explosion.style.left = x + "px";
+        explosion.style.top = y + "px";
+        const baseColor = pickGradientColor();
+        explosion.style.setProperty("--explosion-color", baseColor);
+        parentEl.appendChild(explosion);
+        const core = document.createElement("div");
+        core.className = "explosion-core";
+        explosion.appendChild(core);
+        for (let i = 0; i < 18; i++) {
+          const s = document.createElement("span");
+          s.className = "spark";
+          const angle = Math.random() * Math.PI - Math.PI / 2; // upward cone
+          const dist = rand(40, 120);
+          const dx = Math.cos(angle) * dist;
+          const dy = Math.sin(angle) * dist - rand(30, 90);
+          s.style.setProperty("--dx", dx + "px");
+          s.style.setProperty("--dy", dy + "px");
+          // small variation by lerping again with slight bias
+          s.style.setProperty("--spark-color", pickGradientColor());
+          explosion.appendChild(s);
+        }
+        setTimeout(() => explosion.remove(), 1600);
+      }
+
+      function updateBeams(t) {
+        ensureMinActive(t);
+        const parentRect = parentEl.getBoundingClientRect();
+        beams.forEach((b) => {
+          const { el, cfg } = b;
+          const duration = (cfg.duration || 8) * 1000;
+          const repeatDelay = (cfg.repeatDelay || 0) * 1000;
+          if (t < b.startTime) return; // wait for delay
+          const progress = (t - b.startTime) / duration;
+          if (progress >= 1) {
+            // collision reset cycle
+            b.startTime = t + repeatDelay;
+            el.style.top = "-250px";
+            el.style.left = (cfg.translateX || 0) + "px";
+            b.cycle++;
+            // new gradient color each cycle
+            el.style.setProperty("--beam-color-stop", pickGradientColor());
+            return;
+          }
+          const travelY = 1800; // matches JSX target
+          const y = -250 + travelY * progress;
+          el.style.transform = `translateY(${y}px)`;
+          // collision detection (first time crossing)
+          const beamBottom = el.getBoundingClientRect().bottom;
+          if (!b.collided && beamBottom >= parentRect.bottom - 2) {
+            b.collided = true;
+            const beamRect = el.getBoundingClientRect();
+            const cx = beamRect.left - parentRect.left + beamRect.width / 2;
+            const cy = parentRect.height - 2; // near absolute bottom
+            spawnExplosion(cx, cy);
+          }
+          if (progress > 0.2 && progress < 0.25) {
+            // allow future collisions only after some progress into next cycle
+            b.collided = b.collided; // no-op
+          }
+          if (progress < 0.05) b.collided = false; // reset early
+        });
+        requestAnimationFrame(updateBeams);
+      }
+      requestAnimationFrame(updateBeams);
+    </script>
+  </body>
+</html>

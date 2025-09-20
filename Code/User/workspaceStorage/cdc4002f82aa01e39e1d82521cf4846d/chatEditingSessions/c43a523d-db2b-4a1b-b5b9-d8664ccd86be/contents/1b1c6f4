@@ -1,0 +1,67 @@
+* {
+  border: none;
+  border-radius: 12px;
+  font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace;
+  font-size: 14px;
+  min-height: 0;
+  box-shadow: none;
+}
+
+#waybar {
+  background: rgba(30, 30, 40, 0.35);
+  color: #e0e0e0;
+  border-radius: 12px;
+  margin: 6px 12px 0 12px;
+  padding: 0 180px;
+  min-height: 28px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  border-radius: 12px;
+  background: transparent;
+}
+
+#custom-power,
+#custom-wallpaper,
+#custom-calendar,
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#custom-gpu {
+  padding: 0 10px;
+  margin: 0 2px;
+  border-radius: 8px;
+  background: rgba(50, 50, 60, 0.7);
+  transition: background 0.2s;
+}
+
+#custom-power:hover,
+#custom-wallpaper:hover {
+  background: #e06c75;
+  color: #fff;
+}
+
+#wlr-taskbar button {
+  background: none;
+  border: none;
+  margin: 0 2px;
+  padding: 0 6px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+#wlr-taskbar button.active {
+  background: #61afef;
+  color: #fff;
+}
+#wlr-taskbar button:hover {
+  background: #3b4252;
+}
+
+#window {
+  padding: 0 12px;
+  color: #a3be8c;
+  background: transparent;
+}

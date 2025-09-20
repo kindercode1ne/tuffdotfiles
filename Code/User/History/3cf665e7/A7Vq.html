@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #181a20;
+        font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+        color: #f1f3f6;
+        letter-spacing: 0.01em;
+        margin: 0;
+        overflow: hidden;
+      }
+      /* Particle canvas background */
+      #particle-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        pointer-events: none;
+        display: block;
+      }
+      .login-box {
+        background: #23262f;
+        padding: 2.5rem 2rem;
+        border-radius: 14px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+        min-width: 320px;
+        max-width: 90vw;
+        position: relative;
+        z-index: 1;
+      }
+      .login-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        width: 100%;
+        min-width: 220px;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      input[type="text"] {
+        padding: 0.75rem;
+        border: 1.5px solid #353945;
+        border-radius: 6px;
+        background: #23262f;
+        color: #f1f3f6;
+        font-size: 0.9em;
+        font-family: inherit;
+        transition: border 0.2s;
+        box-sizing: border-box;
+        height: 46px;
+      }
+      input[type="text"]:focus {
+        outline: none;
+        border-color: #6c47ff;
+        background: #23262f;
+      }
+      button {
+        font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+        padding: 0.75rem;
+        background: #6c47ff;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.08em;
+        letter-spacing: 0.03em;
+        box-shadow: 0 2px 8px rgba(108, 71, 255, 0.1);
+        transition: background 0.2s;
+        box-sizing: border-box;
+        height: 46px;
+      }
+      .error {
+        color: #ff4d6d;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1em;
+        letter-spacing: 0.01em;
+      }
+      #scramble-text {
+        font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+        font-size: 1.3em;
+        color: white;
+        text-shadow: 0 1px 8px #6c47ff33;
+        letter-spacing: 0.04em;
+        margin-bottom: 1.2rem;
+        display: block;
+        transition: color 0.2s;
+      }
+      /* Buy section styles */
+      #buy-section a {
+        color: #40ffaa;
+        text-decoration: none;
+      }
+      #buy-section a:hover {
+        text-decoration: underline;
+      }
+      /* New sizing/visibility tweaks */
+      #buy-section {
+        width: 310px !important;
+        background: #2b3040 !important;
+        border: 1.5px solid #6c47ff !important;
+        box-shadow: 0 4px 18px -6px rgba(108, 71, 255, 0.55),
+          0 0 0 1px #353945 inset;
+        font-size: 0.8rem !important;
+      }
+      #buy-section .buy-label {
+        font-size: 1.05rem;
+        letter-spacing: 0.07em;
+      }
+      #buy-section .handles div {
+        font-size: 0.82rem;
+        background: rgba(108, 71, 255, 0.08);
+        padding: 4px 6px;
+        border-radius: 4px;
+      }
+      #buy-section .handles div:nth-child(odd) {
+        background: rgba(64, 255, 170, 0.08);
+      }
+      /* Make warning smaller / less dominant */
+      #login-warning-box {
+        font-size: 0.55rem !important;
+        padding: 0.6rem 0.75rem !important;
+        background: #23262f !important;
+        border: 1px solid #333843 !important;
+        box-shadow: none !important;
+        opacity: 0.85;
+      }
+      #login-warning-box h2 {
+        font-size: 0.7rem !important;
+        color: #ff4d6d !important;
+        margin-bottom: 4px !important;
+      }
+    </style>
+    <!-- Particle background canvas -->
+    <canvas id="particle-bg"></canvas>
+
+    <div class="login-box">
+      <div
+        style="
+          width: 160px;
+          min-height: 1.5em;
+          margin: 0 auto;
+          margin-bottom: 1.2rem;
+        "
+      >
+        <span
+          id="scramble-text"
+          style="
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.2em;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+          "
+          >Password Login</span
+        >
+      </div>
+      <!-- End scrambled text -->
+      <div id="error" class="error" style="display: none"></div>
+      <div class="login-fields">
+        <input
+          type="text"
+          id="password"
+          placeholder="Enter auth key"
+          autofocus
+        />
+        <button onclick="login()">enter</button>
+      </div>
+      <!-- Buy / Contact section (enlarged) -->
+      <div
+        id="buy-section"
+        style="
+          margin-top: 1.2rem;
+          border-radius: 10px;
+          padding: 1rem 1.1rem;
+          line-height: 1.45;
+          text-align: center;
+        "
+      >
+        <div
+          class="buy-label"
+          style="
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            background: linear-gradient(90deg, #6c47ff, #40ffaa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+          "
+        >
+          BUY ACCESS / CONTACT
+        </div>
+        <div
+          class="handles"
+          style="display: flex; flex-direction: column; gap: 0.45rem"
+        >
+          <div>
+            Instagram:
+            <a
+              href="https://instagram.com/yourhandle"
+              target="_blank"
+              rel="noopener"
+              >@yourhandle</a
+            >
+          </div>
+          <div>
+            Discord:
+            <a href="https://t.me/yourhandle" target="_blank" rel="noopener"
+              >@yourhandle</a
+            >
+          </div>
+          <div>
+            Telegram:
+            <a href="https://t.me/yourhandle" target="_blank" rel="noopener"
+              >@yourhandle</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Warning box (now smaller) -->
+      <div
+        id="login-warning-box"
+        style="
+          width: 290px;
+          margin-top: 1.1rem;
+          border-radius: 8px;
+          text-align: center;
+          min-height: 2em;
+        "
+      >
+        <h2 style="margin: 0">WARNING</h2>
+        IF YOU TRY TO USE SOMEONE ELSE'S KEY YOUR PICTURE AND INFO WILL BE
+        PUBLICALLY UPLOADED
+      </div>
+    </div>
+    <!-- LOGIN WILL BE HERE -->
+    <script>
+      function login() {
+        const key = document.getElementById("password").value.trim();
+        const errorBox = document.getElementById("error");
+        errorBox.style.display = "none";
+        fetch("/api/auth", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ key }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.success) {
+              window.location.href =
+                "index.html?key=" + encodeURIComponent(key);
+            } else {
+              errorBox.textContent = "Invalid key. Please try again.";
+              errorBox.style.display = "block";
+            }
+          })
+          .catch(() => {
+            errorBox.textContent = "Server error. Please try again later.";
+            errorBox.style.display = "block";
+          });
+      }
+    </script>
+
+    <!-- scrambler -->
+    <script>
+      (function () {
+        const element = document.getElementById("scramble-text");
+        const original = "Password Login";
+        const characters =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+";
+        const colors = ["#40ffaa", "#4079ff"];
+        let interval = null;
+        let isScrambling = false;
+
+        function scrambleText(text, revealedCount) {
+          // Always return a string of the same length as original, with colored scrambling chars
+          let html = "";
+          for (let i = 0; i < text.length; i++) {
+            const char = text[i];
+            if (char === " " || i < revealedCount) {
+              html += char;
+            } else {
+              const randChar =
+                characters[Math.floor(Math.random() * characters.length)];
+              const color = colors[Math.floor(Math.random() * colors.length)];
+              html += `<span style="color:${color}">${randChar}</span>`;
+            }
+          }
+          // Pad with spaces if needed
+          if (html.length < original.length) {
+            html = html.padEnd(original.length, " ");
+          }
+          return html;
+        }
+
+        function startScramble() {
+          if (isScrambling) return;
+          isScrambling = true;
+          let revealed = 0;
+          interval = setInterval(() => {
+            if (revealed <= original.length) {
+              element.innerHTML = scrambleText(original, revealed);
+              revealed++;
+            } else {
+              clearInterval(interval);
+              element.textContent = original;
+              isScrambling = false;
+            }
+          }, 50);
+        }
+
+        // Start scramble on page load
+        window.addEventListener("DOMContentLoaded", startScramble);
+        // Optionally, keep hover effect;
+      })();
+    </script>
+    <!-- Particle effect script -->
+    <script>
+      const canvas = document.getElementById("particle-bg");
+      const ctx = canvas.getContext("2d");
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      let dpr = window.devicePixelRatio || 1;
+      function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        dpr = window.devicePixelRatio || 1;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.scale(dpr, dpr);
+      }
+      window.addEventListener("resize", resize);
+      resize();
+
+      // Particle config
+      const PARTICLE_COUNT = 400;
+      const SPREAD = 10;
+      const SPEED = 0.4;
+      const COLORS = ["#cccccc", "#cccccc", "#cccccc"];
+      const BASE_SIZE = 0.01; // was 2.5, now smaller
+      const SIZE_RANDOMNESS = 0;
+      const CAMERA_DISTANCE = 20;
+      const ALPHA_PARTICLES = true;
+      const disableRotation = true;
+
+      // Helper: random point in sphere
+      function randomInSphere() {
+        let x, y, z, len;
+        do {
+          x = Math.random() * 2 - 1;
+          y = Math.random() * 2 - 1;
+          z = Math.random() * 2 - 1;
+          len = x * x + y * y + z * z;
+        } while (len > 1 || len === 0);
+        const r = Math.cbrt(Math.random());
+        return [x * r, y * r, z * r];
+      }
+      // Helper: hex to rgb
+      function hexToRgb(hex) {
+        hex = hex.replace(/^#/, "");
+        if (hex.length === 3)
+          hex = hex
+            .split("")
+            .map((c) => c + c)
+            .join("");
+        const int = parseInt(hex, 16);
+        return [(int >> 16) & 255, (int >> 8) & 255, int & 255];
+      }
+
+      // Particle data
+      const particles = [];
+      for (let i = 0; i < PARTICLE_COUNT; i++) {
+        const pos = randomInSphere();
+        const random = [
+          Math.random(),
+          Math.random(),
+          Math.random(),
+          Math.random(),
+        ];
+        const color = hexToRgb(
+          COLORS[Math.floor(Math.random() * COLORS.length)]
+        );
+        const size = BASE_SIZE * (1 + SIZE_RANDOMNESS * (random[0] - 0.5));
+        particles.push({
+          base: pos,
+          random,
+          color,
+          size,
+          pos: [0, 0, 0],
+        });
+      }
+
+      // Camera
+      let camRotX = 0,
+        camRotY = 0,
+        camRotZ = 0;
+
+      // Animation loop
+      let lastTime = performance.now();
+      let elapsed = 0;
+      function animate(now) {
+        const delta = now - lastTime;
+        lastTime = now;
+        elapsed += delta * SPEED;
+        ctx.clearRect(0, 0, width, height);
+
+        // Camera rotation
+        if (!disableRotation) {
+          camRotX = Math.sin(elapsed * 0.0002) * 0.1;
+          camRotY = Math.cos(elapsed * 0.0005) * 0.15;
+          camRotZ += 0.01 * SPEED;
+        } else {
+          camRotX = 0;
+          camRotY = 0;
+          camRotZ = 0;
+        }
+
+        // Camera matrix
+        const sinX = Math.sin(camRotX),
+          cosX = Math.cos(camRotX);
+        const sinY = Math.sin(camRotY),
+          cosY = Math.cos(camRotY);
+        const sinZ = Math.sin(camRotZ),
+          cosZ = Math.cos(camRotZ);
+
+        // Center
+        const cx = width / 2,
+          cy = height / 2;
+        const fov = (15 * Math.PI) / 180;
+        const scale = height / (2 * Math.tan(fov / 2));
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+          let [x, y, z] = particles[i].base.map((v) => v * SPREAD);
+          z *= 10;
+
+          // Animate position
+          const t = elapsed * 0.001;
+          const r = particles[i].random;
+          x += Math.sin(t * r[2] + 6.28 * r[3]) * (0.1 + 1.4 * r[0]);
+          y += Math.sin(t * r[1] + 6.28 * r[0]) * (0.1 + 1.4 * r[3]);
+          z += Math.sin(t * r[3] + 6.28 * r[1]) * (0.1 + 1.4 * r[2]);
+
+          // Apply camera rotation (Y, X, Z order)
+          // Y
+          let tx = cosY * x + sinY * z;
+          let tz = -sinY * x + cosY * z;
+          x = tx;
+          z = tz;
+          // X
+          let ty = cosX * y - sinX * z;
+          tz = sinX * y + cosX * z;
+          y = ty;
+          z = tz;
+          // Z
+          tx = cosZ * x - sinZ * y;
+          ty = sinZ * x + cosZ * y;
+          x = tx;
+          y = ty;
+
+          // Perspective projection
+          const camZ = CAMERA_DISTANCE;
+          const pz = z + camZ;
+          if (pz <= 0.1) continue; // behind camera
+          const px = (x * scale) / pz;
+          const py = (y * scale) / pz;
+
+          // Draw
+          const size = (particles[i].size * scale) / pz;
+          ctx.save();
+          ctx.globalAlpha = ALPHA_PARTICLES
+            ? Math.max(0, Math.min(1, 0.8 * (1 - Math.abs(z) / 100)))
+            : 1;
+          ctx.beginPath();
+          ctx.arc(cx + px, cy + py, size, 0, 2 * Math.PI, false);
+          ctx.closePath();
+          ctx.fillStyle = `rgb(${particles[i].color[0]},${particles[i].color[1]},${particles[i].color[2]})`;
+          ctx.shadowColor = "#cccccc";
+          ctx.shadowBlur = 4;
+          ctx.fill();
+          ctx.restore();
+        }
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+    </script>
+  </body>
+</html>

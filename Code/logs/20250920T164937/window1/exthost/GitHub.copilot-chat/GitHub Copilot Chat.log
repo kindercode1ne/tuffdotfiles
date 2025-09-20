@@ -1,0 +1,52 @@
+2025-09-20 16:49:39.574 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-09-20 16:49:39.574 [info] Using the Electron fetcher.
+2025-09-20 16:49:39.574 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-09-20 16:49:39.574 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-09-20 16:49:39.574 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-09-20 16:49:39.640 [info] Logged in as averyyuwu
+2025-09-20 16:49:40.353 [info] Got Copilot token for averyyuwu
+2025-09-20 16:49:40.358 [info] activationBlocker from 'languageModelAccess' took for 627ms
+2025-09-20 16:49:40.382 [info] copilot token chat_enabled: true, sku: free_educational_quota
+2025-09-20 16:49:40.382 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-09-20 16:49:40.390 [info] Registering default platform agent...
+2025-09-20 16:49:40.391 [info] activationBlocker from 'conversationFeature' took for 662ms
+2025-09-20 16:49:40.410 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-09-20 16:49:40.741 [info] Fetched model metadata in 383ms cd9b250d-d17a-4f88-aeec-2f95eedf57fb
+2025-09-20 16:49:46.360 [info] Refetch model metadata: Succeeded in 506ms 6febc8fd-c5cc-48a0-bdcd-f7283fea2d2a (D3F0:DD930:37E98F:54E789:68CEBF0A) using electron-fetch with status 200.
+2025-09-20 16:49:46.849 [info] Refetch model metadata: Succeeded in 488ms 5e91f21f-ed33-4064-8684-8648aaec2e59 (D3F2:211386:387041:557FEB:68CEBF0A) using node-http with status 200.
+2025-09-20 16:49:47.366 [info] Refetch model metadata: Succeeded in 515ms 10ef5cd2-570f-49a3-acfd-31161bd0a340 (B08A:2F8F2C:13EC537:1D30E54:68CEBF0B) using node-fetch with status 200.
+2025-09-20 16:50:33.542 [info] Latest entry: ccreq:latestrequest.copilotmd
+2025-09-20 16:50:33.542 [info] ccreq:f7e509d3.copilotmd | markdown
+2025-09-20 16:50:33.596 [info] ccreq:f64ceb25.copilotmd | markdown
+2025-09-20 16:50:33.739 [info] ccreq:ec77d9f5.copilotmd | markdown
+2025-09-20 16:50:33.929 [info] ccreq:e2347f49.copilotmd | markdown
+2025-09-20 16:50:34.141 [info] ccreq:f48689c3.copilotmd | markdown
+2025-09-20 16:50:34.333 [info] ccreq:223af4d6.copilotmd | markdown
+2025-09-20 16:50:34.469 [info] ccreq:dcd1e9fa.copilotmd | markdown
+2025-09-20 16:50:34.700 [info] message 0 returned. finish reason: [stop]
+2025-09-20 16:50:34.700 [info] request done: requestId: [b8308194-bed4-4cd4-b0e6-eb1ffcfb9011] model deployment ID: []
+2025-09-20 16:50:34.701 [info] ccreq:e8a78bb1.copilotmd | success | copilot-nes-xtab | 562ms | [XtabProvider]
+2025-09-20 16:50:34.851 [info] ccreq:772e83bf.copilotmd | markdown
+2025-09-20 16:50:34.860 [info] ccreq:77c3d062.copilotmd | markdown
+2025-09-20 16:50:34.991 [info] ccreq:1a0b4647.copilotmd | markdown
+2025-09-20 16:50:35.086 [info] ccreq:1bf2f58e.copilotmd | markdown
+2025-09-20 16:50:35.146 [info] ccreq:fd32f206.copilotmd | markdown
+2025-09-20 16:50:35.310 [info] ccreq:987f8e1e.copilotmd | markdown
+2025-09-20 16:50:35.863 [info] ccreq:dfdc89f6.copilotmd | markdown
+2025-09-20 16:50:36.007 [info] ccreq:ba3fe71a.copilotmd | markdown
+2025-09-20 16:50:36.190 [info] request done: requestId: [89400cff-354f-45b8-81ae-b2dba53e6b2f] model deployment ID: []
+2025-09-20 16:50:36.192 [error] Error: Premature close
+    at Readable.onclose (node:internal/streams/end-of-stream:153:30)
+    at Readable.emit (node:events:518:28)
+    at emitCloseNT (node:internal/streams/destroy:148:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21): Error on conversation request
+2025-09-20 16:50:36.192 [info] ccreq:4d4ac629.copilotmd | failed | copilot-nes-xtab | 382ms | [XtabProvider]
+2025-09-20 16:50:36.197 [info] ccreq:1ecc9a03.copilotmd | markdown
+2025-09-20 16:50:36.401 [info] ccreq:ee786d05.copilotmd | markdown
+2025-09-20 16:50:37.136 [info] message 0 returned. finish reason: [stop]
+2025-09-20 16:50:37.136 [info] request done: requestId: [afffc810-3ab2-48e1-b3a2-df0ff8b74fbf] model deployment ID: []
+2025-09-20 16:50:37.137 [info] ccreq:95022363.copilotmd | success | copilot-nes-xtab | 350ms | [XtabProvider]
+2025-09-20 16:50:38.137 [info] ccreq:4e229ee7.copilotmd | markdown
+2025-09-20 16:50:41.984 [info] message 0 returned. finish reason: [stop]
+2025-09-20 16:50:41.984 [info] request done: requestId: [491f1668-c405-4eb5-a2e2-daafc7396ff7] model deployment ID: []
+2025-09-20 16:50:41.984 [info] ccreq:1b1be0bd.copilotmd | success | copilot-nes-xtab | 287ms | [XtabProvider]
